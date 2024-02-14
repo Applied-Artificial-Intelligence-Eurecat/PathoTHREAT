@@ -1,0 +1,39 @@
+{
+  "event": "sudden onset of acute gastroenteritis",
+  "event_date": "Between September 17 and October 3, 2009",
+  "city": "Shenzhen",
+  "region": [
+    "south China",
+    "Guangdong"
+  ],
+  "country": "China",
+  "cause": "access holes in lid",
+  "source": "The underground reservoir",
+  "people_ill": "396",
+  "contaminants": "norovirus",
+  "symptoms": [
+    "vomiting",
+    "diarrhea"
+  ],
+  "mitigation": [
+    "a 2-m high cover has been erected over the reservoir to prevent contamination via the access holes"
+  ],
+  "monitoring": [
+    "stool",
+    "rectal swab samples"
+  ],
+  "restoration": [
+    "a 2-m high cover has been erected over the reservoir to prevent contamination via the access holes"
+  ],
+  "prevention": [
+    "More attention should be paid to the design",
+    "supervision of secondary water supply systems"
+  ],
+  "investigation": [
+    "lack of surveillance",
+    "supervision",
+    "due to faults in the construction of such water systems"
+  ],
+  "infrastructure": "the lid was at a similar level to the ground around it",
+  "title": "An Outbreak Of Norovirus Gastroenteritis Associated With A Secondary Water Supply System In A Factory In South China"
+}

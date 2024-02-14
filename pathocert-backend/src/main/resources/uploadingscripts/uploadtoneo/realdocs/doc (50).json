@@ -1,0 +1,25 @@
+{
+  "event": "unusual increase of patients with acute gastroenteritis",
+  "event_date": "30 September 2021",
+  "city": "Muxia",
+  "country": "Spain",
+  "cause": "breakdown in chlorination",
+  "people_ill": "115",
+  "contaminants": "Norovirus GII",
+  "symptoms": [
+    "vomiting",
+    "diarrhea"
+  ],
+  "mitigation": [
+    "phone surveys",
+    "tap water ban"
+  ],
+  "restoration": [
+    "the water was purged",
+    "chlorinated"
+  ],
+  "prevention": "timely communication",
+  "investigation": "phone surveys",
+  "infrastructure": "breakdown in chlorination",
+  "title": "Norovirus Gii.3[P12] Outbreak Associated With The Drinking Water Supply In A Rural Area In Galicia, Spain, 2021"
+}

@@ -1,0 +1,38 @@
+{
+  "event": "unusually high number of patients with acute diarrhoea",
+  "event_date": "between July and October 2006",
+  "city": "Taranto",
+  "region": "Apulia",
+  "country": "Italy",
+  "source": [
+    "drinkable tap water contaminated with (at least) rota-",
+    "noroviruses"
+  ],
+  "detection": [
+    "reported by the accident",
+    "emergency departments"
+  ],
+  "people_ill": "361",
+  "contaminants": [
+    "rota-noroviruses"
+  ],
+  "symptoms": [
+    "fever",
+    "headache",
+    "vomit",
+    "abdominal pain",
+    "nausea"
+  ],
+  "mitigation": [
+    "information on patients with acute gastroenteritis",
+    "extra chlorination treatment for household water supplies"
+  ],
+  "monitoring": [
+    "Stool samples",
+    "gastrointestinal bacteria",
+    "parasites"
+  ],
+  "restoration": "extra chlorination treatment for household water supplies",
+  "infrastructure": "technical problems at the local chlorination treatment facilities",
+  "title": "Large Outbreak Of Viral Gastroenteritis Caused By Contaminated Drinking Water In Apulia, Italy, May- October 2006"
+}

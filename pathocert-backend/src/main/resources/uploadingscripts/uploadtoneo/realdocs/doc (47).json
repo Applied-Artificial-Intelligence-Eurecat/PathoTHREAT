@@ -1,0 +1,32 @@
+{
+  "event_date": "between 1 and 19 June 2019",
+  "event_duration": "between 1 and 19 June 2019",
+  "city": "Asky",
+  "cause": "Contamination through cracks in the reservoir",
+  "source": "A reservoir in a water supply system",
+  "detection": "the Norwegian Institute of Public Health was notified",
+  "people_ill": "1,573",
+  "contaminants": "Campylobacter jejuni",
+  "symptoms": [
+    "gastroenteritis",
+    "fever",
+    "abdominal pain",
+    "diarrhoea"
+  ],
+  "mitigation": [
+    "pilot interviews",
+    "a telephone survey",
+    "an SMS-based cohort study of residents",
+    "A BWA was issued"
+  ],
+  "monitoring": [
+    "water samples",
+    "faecal indicator bacteria"
+  ],
+  "investigation": [
+    "pilot interviews",
+    "a telephone survey",
+    "an SMS-based cohort study of residents"
+  ],
+  "title": "Large Waterborne Campylobacter Outbreak"
+}

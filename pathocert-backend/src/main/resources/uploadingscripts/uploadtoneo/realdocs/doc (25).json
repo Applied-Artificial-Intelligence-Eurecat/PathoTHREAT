@@ -1,0 +1,35 @@
+{
+  "event": "outbreak of acute gastroenteritis",
+  "event_date": "From May through June 2001",
+  "city": "Stockholm",
+  "region": "Stockholm County",
+  "cause": "overflow of the sewage system",
+  "source": "contaminated drinking water obtained from private wells",
+  "people_ill": "200",
+  "contaminants": "norovirus",
+  "symptoms": [
+    "vomiting",
+    "diarrhea",
+    "abdominal pain",
+    "fever"
+  ],
+  "mitigation": [
+    "boiling all water used for drinking",
+    "food preparation"
+  ],
+  "monitoring": [
+    "water",
+    "food",
+    "Salmonella",
+    "Shigella",
+    "Campylobacter",
+    "Yersinia"
+  ],
+  "restoration": "the environment was thoroughy sanitized",
+  "prevention": "Washing at high temperatures",
+  "infrastructure": [
+    "problems with the capacity of the system",
+    "The sewage pipes were old"
+  ],
+  "title": "Emerging Genotype (Ggiib) Of Norovirus In Drinking Water, Sweden"
+}

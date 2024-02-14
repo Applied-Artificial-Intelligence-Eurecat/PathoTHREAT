@@ -1,0 +1,40 @@
+{
+  "event": "outbreak of acute gastrointestinal illness",
+  "event_date": "December 2012",
+  "city": "Kalundborg",
+  "region": "Zealand",
+  "country": "Denmark",
+  "cause": "leak from a sewage pipe placed above a broken tap-water pipe",
+  "source": "sewage water",
+  "people_ill": "130",
+  "contaminants": "Norovirus GII",
+  "symptoms": [
+    "Diarrhea",
+    "vomiting",
+    "abdominal pain",
+    "nausea"
+  ],
+  "mitigation": [
+    "microbiological",
+    "epidemiological",
+    "environmental investigation",
+    "public meeting"
+  ],
+  "monitoring": [
+    "stool samples",
+    "Norovirus GII",
+    "4 New Orleans 2009 variant"
+  ],
+  "restoration": "timely crosssectional collaboration",
+  "prevention": [
+    "The application of new",
+    "highly sensitive virology methods"
+  ],
+  "investigation": [
+    "microbiological",
+    "epidemiological",
+    "environmental investigation"
+  ],
+  "infrastructure": "contamination of the drinking water due to fall in the pipe water pressure",
+  "title": "The Application Of New Molecular Methods In The Investigation Of A Waterborne Outbreak Of Norovirus In Denmark, 2012"
+}

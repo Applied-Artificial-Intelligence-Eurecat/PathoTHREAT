@@ -1,0 +1,85 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id "io.freefair.lombok" version "6.0.0-m2"
+    id 'java'
+    id 'distribution'
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.0'
+}
+
+group = 'org.eurecat.pathocert'
+version = '0.2'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.5.4'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.4'
+    // test security.
+    testImplementation 'org.springframework.security:spring-security-test:5.5.1'
+    implementation 'org.springframework.data:spring-data-rest-webmvc:3.5.4'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.20'
+    // db used for testing. Is like a sqlite in memory.
+    testImplementation group: 'com.h2database', name: 'h2', version: '1.4.200'
+
+    implementation 'org.apache.commons:commons-compress:1.20'
+
+
+    // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.5.9'
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-data-rest', version: '1.5.9'
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-hateoas', version: '1.5.9'
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-security', version: '1.5.9'
+
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+
+    // https://mvnrepository.com/artifact/org.yaml/snakeyaml/1.29
+    // Needed to parse yaml properties. It seems that some internal dependencies of
+    // Spring usually needs them. Only used in the configuration package.
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.29'
+
+    // Neo4j Java Driver
+    compileOnly 'org.neo4j:neo4j:4.3.5'
+    // Spring data neo4j
+    implementation group: 'org.springframework.data', name: 'spring-data-neo4j', version: '6.2.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+    // Cache
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    implementation group: 'com.google.guava', name: 'guava', version: '31.1-jre'
+
+    // JobRunr to run jobs in background
+    implementation group: 'org.jobrunr', name: 'jobrunr-spring-boot-starter', version: '3.1.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = "org.eurecat.pathocert.backend.BackendApplication"
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+}
+
+

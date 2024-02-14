@@ -1,0 +1,72 @@
+#+TITLE: Readme
+
+
+* BD model
+
+#+BEGIN_SRC plantuml :file img/temp.png :dir .
+!define BASEPATH img/
+!include BASEPATH/global/stylesheet.puml
+
+
+class Document {
+        id :: Long
+        name :: String
+        data :: Date
+        source :: String
+        url :: String
+        keywords :: String
+        text :: Text
+}
+
+class Emergency {
+        id :: Long
+        reportDate :: Date
+        reportingOrganizationId :: Long
+        reportingUserId :: Long
+        nameReporter :: String
+        emergencyType :: String
+        emergencyDescription :: Text
+        waterStateDescription :: Text
+        severityLevel :: Short
+        nameAreaAffected :: String
+        affectedAreaType :: String
+        ocupationDescription :: Text
+        riskAssessment :: String
+        actionPlan :: String
+}
+
+class User {
+        id :: Long
+        username :: String
+        password :: Hash
+        userRole :: String
+        registrationDate :: Date
+        organizationId :: Long
+}
+
+class RelatedDocument {
+        documentId :: Long
+        emergencyId :: Long
+}
+
+class Organization {
+        id :: Long
+        name :: String
+        description :: Text
+        actionArea :: String
+}
+
+Document "*" -- "*" Emergency
+
+(Document, Emergency) .. RelatedDocument
+
+Emergency "*" -- "1" User
+Emergency "*" -- "1" Organization
+User "1..*" -- "1" Organization
+#+end_src
+
+#+RESULTS:
+
+
+#+attr_org: :width 200
+[[file:img/temp.png]]

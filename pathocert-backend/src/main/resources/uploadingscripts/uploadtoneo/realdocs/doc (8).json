@@ -1,0 +1,25 @@
+{
+  "event": "outbreak of campylobacteriosis",
+  "event_date": "16 August 2012",
+  "city": "Darfield",
+  "region": "South Island",
+  "country": "New Zealand",
+  "cause": [
+    "Heavy rains",
+    "contamination of water with animal effluent from nearby paddocks",
+    "failures in the treatment of drinking water"
+  ],
+  "source": "nearby paddocks",
+  "people_ill": "130",
+  "contaminants": [
+    "Ecoli",
+    "Campylobacter"
+  ],
+  "symptoms": "diarrhoea and/or abdominal pain with fever",
+  "monitoring": "one-off water samples",
+  "prevention": [
+    "enforce legislation",
+    "standards"
+  ],
+  "title": "A Waterborne Outbreak Of Campylobacteriosis In The South Island Of New Zealand Due To A Failure To Implement A Multi-Barrier Approach"
+}

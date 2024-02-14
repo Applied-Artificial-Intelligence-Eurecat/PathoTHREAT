@@ -1,0 +1,32 @@
+[
+  {
+    "sql_id": 103,
+    "title": "Large outbreak of viral gastroenteritis caused by contaminated drinking water in Apulia 2006.pdf",
+    "event_date": "July 2006",
+    "city": "Taranto",
+    "region": "Apulia",
+    "source": "drinkable tap water contaminated with (at least) rota- and noroviruses",
+    "detection": [
+      "an unusually high number of patients with acute diarrhoea were reported"
+    ],
+    "people_ill": "166",
+    "contaminants": [
+      "norovirus",
+      "rotavirus"
+    ],
+    "symptoms": [
+      "nausea",
+      "abdominal pain",
+      "fever",
+      "vomit",
+      "headache"
+    ],
+    "mitigation": [
+      "extra  chlorination treatment"
+    ],
+    "monitoring": [
+      "environmental samples",
+      "stool samples"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+<div class="p-grid p-formgrid">
+    <div class="p-fluid p-col-12 p-md-12">
+        <app-field-inline [title]="'Event Investigation'"
+                            [information]="event.eventInvestigation"></app-field-inline>
+
+        <app-field-inline [title]="'Initial Investigation'"
+                            [information]="event.initialMitigation"></app-field-inline>
+        <app-field-list [title]="'Monitoring'" [ls]="event.control?.monitoring"></app-field-list>
+    </div>
+</div>

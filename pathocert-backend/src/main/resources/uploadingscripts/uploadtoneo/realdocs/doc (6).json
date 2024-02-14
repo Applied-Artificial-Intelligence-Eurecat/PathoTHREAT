@@ -1,0 +1,70 @@
+{
+  "event": "fire in a textile factory",
+  "event_date": "6 December 2010",
+  "city": "Hemiksem",
+  "country": "Belgium",
+  "cause": [
+    "contamination of the tap water with river water",
+    "absence of reflux valves"
+  ],
+  "source": "river water",
+  "detection": "Local physicians were asked to report all cases of gastroenteritis",
+  "people_ill": "222",
+  "people_hospitalized": "Six",
+  "people_dead": "One",
+  "contaminants": [
+    "Campylobacter sp",
+    "norovirus GI",
+    "GII",
+    "rotavirus",
+    "Giardia lamblia"
+  ],
+  "symptoms": "diarrhoea (\u00e2\u00a9\u00be3 loose stools per 24 h) and/or vomiting",
+  "mitigation": [
+    "Bottled potable water was distributed to the population",
+    "Sanitation of water pipes",
+    "a warning was sent to other fire brigades",
+    "Bottled potable water was distributed to the population",
+    "Sanitation of water pipes (flushing",
+    "disinfection)"
+  ],
+  "monitoring": [
+    "water samples",
+    "faecal pollution indicators",
+    ">200 c",
+    "f",
+    "u",
+    "/100 ml for Ecoli",
+    ">1100 c",
+    "f",
+    "u",
+    "/100 ml for enterococci"
+  ],
+  "restoration": [
+    "Sanitation of water pipes (flushing",
+    "disinfection)"
+  ],
+  "prevention": [
+    "the development of a surveillance system",
+    "a wider",
+    "more thorough microbiological investigation",
+    "Syndromic surveillance combined with water incident",
+    "consumer complaints data",
+    "if additional surveillance systems had been in place",
+    "the development of a surveillance system",
+    "a wider",
+    "more thorough microbiological investigation",
+    "Syndromic surveillance combined with water incident",
+    "consumer complaints data"
+  ],
+  "investigation": [
+    "physicians' case-finding survey with a randomly sampled survey",
+    "univariate analysis (cross tables",
+    "\u00cf\u20212 tests",
+    "linear trend analysis",
+    "relative risk)",
+    "multivariate analysis",
+    "The distance from the home address of the respondent to the site of the fire was significantly shorter for cases compared to non-cases"
+  ],
+  "title": "A Large Community Outbreak Of Gastroenteritis Associated With Consumption Of Drinking Water Contaminated By River Water, Belgium, 2010"
+}

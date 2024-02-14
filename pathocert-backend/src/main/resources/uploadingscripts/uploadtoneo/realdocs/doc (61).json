@@ -1,0 +1,37 @@
+{
+  "event": "Drinking water outbreaks",
+  "event_date": "2016",
+  "country": "Finland",
+  "cause": [
+    "drinking water pipe breakage",
+    "subsequent wastewater intrusion into the distribution system"
+  ],
+  "source": "wastewater",
+  "people_ill": "450",
+  "contaminants": [
+    "adenoviruses",
+    "Dientamoeba fragilis",
+    "noroviruses",
+    "astroviruses",
+    "Escherichia coli",
+    "Plesiomonas shigelloides"
+  ],
+  "mitigation": [
+    "questionnaires",
+    "Boil water advisory",
+    "alternative drinking water source",
+    "chlorination"
+  ],
+  "monitoring": "Water samples",
+  "restoration": [
+    "Boil water advisory",
+    "alternative drinking water source",
+    "chlorination"
+  ],
+  "prevention": "need for testing of multiple pathogens during outbreak investigation",
+  "investigation": [
+    "questionnaires",
+    "need for testing of multiple pathogens during outbreak investigation"
+  ],
+  "title": "Two Drinking Water Outbreaks Caused By Wastewater Intrusion Including Sapovirus In Finland"
+}

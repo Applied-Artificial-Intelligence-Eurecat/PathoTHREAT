@@ -1,0 +1,43 @@
+[
+  {
+    "sql_id": 18,
+    "title": "a-large-community-outbreak-of-gastroenteritis-associated-with-consumption-of-drinking-water-contaminated-by-river-water-belgium-2010",
+    "document_date": "2010-12-06",
+    "event_date": "2010-12-06",
+    "city": "Hemiksem",
+    "country": "Belgium",
+    "cause": "firefighting",
+    "source": "consumption of water contaminated by river water",
+    "detection": [
+      "routinely taken tap water samples",
+      "Local general practitioners (GPs) reported an increase in consultations for gastroenteritis on 8 December."
+    ],
+    "people_ill": "603",
+    "people_hospitalized": "6",
+    "people_dead": "1",
+    "contaminants": [
+      "Campylobacter sp",
+      "norovirus",
+      "rotavirus",
+      "Giardia lamblia"
+    ],
+    "symptoms": [
+      "diarrhea",
+      "gastroenteritis",
+      "fever",
+      "vomiting",
+      "nausea"
+    ],
+    "mitigation": [
+      "not to consume or use tap water",
+      "Bottled potable water was distributed to the population."
+    ],
+    "monitoring": [
+      "200 c.f.u./100 ml for E. coli and 1100 c.f.u./100 ml for enterococci.",
+      "stool samples"
+    ],
+    "restoration": "Sanitation of water pipes",
+    "prevention": "a warning was sent to other ﬁre brigades",
+    "investigation": "We conducted an epidemiological study to describe the size and identify the source of the outbreak"
+  }
+]

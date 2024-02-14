@@ -1,0 +1,53 @@
+<!--
+<p-toast [showTransitionOptions]="'1000ms'" [hideTransitionOptions]="'1000ms'" position="top-right"
+    [style]="{ 'word-break': 'break-word' }"></p-toast>
+
+<form [formGroup]="loginForm" role="form" (ngSubmit)="login()">
+    <div class="login-body">
+
+        <div class="login-wrapper">
+            <div class="login-panel">
+                <span class="logo">
+                    <img src="assets/images/pathocert-logo.jpg" alt="pathocert-logo" />
+                </span>
+
+                <div class="login-form">
+                    <div class="card">
+                        <h4>Login</h4>
+
+                        <div class="p-grid p-fluid">
+                            <div class="p-col-12 p-md-12" style="display: grid; text-align: left;">
+                                <div class="p-inputgroup">
+                                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                                    <input type="text" pInputText formControlName="username" placeholder="Username">
+                                </div>
+                                <div *ngIf="username().invalid && (username().dirty || username().touched)">
+                                    <small id="username-help" class="p-error">Username is required</small>
+                                </div>
+                            </div>
+
+                            <div class="p-col-12 p-md-12" style="display: grid; text-align: left;">
+                                <div class="p-inputgroup">
+                                    <span class="p-inputgroup-addon"><i class="pi pi-key"></i></span>
+                                    <input type="password" pInputText formControlName="password" placeholder="Password">
+                                </div>
+                                <div *ngIf="password().invalid && (password().dirty || password().touched)">
+                                    <small id="password-help" class="p-error">Password is required</small>
+                                </div>
+                            </div>
+                            <div class="p-col-12 p-md-12" style="display: grid; text-align: left;">
+                                <p-button label="Login" icon="pi pi-sign-in" type="submit"
+                                    [disabled]="!loginForm.valid"></p-button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+</form>-->

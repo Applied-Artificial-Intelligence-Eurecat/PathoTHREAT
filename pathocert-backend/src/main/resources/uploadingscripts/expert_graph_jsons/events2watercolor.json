@@ -1,0 +1,10 @@
+[
+    {
+        "cascading_event": "dw infrastructure damage",
+        "effect_water_color": "brown"
+    },
+    {
+        "produced_event": "water supply contamination",
+        "effect_water_color": "brown"
+    }
+]

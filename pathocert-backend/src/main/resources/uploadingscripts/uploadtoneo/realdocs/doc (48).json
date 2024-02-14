@@ -1,0 +1,32 @@
+{
+  "event": "groundwater-associated outbreak",
+  "event_date": "between July and September 2004",
+  "event_duration": "between July and September 2004",
+  "city": "South Bass Island",
+  "region": "Ohio",
+  "cause": "Massive groundwater contamination",
+  "source": "wastewater treatment facilities",
+  "detection": "received several telephone calls",
+  "people_ill": "1,450",
+  "contaminants": [
+    "total coliform",
+    "Escherichia coli"
+  ],
+  "symptoms": "gastroenteritis",
+  "mitigation": "supply the entire island with fully treated drinking water",
+  "monitoring": [
+    "groundwater wells",
+    "fecal indicators",
+    "enteric viruses",
+    "bacteria",
+    "protozoa"
+  ],
+  "restoration": "supply the entire island with fully treated drinking water",
+  "investigation": [
+    "tested groundwater wells for fecal indicators",
+    "total coliform",
+    "Escherichia coli"
+  ],
+  "infrastructure": "groundwater contamination",
+  "title": "Massive Microbiological Groundwater Contamination Associated With A Waterborne Outbreak In Lake Erie, South Bass Island, Ohio"
+}

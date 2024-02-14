@@ -1,0 +1,38 @@
+[
+  {
+    "sql_id": 36,
+    "title": "Gastroenteritis Outbreak Caused by Waterborne Norovirus at a New Zealand Ski Resort.pdf",
+    "document_date": "2006-06-15",
+    "event_date": "2006-06",
+    "region": "southern New Zealand",
+    "country": "New Zealand",
+    "source": [
+      "a drinking water supply contaminated by human sewage.",
+      "water supply"
+    ],
+    "detection": [
+      "public health authorities were informed about a possible outbreak of gastroenteritis among staff and visitors at a popular ski resort."
+    ],
+    "people_ill": "218",
+    "contaminants": [
+      "norovirus",
+      "rotavirus",
+      "cryptosporidium",
+      "campylobacter"
+    ],
+    "symptoms": [
+      "diarrhea",
+      "vomiting",
+      "nausea"
+    ],
+    "mitigation": [
+      "work restrictions for sick staff, hand hygiene signage for staff and visitors, emergency chlorination of the water supply, and comprehensive environmental cleaning of the resorts facilities."
+    ],
+    "monitoring": [
+      "E. coli (range, 7.4 to 220 per 100 ml) and total coliforms (range, 72 to 1,100 per 100 ml)",
+      "Drinking water, source stream water, and 31 fecal specimens from gastroenteritis outbreak cases",
+      "fecal samples"
+    ],
+    "prevention": "reviewing their approach to water supply management with a particular focus on improved training for supply managers and the development of risk management plans"
+  }
+]

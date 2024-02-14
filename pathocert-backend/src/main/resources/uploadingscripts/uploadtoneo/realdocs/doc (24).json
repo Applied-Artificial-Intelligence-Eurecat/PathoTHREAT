@@ -1,0 +1,34 @@
+[
+  {
+    "sql_id": 30,
+    "title": "Early outbreak detection by linking health advice line calls to water",
+    "document_date": "2011-12-09",
+    "event_date": "2010-04-15",
+    "event_duration": "several months",
+    "country": "Sweden",
+    "source": "municipal water treatment plant (WTP)",
+    "detection": "large numbers of sick people, and higher-than normal contacts regarding symptoms of gastrointestinal illness reported by the nurses staffing the regional health advice line",
+    "people_ill": "18500",
+    "contaminants": "Cryptosporidium hominis",
+    "symptoms": [
+      "watery diarrhea",
+      "upset stomach",
+      "abdominal pain",
+      "fatigue"
+    ],
+    "mitigation": [
+      "A boil water notice (BWN) was therefore issued on 19 April and a web-based questionnaire was immediately created and published on the webpage of the municipality to collect epidemiological data."
+    ],
+    "monitoring": [
+      "150,000 oocysts/L and declined to 6200 oocysts/L",
+      "patient and sewage samples",
+      "Fecal samples from patients"
+    ],
+    "restoration": "the water distribution system was flushed to remove the contamination and work to improve the water treatment in Abborrverket WTP was started.",
+    "investigation": [
+      "epidemiological questionnaires and microbial analysis of samples from patients, water and other environmental sources.",
+      "retrospective study based on phone calls to a health advice line was performed",
+      "postal questionnaire"
+    ]
+  }
+]

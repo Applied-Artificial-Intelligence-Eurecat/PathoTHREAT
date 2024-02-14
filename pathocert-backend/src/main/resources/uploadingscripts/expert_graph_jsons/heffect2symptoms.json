@@ -1,0 +1,139 @@
+[
+    {
+        "contaminants": [
+            {
+                "health_effect": "cholera",
+                "symptoms": [
+                    "diarrhea",
+                    "thirst",
+                    "vomiting",
+                    "leg cramps"
+                ]
+            },
+            {
+                "health_effect": "gastroenteritis",
+                "symptoms": [
+                    "abdominal pain",
+                    "muscle ache",
+                    "fever",
+                    "nausea",
+                    "headache",
+                    "vomiting",
+                    "diarrhea"
+                ]
+            },
+            {
+                "health_effect": "salmonellosis",
+                "symptoms": [
+                    "headache",
+                    "nausea",
+                    "vomiting",
+                    "stomach cramps",
+                    "fever",
+                    "diarrhea"
+                ]
+            },
+            {
+                "health_effect": "typhoid fever",
+                "symptoms": [
+                    "coughing",
+                    "headache",
+                    "fever",
+                    "constipation"
+                ]
+            },
+            {
+                "health_effect": "respiratory infection",
+                "symptoms": [
+                    "coughing",
+                    "dyspnea",
+                    "chest pain",
+                    "fever"
+                ]
+            },
+            {
+                "health_effect": "anthrax",
+                "symptoms": [
+                    "skin infection",
+                    "shortness of breath"
+                ]
+            },
+            {
+                "health_effect": "tetanus",
+                "symptoms": [
+                    "shortness of breath",
+                    "sweating",
+                    "fever",
+                    "headache",
+                    "muscle ache",
+                    "stomach cramps"
+                ]
+            },
+            {
+                "health_effect": "botulism",
+                "symptoms": [
+                    "diarrhea",
+                    "stomach cramps",
+                    "nausea",
+                    "vomiting",
+                    "shortness of breath",
+                    "muscle ache"
+                ]
+            },
+            {
+                "health_effect": "tularemia",
+                "symptoms": [
+                    "skin infection",
+                    "shortness of breath",
+                    "chest pain",
+                    "coughing"
+                ]
+            },
+            {
+                "health_effect": "leprosy",
+                "symptoms": [
+                    "paralysis",
+                    "skin infection"
+                ]
+            },
+            {
+                "health_effect": "legionnaire s disease",
+                "symptoms": [
+                    "fever",
+                    "muscle ache",
+                    "headache",
+                    "coughing",
+                    "shortness of breath"
+                ]
+            },
+            {
+                "health_effect": "shigellosis",
+                "symptoms": [
+                    "diarrhea",
+                    "fever",
+                    "stomach cramps"
+                ]
+            },
+            {
+                "health_effect": "yersiniosis",
+                "symptoms": [
+                    "fever",
+                    "diarrhea",
+                    "abdominal pain"
+                ]
+            },
+            {
+                "health_effect": "amebiasis",
+                "symptoms": [
+                    "dysentery"
+                ]
+            },
+            {
+                "health_effect": "toxoplasmosis he",
+                "symptoms": [
+                    "fatigue"
+                ]
+            }
+        ]
+    }
+]

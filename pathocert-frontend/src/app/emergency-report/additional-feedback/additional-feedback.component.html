@@ -1,0 +1,54 @@
+<div class="card">
+    <div class="p-grid p-formgrid">
+        <div class="p-fluid p-col-12 p-md-4">
+            <div class="p-fluid">
+                <span>How it was detected</span>
+                <p><small>Specify how the emergency was detected</small></p>
+            </div>
+            <br>
+            <p-multiSelect [options]="multiselectValues.infrastructures" optionLabel="name" optionValue="value"
+                placeholder="Please, select some values" [(ngModel)]="dataAdditional.infrastructures"
+                [style]="{'width':'100%'}" [panelStyle]="{'width':'100%'}" class="multiselect-custom">
+            </p-multiSelect>
+        </div>
+        <div class="p-fluid p-col-12 p-md-4">
+            <div class="p-fluid">
+                <span>Symptoms</span>
+                <p><small>Specify the symptoms</small></p>
+            </div>
+            <br>
+            <p-multiSelect [options]="multiselectValues.symptoms" optionLabel="name" optionValue="value"
+                placeholder="Please, select some values" [(ngModel)]="dataAdditional.symptoms"
+                [style]="{'width':'100%'}" [panelStyle]="{'width':'100%'}" class="multiselect-custom"></p-multiSelect>
+        </div>
+        <div class="p-fluid p-col-12 p-md-4">
+            <div class="p-fluid">
+                <span>Contaminants</span>
+                <p><small>Specify associated contaminants</small></p>
+            </div>
+            <br>
+            <p-multiSelect [options]="multiselectValues.contaminants" optionLabel="name" optionValue="value"
+                placeholder="Please, select some values" (onChange)="tapValues($event)"
+                [(ngModel)]="dataAdditional.contaminants" [style]="{'width':'100%'}" [panelStyle]="{'width':'100%'}"
+                class="multiselect-custom"></p-multiSelect>
+        </div>
+        <div class="p-fluid p-col-12 p-md-12">
+            <div class="p-field">
+                <label for="additionalObservations" class="p-mt-4">Additional observations:</label>
+                <textarea id="additionalObservations" rows="5" pInputTextarea autoResize="autoResize"
+                    [(ngModel)]="dataAdditional.additionalObservations"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="p-grid p-nogutter p-justify-end btn-space">
+        <p-button type="button" label="Back" icon="pi pi-angle-left" iconPos="left" (onClick)="prevPage()"></p-button>
+        &nbsp;&nbsp;
+        <p-button type="button" label="Submit" icon="pi pi-save" iconPos="right" (onClick)="complete()"></p-button>
+        &nbsp;&nbsp;
+        <p-button type="button" label="Cancel" (onClick)="cancel()" icon="pi pi-times" iconPos="right"
+            styleClass="p-button p-button-outlined p-button-secondary"></p-button>
+    </div>
+    <p-button type="button" label="Help" icon="pi pi-search" iconPos="left"
+        (onClick)="displayExpert()" style="position: fixed; bottom: 50px; left: 100px;"
+        styleClass="p-button-raised p-button-help p-button-rounded p-button-lg"></p-button>
+</div>

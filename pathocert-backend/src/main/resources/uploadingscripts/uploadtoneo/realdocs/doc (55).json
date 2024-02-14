@@ -1,0 +1,34 @@
+{
+  "event": "complaints from citizens",
+  "event_date": "Monday 15 January 2007",
+  "event_duration": "over the weekend",
+  "country": "Denmark",
+  "cause": [
+    "combination of a technical",
+    "a human error at a local sewage treatment facility"
+  ],
+  "source": "partially filtered waste water",
+  "detection": [
+    "the drinking water in many houses was reported to be discoloured",
+    "of unusual smell",
+    "taste"
+  ],
+  "people_ill": "140",
+  "contaminants": "faecal indicator bacteria",
+  "symptoms": [
+    "diarrhoea",
+    "vomiting",
+    "abdominal pain",
+    "cramps",
+    "fever"
+  ],
+  "mitigation": "prohibited any use of the water - except for toilet flushing - in the entire area",
+  "monitoring": [
+    "water samples",
+    "faecal indicator bacteria"
+  ],
+  "restoration": "disinfected by chlorination",
+  "investigation": "house-to-house questionnaire survey",
+  "infrastructure": "backflow of the sewage water remain",
+  "title": "Outbreak Of Severe Gastroenteritis With Multiple Aetiologies Caused By Contaminated Drinking Water In Denmark, January 2007"
+}

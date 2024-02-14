@@ -1,0 +1,16 @@
+{
+  "event": "survey",
+  "event_date": "2019",
+  "country": "Portugal",
+  "cause": "consumption of contaminated water",
+  "detection": "survey",
+  "contaminants": "Hepatitis E virus",
+  "mitigation": [
+    "detection",
+    "eventual quantification of enteric viruses in samples from surface",
+    "drinking water"
+  ],
+  "prevention": "effective virological control of water",
+  "investigation": "reverse transcription quantitative PCR (RT-qPCR)",
+  "title": "Assessment Of The Presence Of Hepatitis E Virus In Surface Water And Drinking Water In Portugal"
+}

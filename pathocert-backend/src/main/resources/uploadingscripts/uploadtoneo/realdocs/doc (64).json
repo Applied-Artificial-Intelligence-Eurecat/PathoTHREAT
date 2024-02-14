@@ -1,0 +1,29 @@
+{
+  "event": "gastroenteritis outbreak",
+  "event_date": "May 2016",
+  "city": "Taormina",
+  "region": "Sicily",
+  "country": "Italy",
+  "cause": "drinking un-bottled tap water",
+  "source": "Food consumed at a shared lunch on the first day of the trip",
+  "detection": "17 of them showed symptoms",
+  "people_ill": "Twenty-four",
+  "people_hospitalized": "12",
+  "contaminants": "Norovirus",
+  "symptoms": [
+    "vomiting",
+    "diarrhoea",
+    "fever"
+  ],
+  "mitigation": "online questionnaire",
+  "monitoring": [
+    "Stool samples",
+    "NoV genome"
+  ],
+  "prevention": "routine monitoring for viruses of drinking waters",
+  "investigation": [
+    "online questionnaire",
+    "personal data"
+  ],
+  "title": "Waterborne Norovirus Outbreak At A Seaside Resort Likely Originating From Municipal Water Distribution System Failure"
+}

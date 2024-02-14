@@ -1,0 +1,67 @@
+{
+  "event": "groundwater source to this community had probably been contaminated by agricultural run-off",
+  "event_date": "during August 2000",
+  "city": "Gourdon",
+  "region": "south-west of France",
+  "country": "France",
+  "cause": "a groundwater source to this community had probably been contaminated by agricultural run-off",
+  "source": "tap water",
+  "detection": "a general practitioner informed the local district health department",
+  "people_ill": "2600",
+  "contaminants": [
+    "Ecoli",
+    "enterococci",
+    "total coliforms",
+    "faecal streptococci",
+    "sulphite-reducing clostridia",
+    "group A rotavirus"
+  ],
+  "symptoms": [
+    "vomiting",
+    "nausea",
+    "abdominal pain",
+    "fever"
+  ],
+  "mitigation": [
+    "avoid the consumption of tap water",
+    "to boil it for 5 min",
+    "the population of Gourdon was informed on 25 August to avoid the consumption of tap water",
+    "to boil it for 5 min"
+  ],
+  "monitoring": [
+    "Stool samples",
+    "on tap water",
+    "on the water sampled from the two groundwater sources",
+    "Salmonella spp",
+    "Shigella spp",
+    "Staphylococcus aureus",
+    "Campylobacter spp",
+    "Yersinia enterocolitica",
+    "Escherichia coli",
+    "enterococci",
+    "rotavirus groups A",
+    "C",
+    "astrovirus",
+    "calicivirus",
+    "adenovirus types 40",
+    "41",
+    "enterovirus",
+    "hepatitis A virus",
+    "Cryptosporidum",
+    "Ecoli (2263 / 100 mL)",
+    "enterococci (415 / 100 mL)",
+    "total coliforms (90 / 100 mL)",
+    "faecal streptococci (136 / 100 mL)",
+    "sulphite-reducing clostridia (10 / 100 mL)"
+  ],
+  "prevention": [
+    "the immediate area of the source was insufficiently protected",
+    "vulnerable to the environment"
+  ],
+  "investigation": [
+    "the immediate area of the source was insufficiently protected",
+    "vulnerable to the environment"
+  ],
+  "infrastructure": "facility A was suspected to be the origin of the outbreak",
+  "title": "A Large Multi-Pathogen Waterborne Community Outbreak Linked To Faecal Contamination Of A Groundwater System, France, 2000"
+}

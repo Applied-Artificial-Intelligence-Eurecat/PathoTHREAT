@@ -1,0 +1,32 @@
+{
+  "event": "dengue epidemic",
+  "event_date": "from July to November 2013",
+  "region": "Swat",
+  "country": "Pakistan",
+  "cause": [
+    "inadequate water sewerage",
+    "waste management systems",
+    "substandard housing",
+    "poor sanitation"
+  ],
+  "source": [
+    "Aedes aegypti",
+    "Aedes albopictus"
+  ],
+  "people_ill": "6000",
+  "people_dead": "48",
+  "contaminants": "dengue virus",
+  "monitoring": "blood samples",
+  "prevention": [
+    "Control of Aedes mosquitoes",
+    "elimination of breeding sources"
+  ],
+  "investigation": "reverse transcriptase semi nested-PCR assay",
+  "infrastructure": [
+    "inadequate water sewerage",
+    "waste management systems",
+    "substandard housing",
+    "poor sanitation"
+  ],
+  "title": "A Comprehensive Entomological, Serological And Molecular Study Of 2013 Dengue Outbreak Of Swat, Khyber Pakhtunkhwa, Pakistan"
+}

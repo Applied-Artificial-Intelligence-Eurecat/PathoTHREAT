@@ -1,0 +1,79 @@
+<div class="card">
+    <div class="p-fluid">
+        <span>Past events</span>
+        <p><small>Select similar past events from the following list</small></p>
+        <br>
+    </div>
+    <p-messages [(value)]="messageValidation" [enableService]="false" [showTransitionOptions]="'1000ms'"
+        [hideTransitionOptions]="'1000ms'"></p-messages>
+    <div class="p-fluid" [ngSwitch]="switch">
+        <div *ngSwitchCase="'Loading'" style="display: flex; justify-content: center;">
+            <p *ngIf="minElapsed > 0">Time elapsed: <b>{{ minElapsed }}m{{ secElapsed }}s</b>. If it takes longer than 5
+                minutes, please
+                contact an administrator.</p>
+            <p *ngIf="minElapsed == 0">Time elapsed: <b>{{ secElapsed }}s</b>. If it takes longer than 5 minutes, please
+                contact an administrator.</p>
+        </div>
+        <div *ngSwitchCase="'Loading'" style="display: flex; justify-content: center;">
+            <p-progressSpinner></p-progressSpinner>
+        </div>
+        <div *ngSwitchCase="'ResultButError'">
+            It looks like some error has occurred, and we do not know how. Please, retry after a few minutes.
+        </div>
+        <div *ngSwitchCase="'Result'">
+            <p-paginator [rows]="5" [pageLinkSize]="10" totalRecords="{{ historicEvents?.length }}" (onPageChange)="onPageChange($event)"></p-paginator>
+            <p-accordion>
+                <ng-container *ngFor="let event of historicEventsPage" class="p-grid p-formgrid">
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="p-grid" style="width: 100%;">
+                                <div class="p-col-2 p-sm-1 p-md-1 p-lg-1" style="position: relative; top: 50%;">
+                                    <p-inputSwitch [(ngModel)]="event.active" (onChange)="onChangeSelectCase($event)">
+                                    </p-inputSwitch>
+                                </div>
+                                <div class="p-col-10 p-sm-9 p-md-9 p-lg-9">
+                                    <span style="margin-left: 0.8em">CASE: {{ event.document.name }}</span>
+                                </div>
+                                <div class="p-col-12 p-sm-2 p-md-2 p-lg-2" [align]="'right'">
+                                    <p-tag severity="primary"
+                                        [value]="'Similarity: ' + event.similarity.toFixed(2) +'%'" [rounded]="false">
+                                    </p-tag>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <div class="p-grid p-formgrid">
+                            <div class="p-fluid p-col-12 p-md-12">
+                                <p-accordion [multiple]="true">
+                                    <p-accordionTab header="Identification/detection">
+                                        <app-historic-detection [event]="event"></app-historic-detection>
+                                    </p-accordionTab>
+                                    <p-accordionTab header="Impact">
+                                        <app-historic-impact [event]="event"></app-historic-impact>
+                                    </p-accordionTab>
+                                    <p-accordionTab header="Control">
+                                        <app-historic-control [event]="event"></app-historic-control>
+                                    </p-accordionTab>
+                                    <p-accordionTab header="Generic Investigation processes">
+                                        <app-historic-generic-investigations [event]="event">
+                                        </app-historic-generic-investigations>
+                                    </p-accordionTab>
+                                </p-accordion>
+                            </div>
+                        </div>
+                    </p-accordionTab>
+                </ng-container>
+            </p-accordion>
+        </div>
+    </div>
+
+    <br />
+    <div class="p-grid p-nogutter p-justify-end btn-space">
+        <span style="padding: 0.5rem;">{{casesSelected}} cases selected</span>&nbsp;&nbsp;
+        <!--<p-button type="button" label="Prepare Q&A"
+            (onClick)="prepareQA()"></p-button>&nbsp;&nbsp;-->
+        <p-button type="button" label="Next" icon="pi pi-angle-right" iconPos="right" (onClick)="nextPage()"></p-button>
+        &nbsp;&nbsp;
+        <p-button type="button" label="Cancel" (onClick)="cancel()" icon="pi pi-times" iconPos="right"
+            styleClass="p-button p-button-outlined p-button-secondary"></p-button>
+    </div>
+</div>

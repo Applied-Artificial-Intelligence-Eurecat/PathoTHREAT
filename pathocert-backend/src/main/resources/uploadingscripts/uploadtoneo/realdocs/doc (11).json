@@ -1,0 +1,67 @@
+{
+  "event": "extensive waterborne gastroenteritis outbreak",
+  "event_date": "Wednesday, 28 November 2007",
+  "event_duration": "3 months",
+  "city": "Nokia",
+  "region": "southern Finland",
+  "country": "Finland",
+  "cause": [
+    "An inappropriate cross-connection between sewage-",
+    "drinking-water pipelines"
+  ],
+  "source": [
+    "Drinking-water contamination",
+    "Extensive water",
+    "pipeline sampling was initiated",
+    "a boil-water notice issued",
+    "water chlorine concentration was increased"
+  ],
+  "detection": [
+    "customers complained of a bad smell",
+    "taste in their tap water",
+    "an increase in the number of patients with gastroenteritis was observed at the health centre"
+  ],
+  "people_ill": "8453",
+  "people_hospitalized": "204",
+  "contaminants": [
+    "Campylobacter sp",
+    "Giardia",
+    "norovirus",
+    "salmonellas",
+    "Clostridium difficile",
+    "rotavirus"
+  ],
+  "symptoms": [
+    "diarrhoea",
+    "vomiting",
+    "nausea",
+    "abdominal pain"
+  ],
+  "mitigation": [
+    "Extensive water",
+    "pipeline sampling was initiated",
+    "a boil-water notice issued",
+    "water chlorine concentration was increased",
+    "boil-water notice issued"
+  ],
+  "monitoring": [
+    "from cases with more severe symptoms",
+    "viral pathogens"
+  ],
+  "restoration": [
+    "Distribution of clean water",
+    "Schools",
+    "daycare centres were closed from 6 to 9 December",
+    "children's sick leave",
+    "decontamination procedures including shock chlorination",
+    "waterworks across the country",
+    "Distribution of clean water",
+    "Schools",
+    "daycare centres were closed from 6 to 9 December",
+    "children's sick leave",
+    "decontamination procedures including shock chlorination",
+    "waterworks across the country"
+  ],
+  "infrastructure": "sewage had direct entry to the distribution line through an inappropriate crossconnection",
+  "title": "An Extensive Gastroenteritis Outbreak After Drinking-Water Contamination By Sewage Effluent, Finland"
+}

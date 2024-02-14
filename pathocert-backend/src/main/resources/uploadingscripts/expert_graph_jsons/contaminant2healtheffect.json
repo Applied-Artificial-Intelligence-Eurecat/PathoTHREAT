@@ -1,0 +1,90 @@
+[
+    {
+        "contaminants": [
+            {"name": "campylobacter jejuni",
+            "health_effect": [
+                "gastroenteritis"
+            ]},
+            {"name": "legionella spp",
+                "health_effect": [
+                    "legionnaire s disease",
+                    "respiratory infection"
+                ]},
+            {"name": "pseudomonas aeruginosa",
+                "health_effect": [
+                    "wound infection",
+                    "ear/nose/throat infection"
+                ]},
+            {"name": "salmonella typhi",
+                "health_effect": [
+                    "typhoid fever"
+                ]},
+            {"name": "vibrio cholerae",
+                "health_effect": [
+                    "cholera"
+                ]},
+            {"name": "shigella spp",
+                "health_effect": [
+                    "shigellosis"
+                ]},
+            {"name": "yersinia enterocolitica",
+                "health_effect": [
+                    "yersiniosis"
+                ]},
+            {"name": "escherichia Coli-Pathogenic",
+                "health_effect": [
+                    "gastroenteritis"
+                ]},
+            {"name": "Bacillus anthracis",
+                "health_effect": [
+                    "anthrax"
+                ]},
+            {"name": "clostridium tetani",
+                "health_effect": [
+                    "tetanus"
+                ]},
+            {"name": "clostridium botulinum",
+                "health_effect": [
+                    "Botulism"
+                ]},
+            {"name": "fransiscella tularensis",
+                "health_effect": [
+                    "tularemia"
+                ]},
+            {"name": "mycobacterium leprae",
+                "health_effect": [
+                    "leprosy"
+                ]},
+            {"name": "salmonella enterica",
+                "health_effect": [
+                    "salmonellosis",
+                    "gastroenteritis"
+                ]},
+            {"name": "campylobacter spp",
+                "health_effect": [
+                    "gastroenteritis"
+                ]},
+            {"name": "Adenovirus",
+                "health_effect": [
+                    "gastroenteritis"
+                ]},
+            {"name": "Astrovirus",
+                "health_effect": [
+                    "gastroenteritis",
+                    "respiratory infection"
+                ]},
+            {"name": "cryptosporidium parvum",
+                "health_effect": [
+                    "cryptosporidosis"
+                ]},
+            {"name": "giardia intestinalis",
+                "health_effect": [
+                    "giardiasis"
+                ]},
+            {"name": "toxoplasma gondii",
+                "health_effect": [
+                    "toxoplasmosis he"
+                ]}
+        ]
+    }
+]

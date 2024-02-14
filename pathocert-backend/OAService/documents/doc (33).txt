@@ -1,0 +1,131 @@
+ABSTRACT
+Hepatitis E virus (HEV) is a common cause of water-borne acute hepatitis in areas with poor sanitation. In 2004 an outbreak of HEV infection affected around 2,000 people in Eastern Chad (Dar Sila). This paper describes the decrease in the incidence of acute jaundice syndrome (AJS) from 2004 until 2009 when a mean incidence of 0.48 cases/1,000 people/year was recorded in the region. Outbreaks of AJS were identified in some of the camps in 2007 and 2008. Moreover, water samples from drinking water sources were screened for human adenoviruses considered as viral indicators and for hepatitis A virus and HEV. Screening of faecal samples from donkeys for HEV gave negative results. Some of the samples were also analysed for faecal coliforms showing values before disinfection treatment between 3 and >50 colony forming units per 100 mL. All water samples tested were negative for HEV and HAV; however, the presence of low levels of human adenoviruses in 4 out of 16 samples analysed indicates possible human faecal contamination of groundwater. Consequently, breakdowns in the treatment of drinking water and/or increased excretion of hepatitis viruses, which could be related to the arrival of a new population, could spread future outbreaks through drinking water.
+
+Key words | acute jaundice syndrome, drinking-water, Eastern Chad, HEV, HAdV, humanitarian action
+
+INTRODUCTION
+Hepatitis E virus (HEV) and hepatitis A virus (HAV) are small, non-enveloped viruses that contain positive sense single-stranded RNA genomes of 7.5 and 7.2 Kb respectively (Purcell & Emerson ). HEV and HAV infections cause water-borne acute hepatitis with frequent onset of jaundice, called acute jaundice syndrome (AJS). The disease is selflimiting, with a low mortality rate in the general population, higher for HEV (1%) than for HAV (0.1%); however, a casefatality ratio that might reach 30% in pregnant women has been reported in HEV infections during the second and third trimesters (Dalton et al. ; Purcell & Emerson ). Over the past few years, some animal species have been identified as reservoirs of HEV genotypes 3 and 4. This finding suggests the role of HEV as a zoonosis (Pavio et al. ). Additionally, HEV infection has recently been found to lead to chronic hepatitis in solid organ-transplant recipients (Dalton et al. ), showing evidence of a chronic form of HEV infection (Kamar et al. ).
+
+HEV is recognized as an important pathogen in tropical and subtropical regions and is one of the two leading causes of acute hepatitis in adults in North Africa, Asia and the Middle East (FitzSimons et al. ). Moreover, it is responsible for recent large-scale epidemics of hepatitis around the world (Aggarwal & Naik ; Teshale et al. ) showing a seasonal pattern outbreaks of this waterborne virus associated with the rainy season (Ippagunta et al. ).
+
+Although HEV and HAV share the same routes of transmission, outbreaks of HAV are not normally detected in endemic areas; this is related to a high prevalence of seropositivity among those populations from early childhood, which confers them lifelong immunity (Martin & Lemon ).
+
+A study carried out in 1993 in the N’Djamena region in Chad detected anti-HEV antibodies in 83% (34/41) of hepatitis cases and in 22% (19/86) of the control subjects, whereas none had serological markers for acute or recent infection by HAV (Coursaget et al. ). These results suggested that Chad could also be an HEV endemic area in addition to other recognized endemic areas, such as Sudan with anti-HEV seroprevalence of 18% (Hyams et al. ) and Egypt with 24–25% (Goldsmith et al. ).
+
+In 2003 a violent conflict in Darfur (Sudan) affected the population that moved westwards to take refuge in Chad. According to a report by the UN Security Council, more than 250,000 Darfurians are living in 12 refugee camps in eastern Chad and 172,600 people have been internally displaced to the south-eastern regions of Chad bordering Sudan’s Darfur (UNHCR ). The refugees and the displaced people are extremely vulnerable and have very limited access to already scarce resources including water, sanitation, food and healthcare. In these conditions the risk of outbreaks from water-related diseases increases dramatically.
+
+In 2004, an important outbreak of hepatitis E in Western Darfur affected two refugee camps in the district of Dar Sila, Eastern Chad. The analysis of IgG anti-HEV among the asymptomatic population showed a seroprevalence of 25.9% (37/143), indicating previous contact of this population with HEV prior to the outbreak (Guthmann et al. ). HEV RNA was isolated from serum samples and the sequences closely resembled genotypes 1 and 2 (Nicand et al. ). The role of donkeys, as the most prevalent domestic animals in the area was studied in 2004 but no clear results were found (Guthmann et al. ).
+
+To our knowledge this is the only confirmed outbreak of HEV disease in Chad. Since then, outbreaks of this disease have ocurred in Dar Sila, but nothing is known about their intensity or periodicity.
+
+Intermon Oxfam has been the main provider of water, sanitation and hygiene (WaSH) in four of the camps based in the Dar Sila district since 2007: Goz Amir camp and Djabal camp (both started in March 2007), Aradib site (September 2007) and Habilé site (June 2008).
+
+Classic water safety microbiological indicators such as faecal coliforms and enterococci are commonly used for evaluating water quality. However, the adequacy of these bacteria for indicating the occurrence and concentration of human viruses and protozoa cysts has been questioned in recent years. Human adenoviruses (HAdV) have been described as stable in the environment and highly resistant to ultraviolet (UV) disinfection. HAdV quantified by quantitative PCR (qPCR) have been proposed as a molecular index of faecal contamination in water (Albinana-Gimenez et al. a, b). Eschorichia coli and thermotolerant bacteria are less resistant to chlorine than pathogenic viruses and protozoal cysts and oocysts, and there is some evidence that coliforms, possibly including E. coli, can proliferate in some environments (WHO ).
+
+Previous studies show that even in areas with no significant numbers of clinical cases of acute hepatitis A and E, these viruses may be excreted and detected in wastewater (Pina et al. ; Clemente-Casares et al. ), and faecal contamination of food and water may represent a significant risk for outbreaks in human populations (Clemente-Casares et al. ; Rodriguez-Manzano et al. ).
+
+This study provides a description of the available information regarding the incidence of AJS in the regional district of Dar Sila and evaluates the presence and dissemination of human adenoviruses as indicators of human faecal contamination and of HAV and HEV in two settlements within the district studied. This information is useful for the identification of potential routes for the spread of future acute hepatitis outbreaks in the region.
+
+METHODS
+Data collection and sampling
+Epidemiological information was collected from the Early Warning Alert and Response system (EWARS) from Eastern Chad. The surveillance data from EWARS reports cases with epidemic potential: suspicion of cholera, meningitis, Hepatitis E (AJS) and measles, among others.
+
+Laboratory diagnosis of HEV is not available in Chad; therefore, we reviewed reports of AJS defined as an individual presenting symptoms of acute onset of jaundice (yellow coloration of the sclera) with test results being negative for malaria (thick blood smear or Paracheck®). Incidence of
+
+AJS has been adjusted according to settlement location, year and population size per camp which varies significantly every year due to the arrival of new refugees.
+
+Environmental screening was performed in two selected settlements: Goz Amir camp and Dogdoré site (Figure 1). The analysis took place in September 2009 during the rainy season when the risk of water contamination is higher and when HEV outbreaks have been previously observed (Figure 2), although no significant number of cases of AJS had been reported at the time of the study.
+
+Sampling points were mainly sources of drinking water provided by non-governmental organisations (Intermon Oxfam in Goz Amir and Action against Hunger in Dogdoré), such as wells, boreholes and pipelines before treatment (if any), and surface water from the seasonal river (Barh Azoum) that runs through both settlements.
+
+Samples from Dogdoré site for internally displaced persons
+Nine water samples of 10 L each were collected from the following sources located at Dogdoré site for internally displaced persons (IDPs) (Figure 1): one water sample was taken directly from surface water of the river (Bahr Azoum); another sample was taken using a water pump drawing water from 7 m underground within the river bed area; two water samples were collected after UV treatment (in the station and from the pipeline on the site); two water samples were taken from open wells; one water sample was collected from a traditional well and two additional water samples were collected from boreholes (60 m deep).
+
+Samples from Goz Amir refugee camp
+Seven water samples of 10 L each was collected from different sources of drinking water in the Goz Amir Refugee Camp. One water sample was collected directly from the river (Bahr Azoum); three water samples were collected from wells and three water samples were collected from boreholes. In addition, 28 faecal samples from donkeys were collected from distinct areas within the refugee camp.
+
+Positive controls
+As positive controls for HEV analysis, positive sewage samples from other geographical areas were used (Rodriguez-Manzano et al. ). The positive controls used for the analysis of HAV consisted of dilutions of the supernatant of FRhK-4 cell cultures infected with pHM- 175 strain. HAdV2, isolated from a clinical sample and used as positive control for the determinations of human adenoviruses was grown on A549 cells. Viral suspensions were stored at 80 WC until required.
+
+Sample processing
+Virus concentration from water samples
+The method used to recover virus particles from water samples was chosen on the basis of previous studies (Vilaginès et al. ; Albinana-Gimenez et al. a). Briefly, the samples were filtered on the site at 0.5 L/min through a column containing 10 g of compacted glass wool (Panreac, Barcelona, Spain) previously washed with HCl 1 M, NaOH 1 M using gravity flow. Glass wool concentrates obtained from filtration were shipped at þ4 WC to the Laboratory of Microbiology, University of Barcelona, Spain, for testing. Maximum transport time was 4 days. The columns were eluted in the laboratory by gravity flow using 200 mL of 0.05 M glycine buffer containing 3% beef extract at pH 9.5 ± 0.2. The eluate was flocculated at pH 3.5 ±0.2 and centrifuged at 7,000 × g for 30 min. The pellet was resuspended in 5 mL phosphate-buffered saline (PBS) and stored at 80 WC until analysis could be conducted.
+
+Virus concentration from faecal samples
+Faecal material was distributed in seven pools of specimens from four donkeys each and shipped to the reference laboratory at 4 WC. Maximum transport time was 4 days. Once in the laboratory, 1 g of each pooled sample was dissolved in 0.25 N glycine buffer pH 9.5 using vortexing for 15 min. The suspended solids were kept on ice for 20 min and separated by centrifugation at 12,000 × g for 15 min following the addition of 3.5 mL of 2 × PBS. Viruses were pelleted by ultracentrifugation (229,600 × g for 1 h at 4 WC), resuspended in 0.1 mL of 1 × PBS, and stored at 80 WC until analysis.
+
+Nucleic acid extraction
+The nucleic acids from viral concentrates obtained from water and faecal samples were extracted following the manufacturer’s instructions of QIAamp Viral RNA Mini Kit® (Qiagen, Valencia, Spain). Each sample was eluted in a final volume of 80 μL.
+
+Enzymatic amplification
+Reverse transcription-polymerase chain reaction (RT-PCR)
+Testing was carried out on 10 μL of neat and 10-fold dilutions of each RNA for the specific detection of HEV and HAV genomes. Water and faecal samples were tested for evidence of HEV by RT-PCR using two different sets of primers: primers targeting HEV ORF2 (Erker et al. ) (semi-nested RT-PCR) and a new set of primers targeting ORF1 (Johne et al. ) (nested RT-PCR) capable of detecting a wider spectrum of HEV types, including mammalian and avian HEV. For HAV detection, the non-coding region of the 50 end was used, based on a protocol previously described (Pina et al. ) (nested RT-PCR). Positive and negative controls extracted in parallel and inhibition controls were added to the PCR assays. The results of the PCRs using OneStep® RT-PCR kit (Qiagen) for a typical one-step reaction, and the 50 μL reaction mixture containing PCR Gold Buffer, 1.2 mM MgCl2 and 2 U of AmpliTaq® Gold (Applied Biosystems, New Jersey, USA), for a second PCR amplification cycle were analysed by electrophoresis on agarose gels to 2% (w/v) followed by staining with ethidium bromide at 0.5 μg/mL. The amplicons were viewed using an Image Master® VDS (Pharmacia Biotech, Uppsala, Sweden).
+
+Quantitative polymerase chain reaction
+Human faecal contamination was quantified using HAdV as a viral indicator of human faecal contamination (Albinana-Gimenez et al. b). For the specific detection and quantification of HAdV, 10 μL of the extracted DNA samples and of their 10-fold dilutions were assayed; these dilutions were carried out in order to avoid amplification inhibition due to the high sensitivity of the assay to the inhibitors.
+
+Quantitative PCR amplification reactions for HAdV were carried out using TaqMan® Universal PCR Master Mix reagents (Applied Biosystems), as previously described (Jothikumar et al. ; Bofill-Mas et al. ). Ten microlitre aliquots of the nucleic acid extractions were analysed, corresponding to 21.8 mL of water sample. Dilutions from 101 to 107 genomic copies (GC)/10 μL of the standard were analysed in triplicate.
+
+Standard precautions were taken in all PCR assays by using separate areas for the diverse steps of the protocols. Negative controls, inhibition controls and positive controls were added in each assay. Positive results were confirmed by sequencing analysis of the amplified DNA. The qPCRs were conducted in a thermocycler Stratagene® MX3000P (Stratagene, La Jolla, USA). All of the samples and their respective dilutions were analysed in duplicate.
+
+Nested PCR (nPCR)
+In order to verify the HAdV qPCR results and to characterize the strains present in the samples, the positive samples were analysed by nested PCR (nPCR) for further sequencing. A set of primers and PCR conditions previously described by Allard et al. () were used.
+
+Sequencing and analysis of viral genomes
+Amplicons obtained with nPCR were purified using a QIAquick® purification kit (Qiagen) following the manufacturer’s instructions. Strands of the purified DNA amplicons were sequenced using an ABI Prism 3100 Genetic Analyzer and Big Dye Terminator Cycle Sequencing Kit v. 3.1® (Applied Biosystems), following the manufacturer’s instructions. Products were checked using an ABI PRISM 377 analyzer (Applied Biosystems) by the Scientific and Technical Services of the University of Barcelona. The sequences were compared with the nucleotide sequences present in the GenBank using the BLAST program of NCBI (National Center for Biotechnology Information; www.ncbi.nlm.nih.gov/BLAST).
+
+Faecal coliforms in the analysed samples
+Bacteriological analyses were carried out on water samples after collection from the site when possible, by a membrane filtration method using a DelAgua test kit (DelAgua, Robens Centre, UK). After filtration, samples were incubated at 44.5 WC ± 0.5 WC on selective growth media. After approximately 18 h, the colonies can be visualized on the filter paper.
+
+Ethical considerations
+The study performed in this manuscript was authorized by the Chadian Ministry of Public Health.
+
+RESULTS
+Incidence of AJS in Dar Sila camps
+The review of EWARS surveillance data indicated that AJS outbreaks are more frequently detected during the rainy season, from May until October (Figure 2), although the incidence (cases/1,000 people/year) has been decreasing substantially since the outbreaks that took place in 2004.
+
+However, in 2007 new arrivals from the regional conflict settled into two sites for IDPs near Goz Amir Refugee camp (20,149 people), Habilé site (25,340 people) and Aradib site (11,406 people). A significant attack rate of AJS affected the displaced population from Habilé (2.19%) and Aradib (2.77%) the same year, but not the neighbouring population of Goz Amir (0.08%) that had already been living in the area for 3 years.
+
+In 2008, a new outbreak of AJS appeared in Dogdoré IDPs site (27,450 people), located very close to the border with Sudan (Figure 1) with an attack rate of 2.96%.
+
+The periodicity pattern for the last 5 years showed no consecutive outbreaks in the same site. All the data is summarized in Table 1.
+
+Presence of human faecal contamination in water samples
+The level of human faecal contamination of the sampling sites was evaluated by determining the concentration of HAdV. Furthermore, levels of faecal coliforms were evaluated when possible.
+
+Human adenovirus was detected in one of seven analysed water samples (14.3%) from Goz Amir and in three of nine analysed water samples from Dogdoré (33%). The values recorded were 6.82 × 101 GC/L and 1.94 × 102 GC/L (SD ¼ 1.87 × 102 GC/L) of water tested in Goz Amir and Dogdoré, respectively (Table 2).
+
+One out of four positive HAdV sequences detected by amplification of the hexon region (171 pb) was genotyped. The DNA sequence obtained from Dogdoré was compared with sequences described in previous studies from the GenBank data base, showing a 90% similarity to human adenovirus D.
+
+All the tested samples for faecal coliforms showed positives results. The water samples from Dogdoré (4/9) and Goz Amir (6/7) ranged from >50 to 3 colony forming units per 100 mL, although some analysis were performed at the same location but on a different date for the collection of water used for virus analysis (Table 2).
+
+HEV and HAV in analysed samples
+HEV and HAV were not detected in any water sample neither from the Dogdoré site for IDPs nor from the Goz Amir Refugee Camp. The negative results cannot be related to methodological problems, since controls and sewage samples from a diverse range of geographical areas (Spain, Egypt, Ethiopia, etc.) were analysed simultaneously and gave positive results for HEV and HAV (data not shown). This information indicates the role of sewage as a potential source of contamination for HAV and HEV, even in the absence of outbreaks among the population.
+
+Pooled stool samples obtained from 28 donkeys from the Goz Amir Camp tested negative for HEV by nested-PCR.
+
+DISCUSSION
+The high incidence of AJS in 2004 when the refugees arrived is probably due to their impaired health status due to poor living conditions, extremely unsafe sanitary conditions, and poor access to food and safe drinking water. The main hypothesis to explain the reduction of the incidence is that all of these aspects have improved with the presence of humanitarian organizations working in the camp and therefore, decreasing the vulnerability of those populations. UV treatment for drinking water was established in Dogdoré and in Goz Amir chlorination systems have been in place since 2007.
+
+However, in 2008 in Dogdoré, an outbreak with a significant attack rate (29 cases/1,000 people/year) was reported. This site, near the border with Sudan, is one of the most vulnerable in terms of security, resulting in the evacuation of humanitarian organizations that are working in Dogdoré and often leading to intermittent assistance to the vulnerable population during rebel attacks. The possibility that the disinfection process applied in Dogdoré might not be efficient enough for the inactivation of HEV has also been considered. Dogdoré is the only settlement using UV treatment, whereas other camps use chlorination systems. There is no experimental data available which analyse the effect of chlorine or UV on the viability of HEV. The WHO recommends treatments with a free chlorine residual of at least 0.5 mg/L for 30 min (pH 8.0), with mean turbidity not exceeding five nephelometric turbidity units (WHO ). HAV has been demonstrated to be inactivated by chlorine (Li et al. ) suggesting that free chlorine could have the same effect on HEV. This controversy highlights the importance of further laboratory studies on the inactivation of HEV.
+
+The pattern of those outbreaks – never seeing two consecutive outbreaks in the same camp – supports the hypothesis that the infection may confer immunity to the population for at least a year following an outbreak (Purdy & Krawczynski ).
+
+This is the first time an attempt has been made to isolate HEV in water from an unstable setting, as in the situation in Eastern Chad, through a prompt screening of drinking-water points. Although sophisticated laboratory technology is needed for such testing, it is rarely performed even in stable settings. Even though HEV was not found, this study has provided a picture of the potential risk for viral contamination that exists in sources of drinking water and given additional information about water quality within the camps.
+
+The limited available data on faecal coliforms observed suggest the presence of faecal contamination in some water samples before the disinfection treatment; however, more specific information on the viral contamination of human origin would be provided by the viral parameters analysed. The lack of correlation observed between faecal coliforms and viral contamination in the few samples where these data are available, is not conclusive, but this lack of correlation has also been described in previous studies (Pina et al. ).
+
+The low numbers and negative results obtained from the viruses studied would suggest that the drinking water available in the camps has good microbiological quality even during the rainy season. This information is in agreement with the observation that only a few sporadic cases of AJS were detected in the population during the months of the study. The presence of low levels of HAdV in 4 out of 16 samples indicates that the routes of faecal contamination in groundwater may still exist. Moreover, possible failures in the drinking water treatment and/or increased excretion of hepatitis viruses related to the arrival of new population could be related to future water-borne hepatitis outbreaks in the population.
+
+Additional research is needed to better understand the role of domestic animals in transmission or as reservoirs of HEV, considering the negative results for HEV obtained in the faecal samples from donkeys analysed.
+
+During the rainy season, the Bahr Azoum, a seasonal river that runs through the two camps, studied increases its flow and could become a potential source of transmission of water-borne infections by direct consumption from the surface water or by filtration to the groundwater. However, the negative results for viral contamination in the river observed would be in accordance with the lack of identified discharges of sewage into the river in the context of the region. Inactivation has not been observed in the qPCR assays for HAdV when one-fold and two-fold dilutions were analysed.
+
+Even in industrialized countries, studies of rivers have shown significant levels of HAdV, as several towns or cities discharge treated and/or untreated wastewater to rivers; for example, Albinana-Gimenez et al. () reported mean concentrations of 102 GC/L.
+
+According to the results of the present study, the most probable hypothesis is that faecal contamination detected in the positive ground water samples could have originated from within the camp, since the wastewater generated is accumulated in latrines that could contaminate the groundwater, especially during the rainy season. Moreover, the geological properties of the soil presented a high porosity, therefore, increasing the risk of seepage of microorganisms from the latrines to the shallow groundwater.
+
+However, in general, the levels of human contamination in the drinking water sources are low, indicating satisfactory management of the camps on the part of the humanitarian organizations. Nevertheless, with human contamination indicators we could identify possible risk sources which can be potential infection points in epidemic periods.
+
+CONCLUSIONS
+The analysis of viruses in this study has provided useful information that may not be obtained using the bacterial indicators described in international standards. The number of samples collected was limited and HEV was not detected in the environmental samples tested (water and donkey faeces). This observation is in accordance with the absence of a significant number of cases of AJS during the specific period studied. However, the presence of human adenoviruses at low levels in some of the water sources studied indicates that potential routes of faecal contamination for water-borne viruses may exist.

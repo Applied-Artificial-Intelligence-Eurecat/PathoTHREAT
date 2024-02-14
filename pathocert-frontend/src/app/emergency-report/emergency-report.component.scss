@@ -1,0 +1,21 @@
+
+    :host ::ng-deep .btn-space {
+        .button {
+            margin-bottom: .5rem;
+            display: block;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        :host ::ng-deep {
+            .customSteps.p-steps {
+                .p-steps-title {
+                    visibility: hidden;
+                }
+            }
+        }
+    }

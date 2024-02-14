@@ -1,0 +1,34 @@
+{
+  "event": "large waterborne outbreak of Salmonella typhimurium infections",
+  "event_date": "Department of Health. Food",
+  "city": "Gideon",
+  "region": "the only",
+  "country": "supplies",
+  "cause": [
+    "each of the city water st",
+    "age towers",
+    "apparently disseminated the contaminated water"
+  ],
+  "source": "the 100 000-gal tower",
+  "detection": [
+    "Department of Health",
+    "Food"
+  ],
+  "people_ill": "Persons consuming",
+  "people_hospitalized": "Persons consuming",
+  "people_dead": "Persons consuming",
+  "contaminants": "typhimurium",
+  "symptoms": "diarrhea",
+  "mitigation": [
+    "household members",
+    "survey of household members in",
+    "Persons consuming"
+  ],
+  "monitoring": [
+    "biochemical testing",
+    "biochemical"
+  ],
+  "prevention": "23",
+  "infrastructure": "towers",
+  "title": "A community waterborne outbreak of salmonellosis and the effectiveness of a boil water order.txt"
+}

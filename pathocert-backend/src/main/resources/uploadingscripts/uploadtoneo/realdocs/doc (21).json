@@ -1,0 +1,26 @@
+[
+  {
+    "sql_id": 23,
+    "title": "Cryptosporidium Oocysts in a Water Supply Associated with a Cryptosporidiosis Outbreak.pdf",
+    "document_date": "2000-03-25",
+    "event_date": "2000-03-25",
+    "event_duration": "almost 1 month",
+    "region": "northwest England",
+    "country": "England",
+    "cause": "animal feces",
+    "source": "water supply",
+    "detection": "nine cases of cryptosporidiosis to the East Lancashire Health Authority",
+    "people_ill": "58",
+    "contaminants": "Cryptosporidium",
+    "symptoms": [
+      "diarrhea",
+      "fever",
+      "vomit",
+      "abdominal pain"
+    ],
+    "monitoring": [
+      "76 oocysts of Cryptosporidium per 1,000 L.",
+      "five oocysts per 10 L of water."
+    ]
+  }
+]

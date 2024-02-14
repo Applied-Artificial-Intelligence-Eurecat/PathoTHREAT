@@ -1,0 +1,17 @@
+<div class="p-grid p-formgrid">
+    <div class="p-fluid p-col-12 p-md-12">
+        <app-field-inline [title]="'Document Name:'"
+                            [information]="event.document.name"></app-field-inline>
+        <app-field-inline [title]="'Date:'"
+                            [information]="event.date | date: 'dd/MM/yyyy'"></app-field-inline>
+
+        <app-field-inner-html
+                [event]="event"></app-field-inner-html>
+        <!--
+        <app-field-inline [title]="'Contamination Source:'"
+                            [information]="event.document.source"></app-field-inline>-->
+        <app-field-inline [title]="'First detection of the event:'"
+                            [information]="event.firstDetectionEvent"></app-field-inline>
+
+    </div>
+</div>

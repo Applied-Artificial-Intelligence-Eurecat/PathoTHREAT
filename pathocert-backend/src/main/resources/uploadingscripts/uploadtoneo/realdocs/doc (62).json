@@ -1,0 +1,21 @@
+{
+  "event": "contamination of drinking water",
+  "event_date": "June 2008",
+  "city": "Northamptonshire",
+  "country": "United Kingdom",
+  "source": [
+    "heat wave",
+    "flooding"
+  ],
+  "detection": "peak in the number of calls to NHS Direct",
+  "people_ill": "33",
+  "contaminants": "Cryptosporidium oocyst",
+  "symptoms": "Cryptosporidiosis",
+  "mitigation": [
+    "syndromic surveillance",
+    "HPA/QSurveillance national surveillance system"
+  ],
+  "prevention": "procedures must be in place to correctly interpret the data",
+  "infrastructure": "potential problem by the water company",
+  "title": "Value Of Syndromic Surveillance In Monitoring A Focal Waterborne Outbreak Due To An Unusual Cryptosporidium Genotype In Northamptonshire"
+}

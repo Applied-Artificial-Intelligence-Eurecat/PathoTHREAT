@@ -1,0 +1,67 @@
+version: "3.9"
+
+services:
+  pathocert-postgres:
+    image: postgres:latest
+    container_name: postgres
+    volumes:
+      - ./postgres-data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=pathocert
+      - POSTGRES_PASSWORD=ChangeMe
+      - POSTGRES_USER=postgres
+    restart: on-failure
+    ports:
+      - "5432:5432/tcp"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+
+  pathocert-api:
+    build: .
+    ports:
+      - "4567:4567"
+    depends_on:
+      pathocert-postgres:
+        condition: service_healthy
+
+      pathocert-neo:
+        condition: service_started
+      pathocert-merge:
+        condition: service_started
+
+  pathocert-neo:
+    image: neo4j:4.3.10
+    container_name: pathocert-neo
+    volumes:
+      - ./neo4j/data:/data
+      - ./neo4j/import:/import
+    environment:
+      - NEO4J_AUTH=neo4j/1234
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+
+  pathocert-resources:
+    build: src/main/resources/uploadingscripts/
+    depends_on:
+      - pathocert-neo
+
+  pathocert-csvtosql:
+    build: src/main/resources/uploadingscripts/csvtosqldb/
+    depends_on:
+      - pathocert-api
+    restart: on-failure:5
+
+  pathocert-merge:
+    build: src/main/resources/uploadingscripts/ComponentsService/
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - pathocert-neo
+    ports:
+      - "5000:5000"

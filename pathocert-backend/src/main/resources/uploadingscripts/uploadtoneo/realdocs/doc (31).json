@@ -1,0 +1,44 @@
+[
+  {
+    "sql_id": 35,
+    "title": "epidemiology-and-estimated-costs-of-a-large-waterborne-outbreak-of-norovirus-infection-in-sweden.pdf",
+    "document_date": "2008",
+    "event_date": "2008",
+    "city": "Lilla Edet Municipality",
+    "region": "Västra Götaland County",
+    "country": "Sweden",
+    "cause": "heavy faecal contamination of the raw water from Gta lv river [20]",
+    "source": [
+      "drinking water",
+      "contaminated drinking water"
+    ],
+    "detection": [
+      "unusually high number of individuals who had suddenly fallen ill with gastrointestinal symptoms",
+      "notified that 7/17 athletes of a team that had visited the municipality during the afternoon on 7 September had fallen ill with gastrointestinal symptoms"
+    ],
+    "people_ill": "2000",
+    "contaminants": [
+      "NoV",
+      "adenovirus",
+      "sapovirus",
+      "rotavirus",
+      "Campylobacter spp"
+    ],
+    "symptoms": [
+      "gastrointestinal symptoms",
+      "acute gastroenteritis"
+    ],
+    "mitigation": [
+      "boil water recommendation",
+      "inform the inhabitants in the municipality about the ongoing outbreak, the issued boil water recommendation, and medical advice for people with gastrointestinal symptoms",
+      "Information was spread via the media, the homepage of the municipality website, posters and local radio as VMA, i.e important message to the public."
+    ],
+    "monitoring": [
+      "300 plaque- forming units (p.f.u.)/100 ml",
+      "between 4 and 42 p.f.u./100 ml",
+      "Ten-liter grab samples were taken from the various water features",
+      "stool samples",
+      "Water samples"
+    ]
+  }
+]

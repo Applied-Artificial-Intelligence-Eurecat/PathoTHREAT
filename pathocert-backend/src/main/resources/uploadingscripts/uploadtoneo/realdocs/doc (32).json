@@ -1,0 +1,30 @@
+{
+  "event": "earthquake",
+  "event_date": "2010",
+  "region": [
+    "Leogone",
+    "Gressier"
+  ],
+  "country": "Haiti",
+  "cause": "hurricane Tomas",
+  "source": "drinking water",
+  "people_ill": "700.000",
+  "contaminants": [
+    "Vibrio cholerae",
+    "fecal indicator organisms"
+  ],
+  "symptoms": "cholera",
+  "mitigation": "thousands of wells were installed",
+  "monitoring": [
+    "Leogone flood basin",
+    "fecal contamination"
+  ],
+  "restoration": "thousands of wells were installed",
+  "prevention": "Routine analysis of drinking water sources",
+  "investigation": "hydrogen sulfide test",
+  "infrastructure": [
+    "severely damaging the drinking",
+    "wastewater infrastructure"
+  ],
+  "title": "Feasibility Of The Hydrogen Sulfide Test For The Assessment Of Drinking Water Quality In Post-Earthquake Haiti"
+}

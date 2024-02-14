@@ -1,0 +1,12 @@
+{
+  "event": "waterborne outbreaks",
+  "event_date": "between 1974 and 2001",
+  "region": "Walkerton and North Battleford",
+  "country": "Canada",
+  "cause": "severe weather, close proximity to animal populations, treatment system malfunctions, poor maintenance and treatment practices",
+  "source": "drinking water",
+  "contaminants": "Giardia, Campylobacter, Cryptosporidium, Norwalk-like viruses, Salmonella and hepatitis A virus",
+  "mitigation": "analyzed information on waterborne outbreaks",
+  "investigation": "waterborne disease outbreaks in Canada follow a seasonal distribution",
+  "title": "Infectious Disease Outbreaks Related To Drinking Water In Canada, 1974-2001"
+}

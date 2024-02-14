@@ -1,0 +1,10 @@
+[
+    {
+    "type_of_event": "flood",
+    "effect_water_taste": "earthy-musty",
+    "contaminants": [{"name": "ecoli",
+                     "symptoms": ["death", "chestpain"]},
+                     {"name": "norovirus",
+                      "symptoms": "fever"}]
+    }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "sql_id": 22,
+    "title": "Compliance with boil water advice following a water contamination incident in the Netherlands in 2007.pdf",
+    "document_date": "2007-05-30",
+    "event_date": "2007-05-30",
+    "event_duration": "almost 3 months",
+    "region": "North Holland",
+    "country": "Holland",
+    "cause": "run-off of rainwater contaminated  with faeces of breeding gulls",
+    "source": "tap water",
+    "detection": "samples",
+    "contaminants": [
+      "ecoli"
+    ],
+    "symptoms": [
+      "diarrhea",
+      "fever",
+      "vomiting",
+      "abdominal pain"
+    ],
+    "mitigation": [
+      "boil tap water",
+      "boil tap water for two minutes before consumption",
+      "broadcasted through  mass-media including the national and regional television channel,  radio and newspapers",
+      "public website used during  emergency situations (www.crisis.nl) and a toll-free telephone  number were made available for the public"
+    ]
+  }
+]

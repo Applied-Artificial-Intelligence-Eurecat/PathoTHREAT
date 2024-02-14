@@ -1,0 +1,21 @@
+[
+    {
+        "effect_water_taste": "metallic-bitter",
+        "contaminants": [
+            {"name": "zink"},
+            {"name": "copper"}
+        ]
+    },
+    {
+        "effect_water_taste": "petrol diesel",
+        "contaminants": [
+            {"name": "diesel"}
+        ]
+    },
+    {
+        "effect_water_taste": "chlorine taste",
+        "contaminants": [
+            {"name": "chlorine"}
+        ]
+    }
+]

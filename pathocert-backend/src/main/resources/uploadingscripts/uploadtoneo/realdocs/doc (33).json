@@ -1,0 +1,44 @@
+{
+  "event": "gastroenteritis outbreak",
+  "event_date": "2003",
+  "region": "central Italy",
+  "country": "Italy",
+  "cause": [
+    "Fecally contaminated groundwater",
+    "seawater"
+  ],
+  "source": [
+    "norovirus",
+    "rotavirus",
+    "Campylobacter spp"
+  ],
+  "contaminants": "Campylobacter sp",
+  "symptoms": [
+    "diarrhea",
+    "vomiting"
+  ],
+  "mitigation": [
+    "identify",
+    "eliminate the source of infection"
+  ],
+  "monitoring": [
+    "Stool samples",
+    "Campylobacter spp",
+    "Escherichia coli O157",
+    "Salmonella spp",
+    "Listeria monocytogenes",
+    "Shigella spp",
+    "Vibrio cholerae",
+    "Clostridium perfringens toxin",
+    "Bacillus cereus toxin",
+    "norovirus",
+    "rotavirus"
+  ],
+  "investigation": [
+    "identify",
+    "eliminate the source of infection",
+    "The groundwater involved in contamination of both drinking-water",
+    "non\u00e2\u20ac\u201cdrinking-water systems was probably polluted by the river flowing into the sea nearby"
+  ],
+  "title": "Gastroenteritis Outbreak At Holiday Resort, Central Italy"
+}

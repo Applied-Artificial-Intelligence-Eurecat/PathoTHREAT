@@ -1,0 +1,70 @@
+[
+    {
+        "type_of_event": "industrial accident",
+        "cascading_event": ["industrial infrastructure damage"]
+    },
+    {
+        "type_of_event": "industrial accident",
+        "cascading_event": ["dw infrastructure damage"]
+    },
+    {
+        "type_of_event": "terrorist attack",
+        "cascading_event": ["surface water contamination"]
+    },
+    {
+        "type_of_event": "terrorist attack",
+        "cascading_event": ["source water contamination"]
+    },
+    {
+        "type_of_event": "terrorist attack",
+        "cascading_event": ["dw infrastructure damage"]
+    },
+    {
+        "type_of_event": "terrorist attack",
+        "cascading_event": ["industrial infrastructure damage"]
+    },
+    {
+        "type_of_event": "flooding event",
+        "cascading_event": ["flooding", "surface water contamination"]
+    },
+    {
+        "type_of_event": "earthquake",
+        "cascading_event": ["landslide", "surface water contamination"]
+    },
+    {
+        "type_of_event": "earthquake",
+        "cascading_event": ["soil erosion", "surface water contamination"]
+    },
+    {
+        "type_of_event": "earthquake",
+        "cascading_event": ["liquefaction", "surface water contamination"]
+    },
+    {
+        "type_of_event": "earthquake",
+        "cascading_event": ["flooding", "surface water contamination"]
+    },
+    {
+        "type_of_event": "earthquake",
+        "cascading_event": ["source water contamination"]
+    },
+    {
+        "type_of_event": "earthquake",
+        "cascading_event": ["industrial infrastructure damage", "dw infrastructure damage"]
+    },
+    {
+        "type_of_event": "earthquake",
+        "cascading_event": ["dw infrastructure damage"]
+    },
+    {
+        "type_of_event": "fire",
+        "cascading_event": ["flooding", "industrial infrastructure damage", "surface water contamination"]
+    },
+    {
+        "type_of_event": "fire",
+        "cascading_event": ["surface water contamination"]
+    },
+    {
+        "type_of_event": "fire",
+        "cascading_event": ["dw infrastructure damage"]
+    }
+]

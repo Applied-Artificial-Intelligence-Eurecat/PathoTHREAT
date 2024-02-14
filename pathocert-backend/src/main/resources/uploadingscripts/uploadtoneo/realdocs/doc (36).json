@@ -1,0 +1,19 @@
+{
+  "event": "outbreaks of gastroenteritis",
+  "event_date": "July and August 2014",
+  "country": "Finland",
+  "source": "beach users",
+  "people_ill": "1,453",
+  "contaminants": "Ecoli",
+  "monitoring": [
+    "Water samples",
+    "noro-adenovirus"
+  ],
+  "restoration": [
+    "Restrictions against bathing",
+    "published guidelines for outbreak control"
+  ],
+  "prevention": "published guidelines for outbreak control",
+  "investigation": "general provisions governing water quality at public beaches",
+  "title": "Increase In Outbreaks Of Gastroenteritis Linked To Bathing Water In Finland In Summer 2014"
+}

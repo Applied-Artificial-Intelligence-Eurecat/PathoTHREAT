@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="p-grid">
+        <div class="p-col-12 p-md-12" style="display:inline-flex;">
+            <span style="margin-right: 0.5rem;">
+                <h5>Ongoing emergencies</h5>
+            </span>
+            <p-badge [value]="pendentEmergencies.length" severity="primary" styleClass="p-mr-2"></p-badge>
+        </div>
+        <div class="p-col-12">
+            <p-dataView #dv [value]="pendentEmergencies" [paginator]="true" [rows]="3" filterBy="name" layout="grid">
+                <!-- TODO @someone Es va posar aquests bindings a unes variables que no existeixen.
+                    [sortField]="sortField" [sortOrder]="sortOrder" -->
+                <ng-template let-eme pTemplate="gridItem">
+                    <div id="cardDataView" class="p-col-12 p-md-4">
+                        <a class="emergency-card-link" (click)="onCardSelected($event, eme)">
+                            <div class="emergency-card card">
+                                <div class="p-grid p-formgrid">
+                                    <div class="p-fluid p-col-12 p-md-12">
+                                        <div class="p-field">
+                                            <label>Name: </label>
+                                            <span><b>{{eme.emergencyName}}</b></span>
+                                        </div>
+                                        <div class="p-field">
+                                            <label>Scenario: </label>
+                                            <span>{{eme.scenario}}</span>
+                                        </div>
+                                        <div class="p-field">
+                                            <label>Date: </label>
+                                            <span>{{eme.reportDate | date: 'dd/MM/yyyy hh:mm'}}</span>
+                                        </div>
+                                        <div class="p-field">
+                                            <label>Type: </label>
+                                            <span>{{eme.emergencyTypeClass}}</span>
+                                        </div>
+                                        <div class="p-field">
+                                            <label>Location: </label>
+                                            <span>{{eme.affectedAreaLat}},{{eme.affectedAreaLon}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                </ng-template>
+            </p-dataView>
+
+        </div>
+    </div>
+</div>

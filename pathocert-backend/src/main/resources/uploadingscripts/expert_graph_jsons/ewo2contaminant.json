@@ -1,0 +1,21 @@
+[
+    {
+        "effect_water_odor": "metal",
+        "contaminants": [
+            {
+                "name": "zink"
+            },
+            {
+                "name": "copper"
+            }
+        ]
+    },
+    {
+        "effect_water_odor": "rotten eggs",
+        "contaminants": [
+            {
+                "name": "algae"
+            }
+        ]
+    }
+]

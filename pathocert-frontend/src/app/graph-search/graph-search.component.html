@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="p-fluid">
+        <h3>Graph Search</h3>
+    </div>
+    <div class="p-grid forms-grid">
+        <div class="p-fluid p-col-12 p-md-6">
+            <div class="p-field">
+                <label>Subject: </label>
+                <p-dropdown [options]="values" (onChange)="saveTermAndGetLabels($event)" [filter]="true"
+                    optionLabel="name" optionValue="name" [showClear]="true" placeholder="Select a Value"
+                    [disabled]="subjectDisabled"></p-dropdown>
+            </div>
+        </div>
+        <div class="p-fluid p-col-12 p-md-6">
+            <div class="p-field">
+                <label>Desired Output: </label>
+                <p-dropdown [options]="labels" (onChange)="saveTermAndGetValues($event)" [filter]="true"
+                    optionLabel="name" optionValue="name" [showClear]="true" placeholder="Select a Label"
+                    [disabled]="outputDisabled"></p-dropdown>
+            </div>
+        </div>
+        <div class="p-fluid p-col-12 p-md-12">
+            <div class="p-grid p-nogutter p-justify-end btn-space">
+                <p-button type="button" label="Search" icon="pi pi-search" iconPos="right" (onClick)="confirmGraph()" [disabled]="searchDisabled">
+                </p-button>&nbsp;&nbsp;
+                <p-button type="button" label="Reset" icon="pi pi-refresh" iconPos="right" (onClick)="resetGraph()">
+                </p-button>
+            </div>
+        </div>
+    </div>
+    <div class="p-fluid">
+        <app-interactive-graph [nodes]="nodes" [relations]="relations" [pause]="pause">
+        </app-interactive-graph>
+    </div>
+</div>

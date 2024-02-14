@@ -1,0 +1,34 @@
+{
+  "event_date": "June 2015",
+  "city": "Gwangju Metropolitan City",
+  "cause": "critical flaws in the camp\u00e2\u20ac\u2122s water distribution system",
+  "source": "water distribution at the camp",
+  "people_ill": "188",
+  "contaminants": "Ecoli",
+  "symptoms": [
+    "diarrhoea",
+    "vomiting"
+  ],
+  "mitigation": [
+    "questionnaire that addressed clinical symptoms",
+    "food consumption",
+    "environmental exposures"
+  ],
+  "monitoring": [
+    "from cooking utensils",
+    "bacterial",
+    "viral pathogens"
+  ],
+  "restoration": [
+    "the cafeteria filter was replaced with a reverse osmosis membrane capable of removing viruses",
+    "bacteria during the purification process",
+    "Chlorination was reinitiated following the cleaning",
+    "disinfection of the water distribution system"
+  ],
+  "prevention": [
+    "periodic sanitation",
+    "inspection"
+  ],
+  "infrastructure": "the cafeteria filter was replaced",
+  "title": "A Waterborne Outbreak Of Multiple Diarrhoeagenic Escherichia Coli Infections Associated With Drinking Water At A School Camp"
+}

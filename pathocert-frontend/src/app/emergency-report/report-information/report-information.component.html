@@ -1,0 +1,67 @@
+<div class="card">
+    <div class="p-fluid">
+        <span>Report information</span>
+        <p><small>Provide information about the person reporting the event</small></p>
+    </div>
+    <br />
+    <div class="p-grid p-formgrid">
+        <div class="p-fluid p-col-12 p-md-6">
+            <div class="p-field">
+                <label for="emergencyName">Emergency name: *</label>
+                <input pInputText id="emergencyName" type="text" #emergencyName="ngModel" required
+                    aria-describedby="emergencyName-help" [(ngModel)]="dataInfo.emergencyName"
+                    [ngModelOptions]="{standalone: true}"
+                    [ngClass]="{'ng-dirty': (emergencyName.invalid && submitted) || (emergencyName.dirty && emergencyName.invalid)}">
+                <small id="emergencyName-help"
+                    *ngIf="(emergencyName.invalid && submitted) || (emergencyName.dirty && emergencyName.invalid)"
+                    class="p-error">Emergency name is required.</small>
+            </div>
+        </div>
+        <div class="p-fluid p-col-12 p-md-6">
+            <div class="p-field">
+                <label for="scenarioName">Scenario: *</label>
+                <p-dropdown id="scenarioName" [options]="scenariosList" [(ngModel)]="dataInfo.scenario"
+                    placeholder="Select an event" optionLabel="optionName" optionValue="optionValue" [showClear]="false"
+                    #scenarioName="ngModel" required aria-describedby="scenarioName-help"
+                    [ngClass]="{'ng-dirty': (scenarioName.invalid && submitted)}"
+                    [style]="{'width':'100%', 'overflow-y': 'hidden', 'overflow': 'initial'}"
+                    [panelStyle]="{'width':'100%', 'overflow-y': 'hidden', 'overflow': 'initial'}"
+                    class="dropdown-custom">
+                </p-dropdown>
+                <small id="scenarioName-help" *ngIf="(scenarioName.invalid && submitted)"
+                    class="p-error">Scenario is required.</small>
+            </div>
+        </div>
+        <div class="p-fluid p-col-12 p-md-6">
+            <div class="p-field">
+                <label for="nameReporter">Reporter name: *</label>
+                <input pInputText id="nameReporter" type="text" #nameReporter="ngModel" required
+                    aria-describedby="nameReporter-help" [(ngModel)]="dataInfo.nameReporter"
+                    [ngModelOptions]="{standalone: true}"
+                    [ngClass]="{'ng-dirty': (nameReporter.invalid && submitted) || (nameReporter.dirty && nameReporter.invalid)}">
+                <small id="nameReporter-help"
+                    *ngIf="(nameReporter.invalid && submitted) || (nameReporter.dirty && nameReporter.invalid)"
+                    class="p-error">Name reporter is required.</small>
+            </div>
+        </div>
+        <div class="p-fluid p-col-12 p-md-6">
+            <div class="p-field">
+                <label for="ocupationDescription">Occupation description: *</label>
+                <input pInputText id="ocupationDescription" type="text" #ocupationDescription="ngModel" required
+                    aria-describedby="ocupationDescription-help" [(ngModel)]="dataInfo.ocupationDescription"
+                    [ngModelOptions]="{standalone: true}"
+                    [ngClass]="{'ng-dirty': (ocupationDescription.invalid && submitted) || (ocupationDescription.dirty && ocupationDescription.invalid)}">
+                <small id="ocupationDescription-help"
+                    *ngIf="(ocupationDescription.invalid && submitted) || (ocupationDescription.dirty && ocupationDescription.invalid)"
+                    class="p-error">Ocupation description is required.</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-grid p-nogutter p-justify-end btn-space">
+        <p-button type="button" label="Next" icon="pi pi-angle-right" iconPos="right" (onClick)="nextPage()"></p-button>
+        &nbsp;&nbsp;
+        <p-button type="button" label="Cancel" (onClick)="cancel()" icon="pi pi-times" iconPos="right"
+            styleClass="p-button p-button-outlined p-button-secondary"></p-button>
+    </div>
+</div>

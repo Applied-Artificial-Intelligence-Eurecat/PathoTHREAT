@@ -1,0 +1,48 @@
+{
+  "event": "acute diarrheal disease (ADD) outbreak",
+  "event_date": "June 26, 2017",
+  "city": "Pedda-Gujjul-Thanda",
+  "region": "Telangana",
+  "country": "India",
+  "cause": "faecal-contaminated water from the shallow borewells",
+  "people_ill": "191",
+  "people_hospitalized": "2",
+  "symptoms": [
+    "diarrhea",
+    "fever",
+    "vomiting",
+    "abdominal pain"
+  ],
+  "mitigation": [
+    "reviewed medical records of local health care facilities",
+    "The village residents were discouraged from using shallow bore-well water",
+    "were provided with safe canned drinking water until all leakages were secured",
+    "Leakages in water supply from the bore-wells were identified",
+    "secured",
+    "Chlorine tablets were distributed for household level water disinfection",
+    "We informed the residents to avoid open defecation near drinking water sources",
+    "residential premises",
+    "Public health staff conducted health education daily to improve awareness among the villagers about water",
+    "sanitation",
+    "hygiene",
+    "discouraged from using shallow bore-well water"
+  ],
+  "monitoring": [
+    "stool samples",
+    "Vibrio cholerae",
+    "Salmonella",
+    "Shigella"
+  ],
+  "restoration": [
+    "repair of leakages at contaminated water sources",
+    "alternative supply of purified canned drinking water"
+  ],
+  "prevention": "achieve an open-defecation free status",
+  "investigation": [
+    "describe the epidemiology",
+    "identify risk factors",
+    "provide evidence-based recommendations",
+    "drinking of faecal-contaminated water from the shallow borewells as the leading cause for this outbreak"
+  ],
+  "title": "A Community-Wide Acute Diarrheal Disease Outbreak Associated With Drinking Contaminated Water From Shallow Bore-Wells In A Tribal Village"
+}

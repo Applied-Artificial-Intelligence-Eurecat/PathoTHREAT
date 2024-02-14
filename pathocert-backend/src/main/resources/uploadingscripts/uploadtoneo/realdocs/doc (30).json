@@ -1,0 +1,27 @@
+{
+  "event": "large outbreak of norovirus",
+  "event_date": "11 September 2008",
+  "city": "Lilla Edet",
+  "region": "southwest Sweden",
+  "country": "Sweden",
+  "cause": "drinking water from the Lilla Edet water treatment plant",
+  "source": "drinking water",
+  "detection": "County Medical Officer was informed",
+  "people_ill": "231",
+  "contaminants": "norovirus",
+  "symptoms": "acute gastroenteritis",
+  "mitigation": "boil water recommendation",
+  "monitoring": [
+    "stool samples",
+    "NoV strains of genogroup I",
+    "300 plaqueforming units"
+  ],
+  "restoration": "boil water recommendation",
+  "investigation": [
+    "questionnaires",
+    "faecal indicator bacteria",
+    "coliphages"
+  ],
+  "infrastructure": "Measures taken at the WTP",
+  "title": "Epidemiology And Estimated Costs Of A Large Waterborne Outbreak Of Norovirus Infection In Sweden"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "sql_id": 106,
+    "title": "Outbreak of diarrhoeal illness in participants in an obstacle adventure race, Alpes-Maritimes, France, June 2015.pdf",
+    "event_date": "Summer of 2005",
+    "country": "France",
+    "cause": "human-to-human transmission of a norovirus introduced by one or more persons and transmitted through contaminated mud",
+    "source": "Several arguments support a common source outbreak of human origin related to the ingestion of contaminated mud",
+    "detection": [
+      "a hospital near Nice alerted the Regional Health Agency of Provence-Alpes-Cte dAzur (ARS PACA) of 22 patients with AG after participation in an obstacle race, in the south of France",
+      "On a social media website, many other participants reported also suffering from similar symptoms."
+    ],
+    "people_ill": "1264",
+    "contaminants": [
+      "Shigella sonnei",
+      "norovirus"
+    ],
+    "symptoms": [
+      "diarrhoea",
+      "abdominal cramps",
+      "fever",
+      "vomiting",
+      "chills",
+      "headaches",
+      "asthenia",
+      "muscle ache"
+    ],
+    "mitigation": [
+      "press conference"
+    ],
+    "monitoring": [
+      "86 to 3,200,000 UFC/100 mL) and 22 C (with counts ranging from 2,500 to 1,400,000 UFC/100 mL 400 to 280,000/L)",
+      "stool samples"
+    ],
+    "prevention": "Risks related to similar races should be assessed and recommendations be proposed to raise awareness among health authorities and organisers"
+  }
+]

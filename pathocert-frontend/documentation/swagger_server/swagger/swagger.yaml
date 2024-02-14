@@ -1,0 +1,1234 @@
+openapi: 3.0.0
+info:
+  title: PathoTHREAT Backend
+  description: The API available by the PathoTHREAT frontend to implement all the
+    functionalities of the PathoTHREAT tool.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: https://localhost:8080
+  description: PathoTHREAT Backend Localhost Server
+- url: https://localhost:4200/api
+  description: PathoTHREAT Backend Localhost Server With Frontend
+tags:
+- name: Authentication
+  description: All endpoints needed to authenticate users into the tool
+- name: Users
+  description: Endpoints related to the users of the tool
+- name: Organisations
+  description: Endpoints of the organisations
+- name: Emergencies
+  description: Endpoints dealing with emergencies
+- name: Emergency Assessment
+  description: Endpoints used during the Impact Assessment process
+- name: Expert Asking
+  description: Endpoints used for the Expert Search component
+paths:
+  /api/authenticate:
+    post:
+      tags:
+      - Authentication
+      summary: Authenticate User
+      description: "Authenticate a user into the server. This is done together with\
+        \ the PathoWARE system, allowing for a single set of login credentials to\
+        \ be necessary to use all the tools in the PathoCERT ecosystem."
+      operationId: api_authenticate_post
+      requestBody:
+        description: The credentials of the user in AuthenticateBody form.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthenticateBody'
+        required: true
+      responses:
+        "200":
+          description: The credentials are correct and the login was successful
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+          links:
+            org-archived:
+              operationRef: /api/emergencies/my
+              description: Link to the emergencies of the organisation
+            my-user:
+              operationRef: /api/emergencies/my
+              description: Link to the information of the user
+            my-org:
+              operationRef: /api/users/my-organization
+              description: Link to the organisation of the authenticated user
+        "403":
+          description: "The credentials are incorrect, so the login failed."
+      x-openapi-router-controller: swagger_server.controllers.authentication_controller
+  /api/authenticate/token:
+    post:
+      tags:
+      - Authentication
+      summary: Verify JWT Token
+      description: "Verifiy if a saved JWT Token created by the system is valid, taking\
+        \ into account if it contains correct authentication and if this authentication\
+        \ has expired."
+      operationId: api_authenticate_token_post
+      requestBody:
+        description: The token of the user in map form.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/authenticate_token_body'
+        required: true
+      responses:
+        "200":
+          description: Boolean representing if the token is expired.
+          content:
+            application/json:
+              schema:
+                type: boolean
+                x-content-type: application/json
+      x-openapi-router-controller: swagger_server.controllers.authentication_controller
+  /api/users/{id}/change-password:
+    patch:
+      tags:
+      - Users
+      summary: Change User Password
+      description: Change the password of the authenticated user.
+      operationId: api_users_id_change_password_patch
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user to verify that the user is trying
+          to change their own password and not somebody else's.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      - name: id
+        in: path
+        description: Numeric ID of the user to change the password. Needs to match
+          with the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          example: 1
+      responses:
+        "200":
+          description: The password has been changed successfully.
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/User'
+        "403":
+          description: "Authentication failed, maybe because of an expired or missing\
+            \ token."
+        "404":
+          description: The user was not found in the database.
+      x-openapi-router-controller: swagger_server.controllers.users_controller
+  /api/users/my-user:
+    post:
+      tags:
+      - Users
+      summary: Get User Object
+      description: Get the information of the authenticated user.
+      operationId: api_users_my_user_post
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      responses:
+        "200":
+          description: The user was authenticated successfully.
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/User'
+        "400":
+          description: "Authentication failed, maybe because of an expired or missing\
+            \ token."
+      x-openapi-router-controller: swagger_server.controllers.users_controller
+  /api/users/my-organization:
+    post:
+      tags:
+      - Organisations
+      summary: Get Organisation Object
+      description: Get the information of the authenticated user's organization.
+      operationId: api_users_my_organization_post
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      responses:
+        "200":
+          description: The user was authenticated successfully and the organization
+            was found.
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/Organization'
+        "400":
+          description: "Authentication failed, maybe because of an expired or missing\
+            \ token."
+        "404":
+          description: The organization of the user was not found in the database.
+      x-openapi-router-controller: swagger_server.controllers.organisations_controller
+  /api/emergencies/my:
+    get:
+      tags:
+      - Emergencies
+      summary: Get Emergencies List
+      description: "Get the emergencies available to the user, depending on their\
+        \ organization."
+      operationId: api_emergencies_my_get
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      - name: archived
+        in: query
+        description: "Whether to return the ongoing emergencies of the organization,\
+          \ or the past emergencies (those that have already been archived)."
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+          example: true
+      responses:
+        "200":
+          description: The user was authenticated successfully and the emergencies
+            were found.
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/Emergency'
+        "403":
+          description: "Authentication failed, maybe because of an expired or missing\
+            \ token."
+      x-openapi-router-controller: swagger_server.controllers.emergencies_controller
+  /api/emergencies/selectable-values:
+    get:
+      tags:
+      - Emergencies
+      summary: Get Selectable Emergencies
+      description: Return three lists of values to be displayed to the user in three
+        diferent multiselect drop-downs in a page during the emergency report process.
+      operationId: api_emergencies_selectable_values_get
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      responses:
+        "200":
+          description: There was no problem fetching the data.
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/EmergencyMultiselectOptions'
+        "403":
+          description: "There was a problem with the authentication, maybe because\
+            \ of an expired or missing token."
+        "500":
+          description: The server failed to connect to the database containing the
+            values.
+      x-openapi-router-controller: swagger_server.controllers.emergencies_controller
+  /api/emergencies/send-to-ware:
+    post:
+      tags:
+      - Emergencies
+      summary: Send Emergency To PathoWARE
+      description: Send the calculated emergency assessment to the PathoWARE system.
+      operationId: api_emergencies_send_to_ware_post
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      responses:
+        "200":
+          description: The emergency was sent successfully to PathoWARE.
+          content:
+            application/json:
+              schema:
+                type: string
+                x-content-type: application/json
+        "4XX":
+          description: Error sending the emergency. The error information is provided
+            by PathoWARE.
+      x-openapi-router-controller: swagger_server.controllers.emergencies_controller
+  /api/assessment/{emergencyId}/close-assessments:
+    get:
+      tags:
+      - Emergency Assessment
+      summary: Get Close Assessments Of An Emergency
+      description: The close assessments of an emergency are a list of how similar
+        the emergency is to a document in the database.
+      operationId: api_assessment_emergency_id_close_assessments_get
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      - name: emergencyId
+        in: path
+        description: Numeric ID of the emergency to calculate the close assessments
+          of.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: The close assessments were calculated successfully.
+          content:
+            application/hal+json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DocumentSimilarity'
+                x-content-type: application/hal+json
+        "403":
+          description: "Authentication failed, maybe because of an expired or missing\
+            \ token."
+        "404":
+          description: An emergency with the specified emergencyId was not found.
+        "5XX":
+          description: Something failed while calculating the similarities.
+      x-openapi-router-controller: swagger_server.controllers.emergency_assessment_controller
+  /api/assessment/merge-documents:
+    post:
+      tags:
+      - Emergency Assessment
+      summary: Merge Documents Into One
+      description: "Merge multiple documents by combinating their information, so\
+        \ they can be presented to the user."
+      operationId: api_assessment_merge_documents_post
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      requestBody:
+        description: The document titles in ArrayList form.
+        content:
+          application/json:
+            schema:
+              type: array
+              example:
+              - Contamination Outbreak in Cabool
+              - Detected gastroenteritis outbreak in ski resort
+              items:
+                type: string
+        required: true
+      responses:
+        "200":
+          description: The documents were merged correctly.
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/DocumentCombination'
+        "400":
+          description: "The list in the body was not sent correctly, or was empty."
+      x-openapi-router-controller: swagger_server.controllers.emergency_assessment_controller
+  /api/expert/search-terms:
+    get:
+      tags:
+      - Expert Asking
+      summary: Get Expert Search Result
+      description: "Search for information in the expert database. The endpoint receives\
+        \ a subject and a desired output, and returns the values found."
+      operationId: api_expert_search_terms_get
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      - name: subject
+        in: query
+        description: Subject of the query.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: earthquake
+      - name: desiredOutput
+        in: query
+        description: Type of the desired outputs.
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: Contaminant
+      responses:
+        "200":
+          description: The search was executed correctly.
+          content:
+            application/hal+json:
+              schema:
+                type: string
+                description: String in HTML format to be shown directly to the user.
+                example: <p>ecoli<br>norovirus<br></p>
+                x-content-type: application/hal+json
+        "5XX":
+          description: Something went wrong while executing the query.
+      x-openapi-router-controller: swagger_server.controllers.expert_asking_controller
+  /api/expert/values:
+    get:
+      tags:
+      - Expert Asking
+      summary: Get All Values In Expert Data
+      description: Get a list of all the values found in the expert database. This
+        is used to provide autocomplete functionality to the search component.
+      operationId: api_expert_values_get
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      responses:
+        "200":
+          description: The query was executed correctly.
+          content:
+            application/hal+json:
+              schema:
+                type: array
+                example:
+                - ecoli
+                - norovirus
+                - earthquake
+                - '...'
+                items:
+                  type: string
+                x-content-type: application/hal+json
+        "5XX":
+          description: Something went wrong while executing the query.
+      x-openapi-router-controller: swagger_server.controllers.expert_asking_controller
+  /api/expert/labels:
+    get:
+      tags:
+      - Expert Asking
+      summary: Get All Labels In Expert Data
+      description: Get all the labels found in the expert data. This is used to provide
+        autocomplete functionality to the search component.
+      operationId: api_expert_labels_get
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      responses:
+        "200":
+          description: The endpoint was executed correctly.
+          content:
+            application/hal+json:
+              schema:
+                type: array
+                example:
+                - Event
+                - CascadingWNEvent
+                - ProducedEvent
+                - Contaminant
+                - EffectWaterTaste
+                - EffectWaterOdor
+                - EffectWater
+                - ContaminantFamily
+                - ContaminantTreatment
+                - EffectHealth
+                - Symptom
+                - ContaminantType
+                items:
+                  type: string
+                x-content-type: application/hal+json
+        "5XX":
+          description: Something went wrong while executing the query.
+      x-openapi-router-controller: swagger_server.controllers.expert_asking_controller
+  /api/expert/values/{type}:
+    get:
+      tags:
+      - Expert Asking
+      summary: Get All Values Of Certain Type In Expert Data
+      description: Get a list of all the values of a certain type found in the expert
+        database. This is used to provide extra functionalities to the autocomplete
+        functionality in the search component.
+      operationId: api_expert_values_type_get
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      - name: type
+        in: path
+        description: Type of the values the user is interested in.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Symptom
+      responses:
+        "200":
+          description: The endpoint was executed correctly.
+          content:
+            application/hal+json:
+              schema:
+                type: array
+                example:
+                - diarrhea
+                - vomiting
+                items:
+                  type: string
+                x-content-type: application/hal+json
+        "5XX":
+          description: Something went wrong while executing the query.
+      x-openapi-router-controller: swagger_server.controllers.expert_asking_controller
+  /api/expert/labels/{subject}:
+    get:
+      tags:
+      - Expert Asking
+      summary: Get All Labels Connected To Subject In Expert Data
+      description: Get a list of all the labels connected to the specified subject.
+        This is used to provide extra functionalities to the autocomplete functionality
+        in the search component.
+      operationId: api_expert_labels_subject_get
+      parameters:
+      - name: token
+        in: header
+        description: Token of the authenticated user.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AuthenticateHeader'
+      - name: subject
+        in: path
+        description: Subject for which we want to check related labels.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: ecoli
+      responses:
+        "200":
+          description: The endpoint was executed correctly.
+          content:
+            application/hal+json:
+              schema:
+                type: array
+                example:
+                - Event
+                - ProducedEvent
+                - Symptom
+                - EffectHealth
+                items:
+                  type: string
+                x-content-type: application/hal+json
+        "5XX":
+          description: Something went wrong while executing the query.
+      x-openapi-router-controller: swagger_server.controllers.expert_asking_controller
+components:
+  schemas:
+    AuthenticateBody:
+      required:
+      - password
+      - username
+      type: object
+      properties:
+        username:
+          type: string
+          example: my_username
+        password:
+          type: string
+          example: my_password
+      description: Object representing the body sent in order to authenticate a set
+        of credentials in the system.
+    AuthenticateHeader:
+      type: string
+      description: Example of the value inside an Authorization header in most requests
+        in order to authenticate the user.
+      example: Bearer eyJhbGciOiJSUzI1...
+    User:
+      required:
+      - id
+      - organization
+      - registrationDate
+      - userRole
+      - username
+      type: object
+      properties:
+        id:
+          type: number
+          example: 1
+        username:
+          type: string
+          example: my_username
+        userRole:
+          type: string
+          example: FIRST_RESPONDENT
+        registrationDate:
+          type: number
+          example: 1671181097547
+        organization:
+          $ref: '#/components/schemas/Organization'
+      description: Object representing a user in the system.
+      example:
+        organization:
+          descriptionOrg: KWR Research
+          name: KWR
+          id: 1
+          actionArea: AREA1
+        registrationDate: 1671181097547
+        id: 1
+        userRole: FIRST_RESPONDENT
+        username: my_username
+    Organization:
+      required:
+      - actionArea
+      - descriptionOrg
+      - id
+      - name
+      type: object
+      properties:
+        id:
+          type: number
+          example: 1
+        name:
+          type: string
+          example: KWR
+        descriptionOrg:
+          type: string
+          example: KWR Research
+        actionArea:
+          type: string
+          example: AREA1
+      description: Object representing an organization in the system.
+      example:
+        descriptionOrg: KWR Research
+        name: KWR
+        id: 1
+        actionArea: AREA1
+    Emergency:
+      required:
+      - id
+      - reportDate
+      - reportingOrganization
+      - reportingUserId
+      type: object
+      properties:
+        id:
+          type: number
+          example: 1
+        reportDate:
+          type: number
+          example: 1671181097735
+        reportingOrganization:
+          $ref: '#/components/schemas/Organization'
+        reportingUserId:
+          type: number
+          example: 1
+        nameReporter:
+          type: string
+          example: William
+        emergencyType:
+          type: string
+          example: Earthquake
+        emergencyDescription:
+          type: string
+          example: An earthquake destroyed the flood gates of the city
+        severityLevel:
+          type: number
+          example: 3
+        nameAreaAffected:
+          type: string
+          example: Cabool
+        affectedAreaType:
+          type: string
+          example: City
+        ocupationDescription:
+          type: string
+          example: Water researcher
+        riskAssessment:
+          type: string
+          example: "Possible contaminants: ecoli, norovirus"
+        actionPlan:
+          type: string
+          example: Share online resources with the population
+        archived:
+          type: boolean
+          example: true
+        symptoms:
+          type: array
+          items:
+            type: string
+        contaminants:
+          type: array
+          items:
+            type: string
+        detections:
+          type: array
+          items:
+            type: string
+        similarityList:
+          type: array
+          items:
+            $ref: '#/components/schemas/DocumentSimilarity'
+        impact:
+          type: string
+          example: "<p>Number of people exposed: 200-1000</p><p>Expected contaminants</p><ul><li>ecoli</li><li>norovirus</li></ul>"
+        control:
+          type: string
+          example: <p>Mitigation actions</p><ul><li>Advising the population</li></ul>
+        _links:
+          $ref: '#/components/schemas/Emergency__links'
+      description: "Object representing an emergency in the system, either ongoing\
+        \ or past."
+      example:
+        actionPlan: Share online resources with the population
+        contaminants:
+        - contaminants
+        - contaminants
+        nameReporter: William
+        _links:
+          self:
+            href: "(server)/api/emergencies/{id}"
+          org-archived:
+            href: (server)/api/emergencies/my
+        reportingUserId: 1
+        impact: "<p>Number of people exposed: 200-1000</p><p>Expected contaminants</p><ul><li>ecoli</li><li>norovirus</li></ul>"
+        control: <p>Mitigation actions</p><ul><li>Advising the population</li></ul>
+        emergencyDescription: An earthquake destroyed the flood gates of the city
+        ocupationDescription: Water researcher
+        similarityList:
+        - similarity: 73.25
+          document:
+            data: 1671180097547
+            keywords: "drinking water, viral gastroenteritis, outbreak"
+            name: An outbreak of viral gastroenteritis...
+            id: 1
+            source: Researchgate
+            text: We report an outbreak of viral  gastroenteritis linked to municipal...
+            url: https://www.researchgate.net/publication/2670...
+          impact:
+            symptoms:
+            - diarrhea
+            - abdominal pain
+            numberPeopleExposed: 350
+            pathogens:
+            - ecoli
+            - rotavirus
+            numberPeopleHospitalized: 20
+            numberPeopleDeceased: 5
+          control:
+            monitoring:
+            - monitoring cases of patients
+            - watch symptoms evolution
+            restoration:
+            - Sanitation of water pipes
+            prevention:
+            - Upgrade to sanitation system
+            - Online information sharing
+        - similarity: 73.25
+          document:
+            data: 1671180097547
+            keywords: "drinking water, viral gastroenteritis, outbreak"
+            name: An outbreak of viral gastroenteritis...
+            id: 1
+            source: Researchgate
+            text: We report an outbreak of viral  gastroenteritis linked to municipal...
+            url: https://www.researchgate.net/publication/2670...
+          impact:
+            symptoms:
+            - diarrhea
+            - abdominal pain
+            numberPeopleExposed: 350
+            pathogens:
+            - ecoli
+            - rotavirus
+            numberPeopleHospitalized: 20
+            numberPeopleDeceased: 5
+          control:
+            monitoring:
+            - monitoring cases of patients
+            - watch symptoms evolution
+            restoration:
+            - Sanitation of water pipes
+            prevention:
+            - Upgrade to sanitation system
+            - Online information sharing
+        affectedAreaType: City
+        symptoms:
+        - symptoms
+        - symptoms
+        severityLevel: 3
+        archived: true
+        reportingOrganization:
+          descriptionOrg: KWR Research
+          name: KWR
+          id: 1
+          actionArea: AREA1
+        nameAreaAffected: Cabool
+        reportDate: 1671181097735
+        emergencyType: Earthquake
+        id: 1
+        riskAssessment: "Possible contaminants: ecoli, norovirus"
+        detections:
+        - detections
+        - detections
+    DocumentSimilarity:
+      required:
+      - document
+      - similarity
+      type: object
+      properties:
+        document:
+          $ref: '#/components/schemas/Document'
+        similarity:
+          type: number
+          example: 73.25
+        impact:
+          $ref: '#/components/schemas/DocumentImpact'
+        control:
+          $ref: '#/components/schemas/DocumentControl'
+      description: Contains the similarity between an emergency and a document of
+        the database.
+      example:
+        similarity: 73.25
+        document:
+          data: 1671180097547
+          keywords: "drinking water, viral gastroenteritis, outbreak"
+          name: An outbreak of viral gastroenteritis...
+          id: 1
+          source: Researchgate
+          text: We report an outbreak of viral  gastroenteritis linked to municipal...
+          url: https://www.researchgate.net/publication/2670...
+        impact:
+          symptoms:
+          - diarrhea
+          - abdominal pain
+          numberPeopleExposed: 350
+          pathogens:
+          - ecoli
+          - rotavirus
+          numberPeopleHospitalized: 20
+          numberPeopleDeceased: 5
+        control:
+          monitoring:
+          - monitoring cases of patients
+          - watch symptoms evolution
+          restoration:
+          - Sanitation of water pipes
+          prevention:
+          - Upgrade to sanitation system
+          - Online information sharing
+    Document:
+      type: object
+      properties:
+        id:
+          type: number
+          example: 1
+        name:
+          type: string
+          example: An outbreak of viral gastroenteritis...
+        data:
+          type: number
+          example: 1671180097547
+        source:
+          type: string
+          example: Researchgate
+        url:
+          type: string
+          example: https://www.researchgate.net/publication/2670...
+        keywords:
+          type: string
+          example: "drinking water, viral gastroenteritis, outbreak"
+        text:
+          type: string
+          example: We report an outbreak of viral  gastroenteritis linked to municipal...
+      description: Contains the information of a document before parsing.
+      example:
+        data: 1671180097547
+        keywords: "drinking water, viral gastroenteritis, outbreak"
+        name: An outbreak of viral gastroenteritis...
+        id: 1
+        source: Researchgate
+        text: We report an outbreak of viral  gastroenteritis linked to municipal...
+        url: https://www.researchgate.net/publication/2670...
+    DocumentImpact:
+      type: object
+      properties:
+        numberPeopleExposed:
+          type: number
+          example: 350
+        numberPeopleHospitalized:
+          type: number
+          example: 20
+        numberPeopleDeceased:
+          type: number
+          example: 5
+        pathogens:
+          type: array
+          example:
+          - ecoli
+          - rotavirus
+          items:
+            type: string
+        symptoms:
+          type: array
+          example:
+          - diarrhea
+          - abdominal pain
+          items:
+            type: string
+      description: Contains the Impact information of a document parsed into attributes.
+      example:
+        symptoms:
+        - diarrhea
+        - abdominal pain
+        numberPeopleExposed: 350
+        pathogens:
+        - ecoli
+        - rotavirus
+        numberPeopleHospitalized: 20
+        numberPeopleDeceased: 5
+    DocumentControl:
+      type: object
+      properties:
+        monitoring:
+          type: array
+          example:
+          - monitoring cases of patients
+          - watch symptoms evolution
+          items:
+            type: string
+        restoration:
+          type: array
+          example:
+          - Sanitation of water pipes
+          items:
+            type: string
+        prevention:
+          type: array
+          example:
+          - Upgrade to sanitation system
+          - Online information sharing
+          items:
+            type: string
+      description: Contains the Control information of a document parsed into attributes.
+      example:
+        monitoring:
+        - monitoring cases of patients
+        - watch symptoms evolution
+        restoration:
+        - Sanitation of water pipes
+        prevention:
+        - Upgrade to sanitation system
+        - Online information sharing
+    EmergencyMultiselectOptions:
+      type: object
+      properties:
+        symptoms:
+          $ref: '#/components/schemas/EmergencyMultiselectOptions_symptoms'
+        detections:
+          $ref: '#/components/schemas/EmergencyMultiselectOptions_symptoms'
+        contaminants:
+          $ref: '#/components/schemas/EmergencyMultiselectOptions_symptoms'
+      description: Three maps of options that the frontend uses to display as multiselect
+        options.
+      example:
+        symptoms:
+          key: value
+        contaminants: null
+        detections: null
+    DocumentCombination:
+      type: object
+      properties:
+        documentNames:
+          type: string
+          example: Emergency in cabool|Outbreak in italy
+        location:
+          $ref: '#/components/schemas/LocationNode'
+        cause:
+          type: array
+          example:
+          - dw contamination
+          - sewage contamination
+          items:
+            type: string
+        source:
+          type: array
+          example:
+          - dw
+          - sewage
+          items:
+            type: string
+        detection:
+          type: array
+          example:
+          - multiple reports
+          - ER data
+          items:
+            type: string
+        impact:
+          $ref: '#/components/schemas/ImpactCombination'
+        contamintants:
+          type: array
+          example:
+          - ecoli
+          - norovirus
+          - rotavirus
+          items:
+            type: string
+        symptoms:
+          type: array
+          example:
+          - diarrhea
+          - vomit
+          - abdominal pain
+          items:
+            type: string
+        mitigation:
+          type: array
+          example:
+          - boil water notice
+          - online advising
+          items:
+            type: string
+        monitoring:
+          type: array
+          example:
+          - online questionnaire
+          items:
+            type: string
+        restoration:
+          type: array
+          example:
+          - new hospital wing
+          - pipe sanitation
+          items:
+            type: string
+        prevention:
+          type: array
+          example:
+          - new medicine
+          items:
+            type: string
+      description: An object storing the result of comparing and merging multiple
+        documents into one.
+      example:
+        symptoms:
+        - diarrhea
+        - vomit
+        - abdominal pain
+        detection:
+        - multiple reports
+        - ER data
+        mitigation:
+        - boil water notice
+        - online advising
+        documentNames: Emergency in cabool|Outbreak in italy
+        impact:
+          peopleIll: 100-2500
+          peopleHospitalized: 19-70
+          peopleDead: "1"
+        cause:
+        - dw contamination
+        - sewage contamination
+        location:
+          country: "Cyprus, Italy, England"
+          city: "Ayia Napa, Rome"
+          region: Famagusta
+        source:
+        - dw
+        - sewage
+        monitoring:
+        - online questionnaire
+        contamintants:
+        - ecoli
+        - norovirus
+        - rotavirus
+        restoration:
+        - new hospital wing
+        - pipe sanitation
+        prevention:
+        - new medicine
+    LocationNode:
+      type: object
+      properties:
+        city:
+          type: string
+          example: "Ayia Napa, Rome"
+        region:
+          type: string
+          example: Famagusta
+        country:
+          type: string
+          example: "Cyprus, Italy, England"
+      description: Object that stores merged data of locations.
+      example:
+        country: "Cyprus, Italy, England"
+        city: "Ayia Napa, Rome"
+        region: Famagusta
+    ImpactCombination:
+      type: object
+      properties:
+        peopleIll:
+          type: string
+          example: 100-2500
+        peopleHospitalized:
+          type: string
+          example: 19-70
+        peopleDead:
+          type: string
+          example: "1"
+      description: Object that stores the combined impact data of multiple documents.
+      example:
+        peopleIll: 100-2500
+        peopleHospitalized: 19-70
+        peopleDead: "1"
+    inline_response_200:
+      type: object
+      properties:
+        token:
+          type: string
+          example: eyJhbGciOiJSUzI1...
+        _links:
+          $ref: '#/components/schemas/inline_response_200__links'
+      example:
+        _links:
+          my-org:
+            href: (server)/api/organizations/my-organization
+          org-archived:
+            href: (server)/api/emergencies/my
+          my-user:
+            href: (server)/api/users/my-user
+        token: eyJhbGciOiJSUzI1...
+    authenticate_token_body:
+      required:
+      - token
+      type: object
+      properties:
+        token:
+          type: string
+          example: eyJhbGciOiJSUzI1...
+    Emergency__links_orgarchived:
+      type: object
+      properties:
+        href:
+          type: string
+          example: (server)/api/emergencies/my
+      example:
+        href: (server)/api/emergencies/my
+    Emergency__links_self:
+      type: object
+      properties:
+        href:
+          type: string
+          example: "(server)/api/emergencies/{id}"
+      example:
+        href: "(server)/api/emergencies/{id}"
+    Emergency__links:
+      type: object
+      properties:
+        org-archived:
+          $ref: '#/components/schemas/Emergency__links_orgarchived'
+        self:
+          $ref: '#/components/schemas/Emergency__links_self'
+      example:
+        self:
+          href: "(server)/api/emergencies/{id}"
+        org-archived:
+          href: (server)/api/emergencies/my
+    EmergencyMultiselectOptions_symptoms:
+      type: object
+      properties:
+        key:
+          type: string
+          example: value
+      example:
+        key: value
+    inline_response_200__links_myuser:
+      type: object
+      properties:
+        href:
+          type: string
+          example: (server)/api/users/my-user
+      example:
+        href: (server)/api/users/my-user
+    inline_response_200__links_myorg:
+      type: object
+      properties:
+        href:
+          type: string
+          example: (server)/api/organizations/my-organization
+      example:
+        href: (server)/api/organizations/my-organization
+    inline_response_200__links:
+      type: object
+      properties:
+        org-archived:
+          $ref: '#/components/schemas/Emergency__links_orgarchived'
+        my-user:
+          $ref: '#/components/schemas/inline_response_200__links_myuser'
+        my-org:
+          $ref: '#/components/schemas/inline_response_200__links_myorg'
+      example:
+        my-org:
+          href: (server)/api/organizations/my-organization
+        org-archived:
+          href: (server)/api/emergencies/my
+        my-user:
+          href: (server)/api/users/my-user
+
