@@ -1,0 +1,96 @@
+
+<div [ngSwitch]="selectedThingType">
+    <div *ngSwitchCase="'None'">
+        <b>Selected Item: </b>{{selectedThing['text']}}
+    </div>
+    <div *ngSwitchCase="'Node'">
+        <b>Selected Item: </b>
+        <p-tag [style]="{ 'background': '#6e6e6e' }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['name']}}</span>
+            </div>
+        </p-tag>
+        <p-tag [style]="{ 'background': labelToColor[selectedThing['label']] }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['label']}}</span>
+            </div>
+        </p-tag>
+    </div>
+    <div *ngSwitchCase="'AirNode'">
+        <b>Selected Item: </b>
+        <p-tag [style]="{ 'background': '#6e6e6e' }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['name']}}</span>
+            </div>
+        </p-tag>
+        <p-tag [style]="{ 'background': labelToColor[selectedThing['label']] }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['label']}}</span>
+            </div>
+        </p-tag>
+    </div>
+    <div *ngSwitchCase="'Edge'">
+        <b>Selected Item: </b>
+        <p-tag [style]="{ 'background': '#6e6e6e' }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['source']['name']}}</span>
+            </div>
+        </p-tag>&nbsp;
+        <p-tag [style]="{ 'background': labelToColor[selectedThing['source']['label']] }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['source']['label']}}</span>
+            </div>
+        </p-tag>&nbsp;
+        <i class="pi pi-minus" style="font-size: 1rem"></i>
+        &nbsp;
+        <p-tag [style]="{ 'background': calculatedGradient }">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['label']}}</span>
+            </div>
+        </p-tag>&nbsp;
+        <i class="pi pi-arrow-right" style="font-size: 1rem"></i>
+        &nbsp;
+        <p-tag [style]="{ 'background': '#6e6e6e' }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['target']['name']}}</span>
+            </div>
+        </p-tag>&nbsp;
+        <p-tag [style]="{ 'background': labelToColor[selectedThing['target']['label']] }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['target']['label']}}</span>
+            </div>
+        </p-tag>
+    </div>
+    <div *ngSwitchCase="'AirEdge'">
+        <b>Selected Item: </b>
+        <p-tag [style]="{ 'background': '#6e6e6e' }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['source']['name']}}</span>
+            </div>
+        </p-tag>&nbsp;
+        <p-tag [style]="{ 'background': labelToColor[selectedThing['source']['label']] }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['source']['label']}}</span>
+            </div>
+        </p-tag>&nbsp;
+        <i class="pi pi-minus" style="font-size: 1rem"></i>
+        &nbsp;
+        <p-tag [style]="{ 'background': calculatedGradient }">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['label']}}</span>
+            </div>
+        </p-tag>&nbsp;
+        <i class="pi pi-arrow-right" style="font-size: 1rem"></i>
+        &nbsp;
+        <p-tag [style]="{ 'background': '#6e6e6e' }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['target']['name']}}</span>
+            </div>
+        </p-tag>&nbsp;
+        <p-tag [style]="{ 'background': labelToColor[selectedThing['target']['label']] }" [rounded]="true">
+            <div class="flex align-items-center gap-2">
+                <span class="text-base">{{selectedThing['target']['label']}}</span>
+            </div>
+        </p-tag>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+[
+  {
+    "sql_id": 101,
+    "title": "Large Outbreak of Cryptosporidium hominis Infection Transmitted through the Public Water Supply, Sweden.pdf",
+    "event_date": "November 2010",
+    "city": "Östersund",
+    "country": "Sweden",
+    "cause": "contamination of surface water by human sewage",
+    "source": "Water Supply",
+    "detection": [
+      "received reports from several employers",
+      "received numerous calls from  persons with gastroenteritis,"
+    ],
+    "people_ill": "27000",
+    "contaminants": [
+      "Cryptosporidium",
+      "enteric bacterial pathogens",
+      "noroviruses",
+      "sapoviruses",
+      "Giardia duodenalis",
+      "Entamoeba spp."
+    ],
+    "symptoms": [
+      "diarrhea"
+    ],
+    "mitigation": [
+      "boil-water advisory",
+      "questionnaire"
+    ],
+    "prevention": "This risk can be minimized by optimizing control of raw water quality and employing multiple barriers that remove or inactivate all groups of pathogens"
+  }
+]

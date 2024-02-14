@@ -1,0 +1,99 @@
+[
+  {
+    "cascading_event": "flooding",
+    "produced_event": "air pollution",
+    "contaminants": [
+      {"name": "particular matter"},
+      {"name": "carbon monoxide"},
+      {"name": "lead"},
+      {"name": "nitrogen dioxide"},
+      {"name": "ozone"}
+    ]
+  },
+  {
+    "type_of_event": "flooding event",
+    "contaminants": [
+      {"name":  "pathogens"}
+    ]
+  },
+  {
+    "cascading_event": "flooding",
+    "produced_event": "electrical hazards"
+  },
+  {
+    "cascading_event": "flooding",
+    "produced_event": "extreme temperatures"
+  },
+  {
+    "cascading_event": "flooding",
+    "produced_event": "falls"
+  },
+  {
+    "cascading_event": "flooding",
+    "produced_event": "produced fire"
+  },
+  {
+    "contaminants": [
+      {
+        "name": "particular matter",
+        "mitigation": [
+          "goggles",
+          "protective face mask",
+          "liquid-repellent coveralls",
+          "waterproof gloves",
+          "rubber boots"
+        ]
+      },
+      {
+        "name": "carbon monoxide",
+        "mitigation": [
+          "goggles",
+          "protective face mask",
+          "liquid-repellent coveralls",
+          "waterproof gloves",
+          "rubber boots"
+        ]
+      },
+      {
+        "name": "lead",
+        "mitigation": [
+          "goggles",
+          "protective face mask",
+          "liquid-repellent coveralls",
+          "waterproof gloves",
+          "rubber boots"
+        ]
+      },
+      {
+        "name": "nitrogen dioxide",
+        "mitigation": [
+          "goggles",
+          "protective face mask",
+          "liquid-repellent coveralls",
+          "waterproof gloves",
+          "rubber boots"
+        ]
+      },
+      {
+        "name": "ozone",
+        "mitigation": [
+          "goggles",
+          "protective face mask",
+          "liquid-repellent coveralls",
+          "waterproof gloves",
+          "rubber boots"
+        ]
+      },
+      {
+        "name": "pathogens",
+        "mitigation": [
+          "goggles",
+          "protective face mask",
+          "liquid-repellent coveralls",
+          "waterproof gloves",
+          "rubber boots"
+        ]
+      }
+    ]
+  }
+]

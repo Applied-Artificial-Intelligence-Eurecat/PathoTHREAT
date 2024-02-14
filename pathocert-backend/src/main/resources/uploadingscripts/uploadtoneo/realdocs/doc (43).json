@@ -1,0 +1,29 @@
+{
+  "event": "outbreak of verotoxin-producing Escherichia coli",
+  "event_date": "October/November 2005",
+  "region": "mid-west Ireland",
+  "country": "Ireland",
+  "source": [
+    "Healthy domestic animals",
+    "in particular ruminants like cattle",
+    "sheep",
+    "goats"
+  ],
+  "people_ill": "20",
+  "people_hospitalized": "Two",
+  "contaminants": "Verotoxigenic Escherichia coli",
+  "mitigation": [
+    "voluntary closure of creches A",
+    "information on Ecoli O157 given",
+    "hygiene emphasised",
+    "boil water advisory"
+  ],
+  "monitoring": [
+    "faecal",
+    "drinking water",
+    "Ecoli O157"
+  ],
+  "restoration": "Primary prevention measures",
+  "prevention": "education initiative advising childcare facilities about VTEC",
+  "title": "Large Outbreak Of E. Coli O157 In 2005, Ireland"
+}

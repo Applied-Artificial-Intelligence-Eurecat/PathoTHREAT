@@ -1,0 +1,17 @@
+{
+  "event_date": "January to March 2011",
+  "region": "central Norway",
+  "country": "Norway",
+  "cause": [
+    "contamination of the wells with infected rodents",
+    "rodent excreta"
+  ],
+  "people_ill": "39",
+  "contaminants": [
+    "tularensis"
+  ],
+  "symptoms": "tularaemia",
+  "mitigation": "boil drinking water",
+  "prevention": "inspect the wells for dead rodents",
+  "title": "Outbreak Of Tularaemia In Central Norway, January To March 2011"
+}

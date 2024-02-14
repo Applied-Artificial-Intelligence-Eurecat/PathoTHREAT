@@ -1,0 +1,52 @@
+
+<div class="card">
+    <div class="p-fluid">
+        <span>Define subjects, relationships and desired return:</span>
+    </div>
+    <br/>
+    <div class="p-fluid">
+        <div class="p-grid forms-grid">
+            <div class="p-fluid p-col-12 p-md-6">
+                <div class="p-field">
+                    <label>Subject: </label>
+                    <p-dropdown [options]="values" (onChange)="saveTermAndGetLabels($event)" [filter]="true"
+                                optionLabel="name" optionValue="name" [showClear]="true"
+                                placeholder="Select a Value" [disabled]="subjectDisabled"></p-dropdown>
+                </div>
+            </div>
+            <div class="p-fluid p-col-12 p-md-6">
+                <div class="p-field">
+                    <label>Desired Output: </label>
+                    <p-dropdown [options]="labels" (onChange)="saveTermAndGetValues($event)" [filter]="true"
+                                optionLabel="name" optionValue="name" [showClear]="true"
+                                placeholder="Select a Label" [disabled]="outputDisabled"></p-dropdown>
+                </div>
+            </div>
+            <div class="p-fluid p-col-12 p-md-12">
+                <div class="p-grid p-nogutter p-justify-end btn-space">
+                    <p-button type="button" label="Search" icon="pi pi-search" iconPos="right"
+                                (onClick)="search()"></p-button>
+                </div>
+            </div>
+            <ng-container [ngSwitch]="searchStatus">
+                <ng-container *ngSwitchCase="'Result'">
+                    <div class="p-fluid p-col-12 p-md-12">
+                        <hr style="height:0.5px; border:0; background-color:gray">
+                        <span>Result</span>
+                    </div>
+                    <div class="p-fluid p-col-12 p-md-12">
+                        <div [innerHTML]="searchedResult"
+                                style="margin-top: 0.5em; padding: 0.5em; background-color: rgb(245, 245, 245);"></div>
+                    </div>
+                </ng-container>
+                <ng-container *ngSwitchCase="'NotYet'"></ng-container>
+                <div class="p-fluid p-col-12 p-md-12" *ngSwitchCase="'None'">
+                    <hr style="height:0.5px; border:0; background-color:gray">
+                    <span>Could not found any item with this search.</span>
+                </div>
+            </ng-container>
+
+        </div>
+    </div>
+
+</div>

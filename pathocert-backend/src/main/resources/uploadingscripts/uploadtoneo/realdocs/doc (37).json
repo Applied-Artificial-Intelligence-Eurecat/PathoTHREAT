@@ -1,0 +1,28 @@
+[
+  {
+    "sql_id": 100,
+    "title": "Increase in outbreaks of gastroenteritis linked to bathing water in Finland in summer 2014.pdf",
+    "event_date": "July and August 2014",
+    "country": "Finland",
+    "cause": "bathing water",
+    "source": "beach users",
+    "detection": [
+      "via the media"
+    ],
+    "people_ill": "1453",
+    "contaminants": [
+      "faecal indicator bacteria",
+      "noroviruses"
+    ],
+    "symptoms": [
+      "diarrhea",
+      "stomach pain",
+      "fever",
+      "vomiting"
+    ],
+    "mitigation": [
+      "Restriction against bathing"
+    ],
+    "prevention": "published guidelines for outbreak control"
+  }
+]

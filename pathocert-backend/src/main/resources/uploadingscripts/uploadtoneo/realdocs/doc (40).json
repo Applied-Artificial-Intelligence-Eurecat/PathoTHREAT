@@ -1,0 +1,24 @@
+{
+  "event": "public officials reported jaundice cases",
+  "event_date": "4th April 2013",
+  "city": "Amritsar",
+  "region": "Punjab",
+  "country": "India",
+  "cause": "contaminated water pipeline",
+  "detection": [
+    "public officials of Labour Colony",
+    "Amritsar reported"
+  ],
+  "people_ill": "159",
+  "people_dead": "1",
+  "contaminants": "anti-hepatitis E virus IgM",
+  "mitigation": "questionnaire",
+  "monitoring": [
+    "sources of drinking water",
+    "antibodies to hepatitis E virus",
+    "hepatitis A virus"
+  ],
+  "prevention": "measures to ensure safe drinking water",
+  "investigation": "measures to ensure safe drinking water are urgently needed",
+  "title": "Jaundice Outbreak Likely Caused By Hev In Amritsar, Punjab, India, 2013"
+}

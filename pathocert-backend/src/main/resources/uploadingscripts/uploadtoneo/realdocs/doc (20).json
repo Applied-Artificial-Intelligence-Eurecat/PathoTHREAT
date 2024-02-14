@@ -1,0 +1,54 @@
+{
+  "event": "outbreak of cryptosporidiosis",
+  "event_date": "March 1-15, 2000",
+  "city": "Clitheroe",
+  "region": [
+    "Lancashire County",
+    "northwest England"
+  ],
+  "country": "England",
+  "source": "contamination with animal feces",
+  "detection": "Health Department reported nine cases of cryptosporidiosis",
+  "people_ill": "Fifty-eight",
+  "contaminants": "Cryptosporidium",
+  "symptoms": [
+    "diarrhea",
+    "fever",
+    "abdominal pain",
+    "vomiting",
+    "blood in the stool"
+  ],
+  "mitigation": [
+    "the water supply to the affected area was changed to an alternate supply during the following night",
+    "the system was flushed",
+    "issued a Boil Water Advisory"
+  ],
+  "monitoring": [
+    "large-volume sample of water (1",
+    "627 L) from a pumping station",
+    "taken from a domestic tap in the water zone",
+    "ranging from 1 to 9/10 L"
+  ],
+  "restoration": [
+    "an outbreak was declared",
+    "an outbreak control team was established",
+    "the water supply to the affected area was changed to an alternate supply during the following night",
+    "the system was flushed"
+  ],
+  "prevention": [
+    "continuous monitoring in the United Kingdom",
+    "together with existing surveillance"
+  ],
+  "investigation": [
+    "information on the water supply",
+    "instituted a water-sampling schedule (from domestic properties",
+    "water treatment works",
+    "fire hydrants during flushing operations)",
+    "analyzed the water samples to identify Cryptosporidium oocysts"
+  ],
+  "infrastructure": [
+    "collection chambers showed signs of aging",
+    "were in a poor state of repair"
+  ],
+  "title": "Cryptosporidium Oocysts In A Water Supply Associated With A Cryptosporidiosis Outbreak"
+}

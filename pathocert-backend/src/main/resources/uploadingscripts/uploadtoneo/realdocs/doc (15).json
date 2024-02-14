@@ -1,0 +1,35 @@
+[
+  {
+    "sql_id": 21,
+    "title": "an-extensive-gastroenteritis-outbreak-after-drinking-water-contamination-by-sewage-effluent-finland",
+    "document_date": "2011-11-30",
+    "event_date": "2011-11-30",
+    "event_duration": "almost 3 months",
+    "country": "Finland",
+    "cause": "A valve in the waste-water plant connecting the drinking-water line and a waste-water effluent line had been opened during the maintenance work and inadvertently left open for 2 days",
+    "source": "drinking-water network",
+    "detection": [
+      "customers complained of a bad smell and taste in their tap water",
+      "From 30 November, environmental health and municipal waterworks officials received reports of bouts of diarrhoea and vomiting among residents, and during that same day an increase in the number of patients with gastroenteritis was observed at the health centre"
+    ],
+    "people_ill": "8453",
+    "contaminants": [
+      "norovirus",
+      "adenovirus",
+      "salmonella",
+      "Clostridium difficile",
+      "Campylobacter jejuni",
+      "Yersinia spp",
+      "Shigella spp"
+    ],
+    "symptoms": [
+      "diarrhea",
+      "fever",
+      "vomiting",
+      "abdominal pain"
+    ],
+    "mitigation": "Extensive water and pipeline sampling was initiated and a boil-water notice issued, and water chlorine concentration was increased",
+    "monitoring": "Stool specimens",
+    "prevention": "waterworks across the country"
+  }
+]

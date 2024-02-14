@@ -1,0 +1,135 @@
+[
+    {
+        "contaminants": [
+            {
+                "name": "campylobacter jejuni",
+                "symptoms": [
+                    "nausea",
+                    "vomiting",
+                    "fever",
+                    "abdominal pain",
+                    "diarrhea"
+                ]
+            },
+            {
+                "name": "campylobacter coli",
+                "symptoms": [
+                    "nausea",
+                    "fever",
+                    "abdominal pain",
+                    "diarrhea"
+                ]
+            },
+            {
+                "name": "pseudomonas aeruginosa",
+                "symptoms": [
+                    "coughing",
+                    "headache",
+                    "diarrhea"
+                ]
+            },
+            {
+                "name": "escherichia coli-pathogenic",
+                "symptoms": [
+                    "fever",
+                    "vomiting",
+                    "diarrhea",
+                    "stomach cramps"
+                ]
+            },
+            {
+                "name": "enterovirus",
+                "symptoms": [
+                    "fever",
+                    "coughing",
+                    "muscle ache"
+                ]
+            },
+            {
+                "name": "norovirus",
+                "symptoms": [
+                    "stomach cramps",
+                    "nausea",
+                    "vomiting",
+                    "diarrhea"
+                ]
+            },
+            {
+                "name": "rotavirus",
+                "symptoms": [
+                    "abdominal pain",
+                    "vomiting",
+                    "fever",
+                    "diarrhea"
+                ]
+            },
+            {
+                "name": "hepatitis A virus",
+                "symptoms": [
+                    "jayndice",
+                    "stomach cramps",
+                    "nausea"
+                ]
+            },
+            {
+                "name": "hepatitis E virus",
+                "symptoms": [
+                    "jayndice",
+                    "abdominal pain",
+                    "vomiting",
+                    "fever",
+                    "fatigue",
+                    "nausea"
+                ]
+            },
+            {
+                "name": "sapovirus",
+                "symptoms": [
+                    "headache",
+                    "nausea",
+                    "vomiting",
+                    "diarrhea",
+                    "abdominal pain"
+                ]
+            },
+            {
+                "name": "cryptosporidium parvum",
+                "symptoms": [
+                    "fever",
+                    "fatigue",
+                    "diarrhea"
+                ]
+            },
+            {
+                "name": "giardia intestinalis",
+                "symptoms": [
+                    "vomiting",
+                    "nausea",
+                    "stomach cramps",
+                    "diarrhea"
+                ]
+            },
+            {
+                "name": "cryptosporidium parvum",
+                "symptoms": [
+                    "fever",
+                    "fatigue",
+                    "diarrhea"
+                ]
+            },
+            {
+                "name": "entamoeba histolytica",
+                "symptoms": [
+                    "dysentery"
+                ]
+            },
+            {
+                "name": "toxoplasma gondii",
+                "symptoms": [
+                    "muscle ache",
+                    "toxoplasmosis"
+                ]
+            }
+        ]
+    }
+]

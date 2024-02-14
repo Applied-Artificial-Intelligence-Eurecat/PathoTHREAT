@@ -1,0 +1,129 @@
+version: "3.9"
+
+services:
+    pathocert-frontend:
+       container_name: pathocert-frontend
+       build: .
+       ports:
+           - "4200:80"
+       depends_on:
+           - pathocert-api
+       restart: on-failure
+       logging:
+           driver: "json-file"
+           options:
+               max-size: "100M"
+               max-file: "2"
+       networks:
+           - default
+           - proxy-network
+
+    pathocert-postgres:
+        image: postgres:13
+        container_name: pathocert-postgres
+        volumes:
+            - /docker_volumes/pathocert/postgres/db:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_DB=pathocert
+            - POSTGRES_PASSWORD=ChangeMe
+            - POSTGRES_USER=postgres
+        ports:
+            - "5432/tcp"
+        restart: on-failure
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "100M"
+                max-file: "2"
+
+    pathocert-neo:
+        image: neo4j:4.3.10
+        container_name: pathocert-neo
+        volumes:
+            - ./neo4j/data:/data
+            - ./neo4j/import:/import
+        environment:
+            - NEO4J_AUTH=neo4j/1234
+        ports:
+            - "7474:7474"
+            - "7687:7687"
+        restart: always
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "100M"
+                max-file: "2"
+
+    pathocert-api:
+        container_name: pathocert-api
+        build:
+            context: ../pathocert-backend
+        ports:
+            - "4567"
+            # - "4567:4567" # Dev server
+            - "8082:8000"
+        depends_on:
+            - pathocert-postgres
+        restart: always
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "100M"
+                max-file: "2"
+        environment:
+            - spring_profiles_active=eurepdemos
+        ulimits:
+            nofile: 50000
+
+    pathocert-resources:
+        build: ../pathocert-backend/src/main/resources/uploadingscripts/
+        depends_on:
+            - pathocert-neo
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "100M"
+                max-file: "2"
+
+    pathocert-csvtosql:
+        build: ../pathocert-backend/src/main/resources/uploadingscripts/csvtosqldb/
+        depends_on:
+            - pathocert-api
+        restart: on-failure:5
+
+    pathocert-merge:
+        build: ../pathocert-backend/src/main/resources/uploadingscripts/ComponentsService/
+        environment:
+            - PYTHONUNBUFFERED=1
+        depends_on:
+            - pathocert-neo
+        ports:
+            - "5000:5000"
+        restart: always
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "100M"
+                max-file: "2"
+
+    pathocert-model:
+        build: ../pathocert-backend/src/main/resources/modelService/
+        depends_on:
+            - pathocert-neo
+        logging:
+            driver: "none"
+        ports:
+            - "10002:5000"
+
+    pathocert-docs:
+        build: ./documentation/
+        environment:
+            - PYTHONUNBUFFERED=1
+        ports:
+            - "8081:8080"
+        restart: always
+
+networks:
+    proxy-network:
+        name: proxy-network
+        external: true

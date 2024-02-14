@@ -1,0 +1,40 @@
+[
+  {
+    "sql_id": 1,
+    "title": "SEARCHING FOR A WATER SUPPLY CONNECTION IN THE CABOOL, MISSOURI DISEASE OUTBREAK OF ESCHERICHIA COLI 0157 H7",
+    "document_date": "2019-10-06",
+    "event_date": "2019-06-06",
+    "event_duration": "4 weeks",
+    "street": "",
+    "city": "Cabool",
+    "region": "Ozarks",
+    "country": "USA",
+    "cause": "43 water meter replacements and 2 line breaks",
+    "source": "groundwater supply",
+    "detection": "residents and visitors to the community of Cabool",
+    "people_ill": "243",
+    "people_hospitalized": "32",
+    "people_dead": "4",
+    "contaminants": [
+      "Escherichia Coli"
+    ],
+    "symptoms": [
+      "bloody diarrhea"
+    ],
+    "mitigation": [
+      "household survey",
+      "boil water",
+      "chlorination program"
+    ],
+    "monitoring": [
+      "total coliform bacteria",
+      "water samples of 200 ml volume were collected"
+    ],
+    "investigation": [
+      "review data,  conduct a sanitary survey and collect additional  water samples",
+      "model the distribution system",
+      "inspection of  the drinking water supply system and operating  practice",
+      "distribution system model to  study the pattern of illness occurrences"
+    ]
+  }
+]

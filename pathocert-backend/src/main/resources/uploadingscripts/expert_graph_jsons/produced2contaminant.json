@@ -1,0 +1,79 @@
+[
+    {
+        "produced_event": "sewage intrusion in dw infrastructure",
+        "contaminants": [
+            {"name":"campylobacter jejuni"},
+            {"name":"vibrio cholerae"},
+            {"name":"shigella spp"},
+            {"name":"yersinia enterocolitica"},
+            {"name":"Escherichia Coli-Pathogenic"},
+            {"name":"salmonella enterica"},
+            {"name":"adenovirus"},
+            {"name":"astrovirus"},
+            {"name":"rotavirus"},
+            {"name":"hepatitis A virus"},
+            {"name":"hepatitis E virus"},
+            {"name":"cryptosporidium parvum"},
+            {"name":"giardia intestinalis"},
+            {"name":"entamoeba histolytica"},
+            {"name":"toxoplasma gondii"}
+        ]
+    },
+    {
+        "produced_event": "water supply contamination",
+        "contaminants": [
+            {"name":"campylobacter jejuni"},
+            {"name":"campylobacter coli"},
+            {"name":"legionella spp"},
+            {"name":"pseudomonas aeruginosa"},
+            {"name":"salmonella typhi"},
+            {"name":"vibrio cholerae"},
+            {"name":"shigella spp"},
+            {"name":"yersinia enterocolitica"},
+            {"name":"Escherichia Coli-Pathogenic"},
+            {"name":"salmonella enterica"},
+            {"name":"bacillus anthracis"},
+            {"name":"clostridium tetani"},
+            {"name":"clostridium botulinium"},
+            {"name":"fransiscella tularensis"},
+            {"name":"mycobacterium leprae"},
+            {"name":"campylobacter spp"},
+            {"name":"adenovirus"},
+            {"name":"enterovirus"},
+            {"name":"astrovirus"},
+            {"name":"norovirus"},
+            {"name":"rotavirus"},
+            {"name":"hepatitis A virus"},
+            {"name":"hepatitis E virus"},
+            {"name":"sapovirus"},
+            {"name":"cryptosporidium parvum"},
+            {"name":"giardia intestinalis"},
+            {"name":"entamoeba histolytica"},
+            {"name":"toxoplasma gondii"}
+        ]
+    },
+    {
+        "produced_event": "direct contact with pathogens",
+        "contaminants": [
+            {"name":"salmonella typhi"},
+            {"name":"shigella spp"},
+            {"name":"Escherichia Coli-Pathogenic"},
+            {"name":"hepatitis A virus"}
+        ]
+    },
+    {
+        "produced_event": "soil pathogens intrusion in dw infrastructure",
+        "contaminants": [
+            {"name":"legionella spp"},
+            {"name":"shigella spp"},
+            {"name":"Escherichia Coli-Pathogenic"},
+            {"name":"bacillus anthracis"},
+            {"name":"clostridium tetani"},
+            {"name":"clostridium botulinium"},
+            {"name":"fransiscella tularensis"},
+            {"name":"mycobacterium leprae"},
+            {"name":"salmonella enterica"},
+            {"name":"campylobacter spp"}
+        ]
+    }
+]

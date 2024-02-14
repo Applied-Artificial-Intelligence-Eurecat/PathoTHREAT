@@ -1,0 +1,56 @@
+At the end of July 2006, an unusually high number of patients with acute diarrhoea were reported by the accident and emergency departments in Taranto, Apulia. Subsequently, a field investigation was conducted jointly by the Apulia Regional Epidemiological Observatory and the Regional Reference Laboratory in Bari, and the Epidemiological Department of Taranto Local Health Unit.
+
+Field investigation:
+The outbreak investigation carried out between July and October 2006, involving hospitals in the whole province of Taranto, included the following main elements:
+
+Case ascertainment and descriptive epidemiology. A case was defined as a patient with diarrhoea (at least three loose or liquid stools in a day) and one or more of the following symptoms: fever >= 38°C, headache, vomit, abdominal pain, nausea [1,2].
+Five out of six hospitals in the province of Taranto provided information on patients with acute gastroenteritis. Data were collected retrospectively for the period between May and July and prospectively for August and September 2006. In addition, the special medical facilities set up for tourists in the summer season (June-August) in the province of Taranto were also asked to report cases.
+Microbiological investigation of stool samples of hospitalised patients.
+Microbiological investigation of environmental samples (including tap water, sea water and shellfish) [1-4].
+Case control study performed between 1 August and 15 September 2006 in order to identify the possible sources of infection.
+Outbreak description
+From 1 May to 30 September 2006, a total of 2,860 patients with gastroenteritis symptoms were either admitted to hospital or seen by the hospitals’ outpatient accident and emergency units. This significantly exceeded the number reported in the same period in 2005, when a total of 586 patients with gastroenteritis were treated by the same hospitals. The epidemic curve is shown in Figure 1.
+
+Figure 1. Number of patients with gastroenteritis seeking hospital care, by week. Taranto province, 1 May-30 September, 2005 and 2006
+
+The first peak in incidence was observed at the end of June (26 week of the year), followed by a second peak at the end of July (weeks 29 and 30). The number of patients with gastroenteritis seeking hospital care decreased in the following weeks. By mid-September, the number of cases per week was similar to that seen in the same period of 2005.
+Patients mean age was 25 years; 19% of the cases were under 5 years of age, 16% were 5 to 15 years old, and 65% were above 15 years of age. Incubation time was not calculated because it was not possible to determine the exact time of exposure.
+
+Incidence by town of residence was highest in the city of Taranto (9.5 cases per 1,000 inhabitants) (Figure 2).
+
+Figure 2. Number of patients with gastroenteritis seeking hospital care, by town of residency per 1,000 inhabitants. Taranto province, 1 May-30 September 2006
+
+Data collected by the tourist medical facilities in Taranto province showed a total of 361 cases of acute gastroenteritis, significantly more than a year before. Hence the same trend was observed as in the case of hospital data.
+
+Microbiological analysis:
+A total of 70 stool samples from patients affected by the outbreak were collected and analysed. Results by age group are reported in Table 1.
+
+Table 1. Stool samples collected from patients and tested by the Regional Reference Laboratory (U.O.C. Igiene, Azienda Ospedaliera Policlinico), Bari, August – September 2006
+
+(°) Nested PCR in VP7 region
+(*) Nested PCR in the polymerase gene
+Stool samples were also examined with respect to gastrointestinal bacteria and parasites. No samples examined were positive for the entire range of pathogens tested.
+Further genotyping of the samples is currently being done.
+
+Environmental samples, systematically collected for microbiological analyses, were tap water from the water distribution system across the whole area affected by the outbreak, sea water and shellfish. The water samples were collected at the local waterworks, from major water pipelines and wells, and from tap water in pubs.
+No faecal indicator bacteria and endotoxins were detected in the environmental samples of tap water collected in Taranto city. Of 44 samples tested, four (9%) were positive for norovirus and 11 (25%) for rotavirus (Table 2). The tests were performed using molecular techniques.
+
+Table 2. Drinkable tap water samples collected and tested – Regional Reference Laboratory (U.O.C. Igiene, Azienda Ospedaliera Policlinico), Bari, August – September 2006
+
+Molecular profiles of rotavirus and norovirus identified in some tap water samples were the same as the ones found in some patients’ stool samples. Sequence analysis showed the new norovirus strain GGII.4 2006a and rotavirus genotype G9. The laboratory investigations, however, are still ongoing and more results are expected in the future.
+
+Of 12 sea water samples tested, four (33%) were positive for norovirus and one (8,3%) for rotavirus.
+No shell fish samples were positive for bacteria or viruses.
+
+Case control study:
+A case control study was performed in order to find an association between the occurrence of gastroenteritis and the exposure to one or more risk factors.
+A case was defined as a patient with at least 3 loose or liquid stools in a day and one or more of the following symptoms: fever >= 38°C, headache, vomit, abdominal pain, nausea.
+166 cases were selected among patients treated at the accident and emergency departments of the hospitals in Taranto province, in the period between 1 August and 15 September 2006. The control group consisted of 146 non-hospitalised healthy individuals who during the study period were resident in the same area as the case patients. Cases and controls were age-matched.
+A standard questionnaire was used for the interview.
+Risk factors which were shown to be significantly associated with the onset of acute diarrhoea/gastroenteritis were the use of tap water (OR= 2; 95% CI: 1,23-3,36), and the use of water of uncertain origin in the 72 hours before the onset of the symptoms (OR= 3,9; 95% CI: 1,41-10,54).
+
+Conclusion and control measures:
+The epidemiological investigation and the laboratory tests showed that the possible source of infection was the drinkable tap water contaminated with (at least) rota- and noroviruses. An extra chlorination treatment for household water supplies was therefore performed starting from the 34th week of the year in order to stop a possible contamination of the water.
+
+Systematic technical and microbiological investigations of the pipelines and wells of the water distribution system did not reveal the source of contamination even though technical problems at the local chlorination treatment facilities could not have been excluded.
+To date, the outbreak of viral gastroenteritis described in this paper is probably the largest one associated with drinking tap water in Italy.

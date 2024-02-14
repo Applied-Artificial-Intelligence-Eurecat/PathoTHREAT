@@ -1,0 +1,58 @@
+{
+  "event": "outbreak of cryptosporidiosis associated with an interactive water feature",
+  "event_date": "between 8 and 29 August",
+  "region": "southwest England",
+  "country": "England",
+  "cause": "the interactive water feature became contaminated with faeces containing cryptosporidium oocysts",
+  "source": [
+    "either from the footwear of users",
+    "from an unidentified primary case"
+  ],
+  "detection": [
+    "complaint from a visitor about the water quality",
+    "water sampling had revealed a high coliform count"
+  ],
+  "people_ill": "Sixty three",
+  "people_hospitalized": "Ten",
+  "contaminants": "cryptosporidium",
+  "symptoms": [
+    "diarrhoea",
+    "followed by vomiting",
+    "abdominal pain",
+    "nausea",
+    "gastrointestinal symptoms",
+    "a faecal sample positive for cryptosporidium"
+  ],
+  "mitigation": [
+    "the water feature was closed",
+    "the park reviewed",
+    "revised health",
+    "safety risk assessments to manage",
+    "control the risk from protozoan parasites",
+    "The design of the water treatment",
+    "disinfection system was improved",
+    "The park also provided additional drinking fountains around the park",
+    "asked children to remove footwear before entering the interactive water feature",
+    "They improved signage",
+    "instructing visitors at all water-related attractions not to drink the water"
+  ],
+  "monitoring": [
+    "Ten-litre grab samples were taken from the various water features within the park for cryptosporidium oocyst detection by South West Water Ltd",
+    "Faecal samples from the farmyard animals were also submitted",
+    "Oocysts",
+    "(2100 coliforms",
+    "40 Ecoli per cu mm)"
+  ],
+  "restoration": "produced guidelines",
+  "prevention": [
+    "risk assessment",
+    "management",
+    "design",
+    "operational standards for filtration",
+    "chlorination",
+    "reducing contamination hazards"
+  ],
+  "investigation": "water in the interactive water feature became contaminated with faeces containing cryptosporidium oocysts",
+  "infrastructure": "the water quality of one of the interactive water features designed for water play",
+  "title": "Cryptosporidium Outbreak Linked To Interactive Water Feature, Uk Importance Of Guidelines"
+}

@@ -1,0 +1,69 @@
+{
+  "event": "outbreak of viral gastroenteritis linked to municipal drinking water",
+  "event_date": "9 June 2009",
+  "event_duration": "one month",
+  "city": "San Felice del Benaco",
+  "region": [
+    "Lombardy",
+    "northern Italy"
+  ],
+  "country": "Italy",
+  "cause": "contaminated municipal water supply",
+  "source": "municipal drinking water",
+  "detection": [
+    "a general practitioner from the municipality of San Felice del Benaco notified to the local health authority",
+    "cluster of gastroenteritis in a hotel"
+  ],
+  "people_ill": "299",
+  "people_hospitalized": "Four",
+  "people_dead": "no fatality",
+  "contaminants": [
+    "norovirus",
+    "rotavirus",
+    "enterovirus",
+    "astrovirus"
+  ],
+  "symptoms": [
+    "vomiting",
+    "diarrhoea",
+    "fever"
+  ],
+  "mitigation": [
+    "restricted the use of municipal water",
+    "restricted the use of municipal water",
+    "provided alternative water supplies to the population via water tankers",
+    "door-to-door information campaign",
+    "distributed leaflets",
+    "Regular water sampling",
+    "testing",
+    "not to use municipal water for drinking",
+    "cooking",
+    "disinfecting the water system with chlorine dioxide",
+    "sand filters with peracetic acid"
+  ],
+  "monitoring": [
+    "water samples from the lake",
+    "norovirus",
+    "rotavirus",
+    "enterovirus",
+    "astrovirus"
+  ],
+  "restoration": [
+    "disinfecting the water system with chlorine dioxide (0",
+    "2 mg/l)",
+    "sand filters with peracetic acid"
+  ],
+  "prevention": [
+    "well-maintained",
+    "monitored water supplies"
+  ],
+  "investigation": [
+    "Regular water sampling",
+    "testing",
+    "1) the water company had undertaken work on the collection reservoir which might have limited the effect of chlorination; 2) two filters were 10 years old (cleaned weekly but not disinfected); 3) the chlorine concentration in the water before it passed through the filters was 0",
+    "4 mg/l; in filtered water it was only 0",
+    "08 mg/l"
+  ],
+  "infrastructure": "two filters were 10 years old",
+  "title": "An Outbreak Of Viral Gastroenteritis Linked To Municipal Water Supply, Lombardy, Italy, June 2009"
+}

@@ -1,0 +1,22 @@
+{
+  "event": "water-borne acute hepatitis",
+  "event_date": "2004",
+  "region": "Eastern Chad",
+  "country": "Chad",
+  "cause": "violent conflict in Darfur",
+  "source": "sewage",
+  "people_ill": "2,000",
+  "contaminants": "Hepatitis E virus",
+  "symptoms": "acute jaundice syndrome",
+  "mitigation": [
+    "Data collection",
+    "sampling"
+  ],
+  "monitoring": [
+    "water samples",
+    "Human adenovirus"
+  ],
+  "prevention": "identify possible risk sources",
+  "investigation": "potential routes of faecal contamination for water-borne viruses may exist",
+  "title": "Occurrence Of Water-Borne Enteric Viruses In Two Settlements Based In Eastern Chad"
+}

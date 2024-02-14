@@ -1,0 +1,41 @@
+{
+  "event": "food poisoning",
+  "event_date": "26 June to 3 July 2018",
+  "region": "Gyeongsangbuk-Do",
+  "country": "South Korea",
+  "source": [
+    "the cooking",
+    "drinking water"
+  ],
+  "detection": "notification made by an elementary school",
+  "people_ill": "13",
+  "contaminants": "Escherichia coli",
+  "symptoms": [
+    "diarrhoea",
+    "fever",
+    "abdominal pain"
+  ],
+  "mitigation": [
+    "determine the extent",
+    "cause",
+    "source of the outbreak"
+  ],
+  "monitoring": [
+    "the suspected food",
+    "drinks causing the food poisoning",
+    "faecal coliforms"
+  ],
+  "prevention": [
+    "Provision of safe",
+    "wholesome water access to all elementary schools by concerned authorities",
+    "especially during the likely seasons of water source contamination",
+    "as well as health education promotion about foodborne outbreaks to all school stakeholders"
+  ],
+  "investigation": [
+    "observation",
+    "laboratory tests",
+    "survey questionnaires",
+    "the cucumber tofu that was supplied in the meals was found to be associated with the food poisoning"
+  ],
+  "title": "A Diarrhoeagenic Enteropathogenic Escherichia Coli (Epec) Infection Outbreak That Occurred Among Elementary School Children"
+}

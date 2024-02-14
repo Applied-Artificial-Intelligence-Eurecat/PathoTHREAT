@@ -1,0 +1,108 @@
+<div class="card">
+    <h5>Past emergencies</h5>
+    <br>
+    <p-table #dtPast [value]="pastEmergencyList" [rowHover]="true" [paginator]="true" styleClass="p-datatable-striped"
+        [rowsPerPageOptions]="environment.pagination.items_options" [rows]="environment.pagination.items_per_page"
+        [filterDelay]="0"
+        [globalFilterFields]="['emergencyName', 'scenario', 'reportDate','emergencyTypeClass', 'affectedAreaType', 'nameAreaAffected']"
+        selectionMode="single" [(selection)]="selectedEmergency" dataKey="id" (onRowSelect)="onRowSelect($event)"
+        [tableStyle]="{'min-width': '200px'}" responsiveLayout="stack" [autoLayout]="true">
+        <!--<ng-template pTemplate="caption">
+            <div class="p-d-flex p-flex-column p-flex-md-row p-jc-md-between table-header">
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input pInputText type="text" (input)="dtPast.filterGlobal($event.target.value, 'contains')"
+                        placeholder="Global Search"/>
+                </span>
+            </div>
+        </ng-template>-->
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="emergencyName">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Name
+                        <p-sortIcon field="emergencyName"></p-sortIcon>
+                        <p-columnFilter type="text" field="emergencyName" display="menu" class="p-ml-auto">
+                        </p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="scenario">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Scenario
+                        <p-sortIcon field="scenario"></p-sortIcon>
+                        <p-columnFilter type="text" field="scenario" display="menu" class="p-ml-auto">
+                        </p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="reportDate">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Date
+                        <p-sortIcon field="reportDate"></p-sortIcon>
+                        <p-columnFilter type="date" field="reportDate" display="menu" class="p-ml-auto">
+                        </p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="emergencyTypeClass">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Type
+                        <p-sortIcon field="emergencyTypeClass"></p-sortIcon>
+                        <p-columnFilter type="text" field="emergencyTypeClass" display="menu" class="p-ml-auto">
+                        </p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="affectedAreaType">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Latitude
+                        <p-sortIcon field="affectedAreaType"></p-sortIcon>
+                        <p-columnFilter field="affectedAreaType" matchMode="equals" display="menu">
+                            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                <p-dropdown [ngModel]="value" [options]="areaTypeList" (onChange)="filter($event.value)"
+                                    placeholder="Any">
+                                    <ng-template let-option pTemplate="item">
+                                        <span
+                                            [class]="'customer-badge affectedAreaType-' + option.value">{{option.label}}</span>
+                                    </ng-template>
+                                </p-dropdown>
+                            </ng-template>
+                        </p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="nameAreaAffected">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Longitude
+                        <p-sortIcon field="nameAreaAffected"></p-sortIcon>
+                        <p-columnFilter type="text" field="nameAreaAffected" display="menu" currency="USD"
+                            class="p-ml-auto"></p-columnFilter>
+                    </div>
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-emergency>
+            <tr [pSelectableRow]="emergency">
+                <td>
+                    {{ emergency.emergencyName }}
+                </td>
+                <td>
+                    {{ emergency.scenario }}
+                </td>
+                <td>
+                    {{ emergency.reportDate | date: 'dd/MM/yyyy' }}
+                </td>
+                <td>
+                    {{emergency.emergencyTypeClass}}
+                </td>
+                <td>
+                    {{emergency.affectedAreaLat}}
+                </td>
+                <td>
+                    {{emergency.affectedAreaLon}}
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="8">No emergencies found.</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

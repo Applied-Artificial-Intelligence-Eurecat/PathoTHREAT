@@ -1,0 +1,31 @@
+{
+  "event": "outbreak of acute gastroenteritis",
+  "event_date": "July 2006",
+  "region": "southern New Zealand",
+  "country": "New Zealand",
+  "cause": [
+    "a septic tank had become blocked",
+    "had overflowed at the resort"
+  ],
+  "source": "drinking water supply contaminated by human sewage",
+  "people_ill": "218",
+  "contaminants": "norovirus",
+  "symptoms": [
+    "diarrhea",
+    "vomiting",
+    "acute gastroenteritis"
+  ],
+  "mitigation": "real-time reverse transcription-PCR (RT-PCR)",
+  "monitoring": [
+    "Water samples",
+    "norovirus"
+  ],
+  "restoration": "A drainage contractor had been employed to clear the blockage",
+  "prevention": "maintenance work",
+  "infrastructure": [
+    "a septic tank had become blocked",
+    "had overflowed at the resort",
+    "there had not been any recent maintenance work carried out on the sewerage system"
+  ],
+  "title": "Gastroenteritis Outbreak Caused By Waterborne Norovirus At A New Zealand Ski Resort"
+}

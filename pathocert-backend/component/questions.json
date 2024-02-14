@@ -1,0 +1,23 @@
+{
+	"event": ["What happened?", "What was the event?"],
+	"event_date": ["When did this happen?", "When did this event start?", "What is the date of this event?"],
+	"event_duration": ["How long was the event?", "How long did the event last?"],
+	"street": ["In which street did this happen?"],
+	"city": ["In which city did this happen?"],
+	"region": ["In which region did this happen?"],
+	"country": ["In which country did this happen?"],
+	"cause": ["What caused the (What caused the event?)?", "What was the cause of the event?"],
+	"source": ["What source started the event?"],
+	"detection": ["How was the event first detected?"],
+	"people_ill": ["How many people were ill?"],
+	"people_hospitalized": ["How many people were hospitalized?"],
+	"people_dead": ["How many people were dead?"],
+	"contaminants": ["Which contaminants or viruses or bacteria were found?"],
+	"symptoms": ["Which were the symptoms?", "What did the patients have?"],
+	"mitigation": ["What were the first steps?", "What did they do to control the problem?", "What did the local authorities advise?", "What were the control measures?"],
+	"monitoring": ["What type of samples were examined?", "What did they test for in the samples?", "What is the concentration of the pathogens?"],
+	"restoration": ["What steps were taken to restore the problem?", "What was done to fix the problem?"],
+	"prevention": ["What could have been done to prevent the event?", "How to prevent this?"],
+	"investigation": ["What were the investigation steps?", "What did the investigation find?"],
+	"infrastructure": ["How was the infrastructure affected?", "What were the infrastructure complaints?"]
+}

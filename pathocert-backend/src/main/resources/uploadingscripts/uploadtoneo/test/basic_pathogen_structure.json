@@ -1,0 +1,26 @@
+[
+    {
+        "type_of_event": "earthquake",
+        "cascading_event": ["flood","pipe break"],
+        "produced_event": "water-loss",
+        "effect_water_taste": ["earthy-musty", "chlorine-bleach"],
+        "effect_water_odor": ["sulfur", "rotten-eggs"],
+        "effect_water_color": "brown",
+        "contaminants": [
+                    {"name": "ecoli",
+                    "family": "bacteria",
+                    "treatment": "coagulants",
+                    "health_effect": ["gastroenteritis", "salmonellosis"],
+                    "symptoms": ["diarrhea", "fever"]},
+                    {"name": "norovirus",
+                    "family": "virus",
+                    "treatment": "coagulants",
+                    "health_effect": ["gastroenteritis", "salmonellosis"],
+                    "symptoms": ["diarrhea", "fever"]}
+                    ],
+        "response_activity": ["network-flushing", "do-not-use-water"],
+        "risk": "medium-risk"
+    },
+    {},
+    {"type_of_event": "terrorist-attack"}
+]

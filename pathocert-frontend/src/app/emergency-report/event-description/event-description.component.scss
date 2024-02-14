@@ -1,0 +1,24 @@
+:host ::ng-deep .multiselect-custom {
+    .p-multiselect-item {
+        overflow-y: hidden;
+        overflow: initial;
+    }
+}
+
+:host ::ng-deep .dropdown-custom {
+    .p-dropdown-item {
+        overflow-y: hidden;
+        overflow: initial;
+    }
+}
+
+#map {
+    height: 340px;
+    width: 100%;
+}
+
+:host ::ng-deep .p-field {
+    .p-tooltip {
+        width: 200px;
+    }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "sql_id": 110,
+    "title": "Value of syndromic surveillance in monitoring a focal waterborne outbreak due to an unusual Cryptosporidium genotype in Northamptonshi",
+    "event_date": "25 June 2008",
+    "city": "Northamptonshire",
+    "country": "United Kingdom",
+    "cause": "a dead rabbit was found in a treated water tank at the water treatment works.",
+    "detection": [
+      "the local Health Protection Unit was informed by Anglian Water of an exceedence in the level of Cryptosporidium oocysts"
+    ],
+    "people_ill": "23",
+    "contaminants": [
+      "Cryptosporidium",
+      "C. cuniculus"
+    ],
+    "symptoms": [
+      "diarrhoea",
+      "vomiting"
+    ],
+    "mitigation": [
+      "boil all drinking water was issued on 25 June 2008 and public health messages were circulated to local health services and to the general public via the media"
+    ],
+    "monitoring": [
+      "faecal specimens"
+    ]
+  }
+]

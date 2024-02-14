@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="p-fluid">
+        <span>Ask the expert database</span>
+    </div>
+</div>
+<div class="p-grid p-formgrid">
+    <div class="p-fluid p-col-12 p-md-6">
+        <div class="card">
+            <div class="p-fluid">
+                <span>{{getEitherImpactOrControl()}}:</span>
+            </div>
+            <br/>
+            <div class="p-fluid">
+                <div class="p-grid forms-grid">
+                    <div class="p-fluid p-col-12 p-md-12">
+                        <div class="p-field">
+                            <p-editor [(ngModel)]="editionText" [style]="{'height':'220px'}"></p-editor>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-grid p-nogutter p-justify-end btn-space">
+                <p-button type="button" label="Save" (onClick)="save()"
+                          icon="pi pi-save" iconPos="right"></p-button>&nbsp;&nbsp;
+                <p-button type="button" label="Cancel" (onClick)="cancel()"
+                          icon="pi pi-times" iconPos="right"
+                          styleClass="p-button p-button-outlined p-button-secondary"></p-button>
+            </div>
+        </div>
+    </div>
+    <div class="p-fluid p-col-12 p-md-6">
+        <!--<app-expert-search></app-expert-search>-->
+        <!--<app-service-ask></app-service-ask>-->
+    </div>
+</div>

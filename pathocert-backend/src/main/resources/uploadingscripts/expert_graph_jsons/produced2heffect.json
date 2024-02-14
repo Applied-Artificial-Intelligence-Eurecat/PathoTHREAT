@@ -1,0 +1,15 @@
+[
+    {
+        "produced_event": "direct contact with pathogens",
+        "contaminants": [
+            {
+                "health_effect": [
+                    "wound infection",
+                    "conjunctivitis",
+                    "dermatitis",
+                    "ear/nose/throat infection"
+                ]
+            }
+        ]
+    }
+]

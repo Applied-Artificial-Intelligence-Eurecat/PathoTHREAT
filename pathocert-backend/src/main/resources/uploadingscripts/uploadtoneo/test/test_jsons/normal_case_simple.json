@@ -1,0 +1,12 @@
+[
+    {
+        "produced_event": "water loss",
+        "effect_water_taste": ["earthy-musty", "chlorine-bleach"],
+        "contaminants": [
+                    {"name": "ecoli",
+                    "family": "bacteria"},
+                    {"name": "norovirus",
+                    "treatment": "coagulants"}
+                    ]
+    }
+]

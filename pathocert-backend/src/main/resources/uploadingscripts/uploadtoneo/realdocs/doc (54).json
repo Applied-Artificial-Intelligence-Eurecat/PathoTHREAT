@@ -1,0 +1,21 @@
+{
+  "event": "outbreaks of jaundice",
+  "event_date": "late 2008",
+  "city": "Dhaka",
+  "country": "Bangladesh",
+  "cause": "sewage contamination of the municipal water system",
+  "people_ill": "4751",
+  "people_dead": "17",
+  "contaminants": "Hepatitis E virus",
+  "symptoms": "jaundice",
+  "mitigation": "house-to-house visits",
+  "monitoring": [
+    "subset of persons",
+    "immunoglobulin M antibodies"
+  ],
+  "prevention": [
+    "Longer-term efforts to improve access to safe water",
+    "license HEV vaccines"
+  ],
+  "title": "Outbreak Of Hepatitis E In Urban Bangladesh Resulting In Maternal And Perinatal Mortality"
+}

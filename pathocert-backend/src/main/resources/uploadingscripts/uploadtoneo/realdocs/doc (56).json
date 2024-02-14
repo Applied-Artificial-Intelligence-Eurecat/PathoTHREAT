@@ -1,0 +1,43 @@
+[
+  {
+    "sql_id": 107,
+    "title": "Outbreak of severe gastroenteritis with multiple aetiologies caused by contaminated drinking water in Denmark, January 2007",
+    "event_date": "January 2007",
+    "country": "Denmark",
+    "cause": "combination of a technical and a human error at a local sewage treatment facility",
+    "detection": [
+      "several complaints from citizens",
+      "drinking water in many houses was reported to be discoloured and of unusual smell and taste"
+    ],
+    "people_ill": "140",
+    "people_hospitalized": "four",
+    "contaminants": [
+      "Coliform counts",
+      "Escherichia coli"
+    ],
+    "symptoms": [
+      "diarrhea",
+      "abdominal pain",
+      "fever",
+      "vomiting",
+      "cramps"
+    ],
+    "mitigation": [
+      "prohibited any use of the water - except for toilet flushing -",
+      "The citizens in the area were warned by the police and through radio broadcasts.",
+      "Geographical information systems were used to define the contaminated area"
+    ],
+    "monitoring": [
+      "water samples",
+      "stool samples"
+    ],
+    "restoration": [
+      "Flushing of the area’s distribution system",
+      "the distribution system was subsequently disinfected by chlorination"
+    ],
+    "investigation": [
+      "water samples for microbiological and chemical analyses were systematically collected from the water distribution system",
+      "a house-to-house questionnaire"
+    ]
+  }
+]

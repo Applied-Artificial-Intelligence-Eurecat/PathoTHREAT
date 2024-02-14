@@ -1,0 +1,120 @@
+<p-toast [showTransitionOptions]="'1000ms'" [hideTransitionOptions]="'1000ms'" position="top-right"
+    [style]="{ 'word-break': 'break-word' }"></p-toast>
+
+<ng-template #noEvent>
+    <div class="p-grid">
+        <div class="p-col-8 p-offset-2">
+            <div class="p-text-center">
+                <p>No impact assessment or control actions have been provided yet.</p>
+                <p-button type="button" label="Provide control actions and impact assessment."
+                    styleClass="p-button p-button-raised p-button-warning" (onClick)="provideControlImpact()">
+                </p-button>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<div class="card">
+    <h5>Emergency detail</h5>
+    <div *ngIf="!emergency?.impact || !emergency?.control" class="card">
+        <ng-content *ngIf="!emergency?.riskAssessment || !emergency?.actionPlan then noEvent">
+
+        </ng-content>
+    </div>
+    <p-accordion [multiple]="true">
+        <p-accordionTab header="General description" [selected]="true">
+            <div class="p-grid p-formgrid">
+                <div class="p-fluid p-col-12 p-md-12">
+                    <div class="p-field">
+                        <label>Emergency name: </label>
+                        <span><b>{{emergency?.emergencyName}}</b></span>
+                    </div>
+                    <div class="p-field">
+                        <label>Scenario: </label>
+                        <span>{{emergency?.scenario}}</span>
+                    </div>
+                    <div class="p-field">
+                        <label>Date: </label>
+                        <span>{{emergency?.reportDate | date: 'dd/MM/yyyy hh:mm'}}</span>
+                    </div>
+                    <div class="p-field">
+                        <label>Type: </label>
+                        <span>{{emergency?.emergencyTypeClass}}</span>
+                    </div>
+
+                    <div class="p-field">
+                        <label>Infrastructure Concerns: </label>
+                        <ul>
+                            <span *ngFor="let item of emergency?.infrastructureConcerns">
+                                <li>{{item}}</li>
+                            </span>
+                        </ul>
+                    </div>
+
+                    <div class="p-field">
+                        <label>Coordinates: </label>
+                        <span>LAT: {{emergency?.affectedAreaLat}} LON: {{emergency?.affectedAreaLon}}</span>
+                    </div>
+                    <div class="p-field">
+                        <label>Emergency description: </label>
+                        <span>{{emergency?.emergencyDescription}}</span>
+                    </div>
+
+                    <div class="p-field" *ngIf="emergency?.additionalObservations">
+                        <label>Emergency description: </label>
+                        <span>{{emergency?.additionalObservations}}</span>
+                    </div>
+                </div>
+            </div>
+        </p-accordionTab>
+        <p-accordionTab header="Area information">
+            <div class="p-grid p-formgrid">
+                <div class="p-fluid p-col-12 p-md-12">
+                    <div class="p-field">
+                        <label>Latitude: </label>
+                        <span>{{emergency?.affectedAreaLat}}</span>
+                    </div>
+                    <div class="p-field">
+                        <label>Longitude: </label>
+                        <span>{{emergency?.affectedAreaLon}}</span>
+                    </div>
+                </div>
+            </div>
+        </p-accordionTab>
+        <p-accordionTab header="Impact assessment">
+            <ng-content *ngIf="emergency?.impact!==null then hasEventImpact else noEvent"></ng-content>
+            <ng-template #hasEventImpact>
+                <div class="p-grid p-formgrid">
+                    <div class="p-fluid p-col-12 p-md-12">
+                        <div class="p-field">
+                            <div [innerHTML]="emergency?.impact"></div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+        </p-accordionTab>
+        <p-accordionTab header="Control actions">
+            <ng-content *ngIf="emergency?.control!==null then hasEventControl else noEvent"></ng-content>
+            <ng-template #hasEventControl>
+                <div class="p-grid p-formgrid">
+                    <div class="p-fluid p-col-12 p-md-12">
+                        <div class="p-field">
+                            <div [innerHTML]="emergency?.control"></div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+        </p-accordionTab>
+    </p-accordion>
+    <div class="p-grid p-nogutter p-justify-end btn-space" style="margin-top: 1rem;">
+        <p-button *ngIf="canArchive" type="button" label="Archive" (onClick)="archiveEmergency()" icon="pi pi-save"
+            iconPos="right" styleClass="p-button p-button-primary"></p-button>&nbsp;&nbsp;
+        <p-button *ngIf="canArchive || emergency.archived" type="button" label="Export" (onClick)="downloadEmergency()"
+            icon="pi pi-download" iconPos="right" styleClass="p-button p-button-outlined p-button-primary"></p-button>
+        &nbsp;&nbsp;
+        <p-button type="button" label="Close" (onClick)="close()" icon="pi pi-times" iconPos="right"
+            styleClass="p-button p-button-outlined p-button-secondary"></p-button>
+    </div>
+</div>

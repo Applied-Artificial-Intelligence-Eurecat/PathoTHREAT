@@ -1,0 +1,29 @@
+<div [hidden]="!hasData || pause">
+    <app-graph-info [selectedThing]="selectedThing" [selectedThingType]="selectedThingType"></app-graph-info>
+    <div id="myDiagramDiv"></div>
+    <div class="p-grid p-nogutter p-justify-end btn-space" style="margin-top: 1rem;">
+        <p-button type="button" label="Export" (onClick)="exportDiagram()" icon="pi pi-download" iconPos="right"
+                  styleClass="p-button p-button-outlined p-button-secondary"></p-button>
+        <p-button type="button" label="Autoscale" (onClick)="fitDiagram()" icon="pi pi-refresh" iconPos="right"
+                  styleClass="p-button p-button-outlined p-button-primary"></p-button>
+    </div>
+</div>
+<div *ngIf="!hasData || pause" style="display: flex; justify-content: center;">
+    <p-progressSpinner></p-progressSpinner>
+</div>
+<!--<p-button type="button" label="Help" icon="pi pi-search" iconPos="left"
+          (onClick)="displayExpert()" style="position: fixed; bottom: 50px; left: 100px;"
+          styleClass="p-button-raised p-button-help p-button-rounded p-button-lg"></p-button>-->
+<p-button (click)="showHelp()" icon="pi pi-external-link" label="Help"
+          style="position: fixed; bottom: 50px; left: 100px;" styleClass="p-button-help"></p-button>
+<p-dialog header="Header" [(visible)]="visible" [style]="{width: '50vw'}">
+    <p>
+        Zoom in and out using the scroll wheel, or by pinching on touch screens.
+        To see the entire graph, click on the Autoscale button.
+        Hovering over a node or an edge will highlight it and display its information.
+        Tapping or clicking a node will select itself and all its successors, that is, all the nodes and edges that can be reached from this node.
+        When a node is selected, only its successors can be hovered to see their information.
+        To deselect a node, tap or click on a blank point of the graph.
+        Pressing the Export button will download the graph's data into a file.
+    </p>
+</p-dialog>

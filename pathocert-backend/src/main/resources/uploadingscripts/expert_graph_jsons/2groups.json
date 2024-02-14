@@ -1,0 +1,50 @@
+[
+    {
+        "contaminants": [
+            {
+                "name": "zink",
+                "family": "chemicals/metals"
+            },
+            {
+                "name": "algae",
+                "family": "algal"
+            }
+        ]
+    },
+    {
+        "effect_water_odor": "rotten_eggs",
+        "contaminants": [
+            {"family": "bacteria"}
+        ]
+    },
+    {
+        "effect_water_odor": "sulfur",
+        "contaminants": [
+            {"family": "bacteria"}
+        ]
+    },
+    {
+        "effect_water_odor": "chlorine odor",
+        "contaminants": [
+            {"family": "chemicals/metals"}
+        ]
+    },
+    {
+        "effect_water_odor": "copper odor",
+        "contaminants": [
+            {"family": "chemicals/metals"}
+        ]
+    },
+    {
+        "effect_water_odor": "diesel odor",
+        "contaminants": [
+            {"family": "chemicals/metals"}
+        ]
+    },
+    {
+        "effect_water_odor": "arsenic",
+        "contaminants": [
+            {"family": "chemicals/metals"}
+        ]
+    }
+]

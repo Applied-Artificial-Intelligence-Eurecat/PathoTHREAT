@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  pathocert-neo:
+    image: neo4j:latest
+    container_name: pathocert-neo
+    volumes:
+      - ./neo4j/data:/data
+      - ./neo4j/import:/import
+    environment:
+      - NEO4J_AUTH=neo4j/1234
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+
+  pathocert-resources:
+    build: .
+    depends_on:
+      - pathocert-neo

@@ -1,0 +1,32 @@
+{
+  "event": "disease outbreak",
+  "city": "Cabool",
+  "region": "Arkansas",
+  "country": [
+    "USA"
+  ],
+  "cause": [
+    "43 water meter replacements",
+    "2 line breaks"
+  ],
+  "source": "public water supply",
+  "people_ill": "243",
+  "people_hospitalized": "32",
+  "people_dead": "4",
+  "contaminants": "Escherichia coli",
+  "symptoms": "diarrhea",
+  "monitoring": "fecesin tests",
+  "prevention": [
+    "proper",
+    "continual addition of a disinfectant"
+  ],
+  "investigation": [
+    "the existing sanitary sewer system was prone to infiltration from stormwater run-off",
+    "underdesigned for the capacity transmitted"
+  ],
+  "infrastructure": [
+    "the existing sanitary sewer system was prone to infiltration from stormwater run-off",
+    "underdesigned for the capacity transmitted"
+  ],
+  "title": "Searching For A Water Supply Connection In The Cabool, Missouri Disease Outbreak Of\u00a0Escherichia Coli\u00a00157H7"
+}

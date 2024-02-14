@@ -1,0 +1,37 @@
+[
+  {
+    "sql_id": 31,
+    "title": "epidemiological-and-serological-investigation-of-a-waterborne-campylobacter-jejuni-outbreak-in-a-danish-town.pdf",
+    "document_date": "2009-06-25",
+    "event_date": "2009-06",
+    "event_duration": "1 month",
+    "country": "Denmark",
+    "cause": [
+      "backflow of sewage water into the gravel surrounding the borehole",
+      "drinking water contamination caused by congestion of the combined rainwater drainage and sewage system"
+    ],
+    "source": "drinking water",
+    "detection": "unusual increase in patients with acute gastroenteritis.",
+    "people_ill": "163",
+    "contaminants": [
+      "Campylobacter jejuni",
+      "coliform bacteria",
+      "Campylobacter spp",
+      "sapovirus"
+    ],
+    "symptoms": [
+      "diarrhea",
+      "fever",
+      "vomiting",
+      "abdominal pain"
+    ],
+    "mitigation": [
+      "tap-water boiling advice",
+      "boiling order was in place for the whole town and the inhabitants were supplied with drinking water from tank trucks."
+    ],
+    "monitoring": [
+      "stool samples",
+      "Water samples"
+    ]
+  }
+]

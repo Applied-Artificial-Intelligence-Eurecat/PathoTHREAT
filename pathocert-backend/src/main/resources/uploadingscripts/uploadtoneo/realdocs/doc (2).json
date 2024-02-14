@@ -1,0 +1,65 @@
+{
+  "event": "large waterborne outbreak of Salmonella typhimurium",
+  "event_date": "November 1993",
+  "event_duration": "between November 1993 and January 1994",
+  "city": [
+    "Gideon",
+    "Anderson Township"
+  ],
+  "region": [
+    "Missouri",
+    "southeastern Missouri"
+  ],
+  "country": "United States",
+  "cause": [
+    "improper roof vent",
+    "an uncovered hatch that could allow free access by wild birds"
+  ],
+  "source": "the 100 000-gal tower",
+  "people_ill": "650",
+  "people_hospitalized": "15",
+  "people_dead": "7",
+  "contaminants": [
+    "Salmonella",
+    "Shigella",
+    "Campylobacter"
+  ],
+  "symptoms": [
+    "Diarrheal illness was accompanied by abdominal cramps (in 68% of cases)",
+    "self-reported fever",
+    "vomiting",
+    "blood in the stool"
+  ],
+  "mitigation": [
+    "A survey of household members",
+    "boil water order"
+  ],
+  "monitoring": [
+    "Stool",
+    "rectal swab specimens",
+    "Salmonella",
+    "Shigella",
+    "Campylobacter Serotyping"
+  ],
+  "restoration": [
+    "residents were warned",
+    "via a local radio station",
+    "to boil their drinking water"
+  ],
+  "prevention": [
+    "Boil orders should be issued with easy-to understand instructions",
+    "door-to-door delivery of information sheets should begin as early as possible",
+    "proper water system maintenance",
+    "with adequate ongoing disinfection",
+    "proper maintenance of water storage",
+    "distribution systems",
+    "adequate training in water sanitation for water system operators",
+    "disinfection of all community water systems"
+  ],
+  "infrastructure": [
+    "storage tower had an improper roof vent",
+    "an uncovered hatch",
+    "bird feathers were observed in the tank"
+  ],
+  "title": "A Community Waterborne Outbreak Of Salmonellosis And The Effectiveness Of A Boil Water Order"
+}

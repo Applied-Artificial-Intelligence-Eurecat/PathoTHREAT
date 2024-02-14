@@ -1,0 +1,26 @@
+{
+  "event": "waterborne outbreak of cryptosporidiosis",
+  "event_date": "November 2010",
+  "city": "\u00c3\u2013stersund",
+  "country": "Sweden",
+  "cause": "contamination of the drinking water",
+  "source": "high counts of Escherichia coli",
+  "detection": "data from the local health advice line",
+  "people_ill": "27,000",
+  "contaminants": "Cryptosporidium oocysts",
+  "symptoms": "cryptosporidiosis",
+  "mitigation": "boil-water advisory",
+  "monitoring": [
+    "drinking water",
+    "raw water",
+    "wastewater",
+    "Escherichia coli"
+  ],
+  "prevention": [
+    "optimizing control of raw water quality",
+    "employing multiple barriers"
+  ],
+  "investigation": "inadequate microbial barriers at water treatment plants",
+  "infrastructure": "insufficient reduction of parasites by the municipal water treatment plant",
+  "title": "Large Outbreak Of Cryptosporidium Hominis Infection Transmitted Through The Public Water Supply, Sweden"
+}

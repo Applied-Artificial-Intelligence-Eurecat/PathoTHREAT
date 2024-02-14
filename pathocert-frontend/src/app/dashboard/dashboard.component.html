@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="p-grid">
+        <div class="p-col-12 p-md-6">
+            <div class="p-text-center">
+                <h5>Found an emergency?</h5>
+                <p>Please, use the tool to report the emergency and fill in useful information to make a correct threat assessment.</p>
+                <p-button type="button" label="Report emergency"
+                    styleClass="p-button p-button-raised p-button-warning"
+                    (onClick)="reportEmergency()"></p-button>
+            </div>
+        </div>
+        <div class="p-col-12 p-md-6">
+            <div class="p-text-center">
+                <h5>Want to explore data?</h5>
+                <p-button type="button" label="Explore data"
+                    styleClass="p-button p-button-raised"
+                    (onClick)="checkExpert()"></p-button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <app-emergencies-pendent></app-emergencies-pendent>
+</div>
+
+<div >
+    <app-emergencies-complete></app-emergencies-complete>
+</div>

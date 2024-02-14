@@ -1,0 +1,68 @@
+<div class="card">
+    <div class="p-fluid">
+        <span>Adapt</span>
+        <p><small>Modify the plan to suite the needs</small></p>
+    </div>
+    <br/>
+    <div class="p-fluid" [ngSwitch]="status">
+        <div *ngSwitchCase="'Loading'" style="display: flex; justify-content: center;">
+            <p-progressSpinner></p-progressSpinner>
+        </div>
+        <div *ngSwitchCase="'Error'">
+            It looks like some error has occurred, and we do not know how. Please, retry after a few minutes.
+        </div>
+        <p-accordion [multiple]="true" *ngSwitchCase="'Result'">
+            <p-accordionTab header="General Information Of The Past Emergencies">
+                <div class="p-grid p-formgrid">
+                    <div class="p-fluid p-col-12 p-md-12">
+                        <app-field-list [title]="'Causes of the previous emergencies:'"
+                                        [ls]="event.cause"></app-field-list>
+                    </div>
+                    <div>
+                        <app-merge-area [event]="event"></app-merge-area>
+                    </div>
+                </div>
+            </p-accordionTab>
+            <p-accordionTab>
+                <ng-template pTemplate="header">
+                    <div class="p-grid" style="width: 100%;">
+                        <div class="p-col-6 p-sm-9 p-md-9 p-lg-9" style="position: relative; top: 50%;">
+                            <span>Impact</span>
+                        </div>
+                        <div class="p-col-6 p-sm-3 p-md-3 p-lg-3" [align]="'right'">
+                            <p-button type="button" label="Edit" (onClick)="editImpact()" icon="pi pi-pencil"
+                                      iconPos="right"></p-button>
+                        </div>
+                    </div>
+                </ng-template>
+                <!-- Impact session inside Merge Result, don't know where it's created -->
+                <div class="p-formgrid" [innerHtml]="impactHtml"></div>
+            </p-accordionTab>
+            <p-accordionTab>
+                <ng-template pTemplate="header">
+                    <div class="p-grid" style="width: 100%;">
+                        <div class="p-col-6 p-sm-9 p-md-9 p-lg-9" style="position: relative; top: 50%;">
+                            <span>Control</span>
+                        </div>
+                        <div class="p-col-6 p-sm-3 p-md-3 p-lg-3" [align]="'right'">
+                            <p-button type="button" label="Edit" (onClick)="editControl()" icon="pi pi-pencil"
+                                iconPos="right"></p-button>
+                        </div>
+                    </div>
+                </ng-template>
+                <div class="p-formgrid" [innerHtml]="controlHtml"></div>
+            </p-accordionTab>
+        </p-accordion>
+    </div>
+
+    <br/>
+
+    <div class="p-grid p-nogutter p-justify-end btn-space">
+        <p-button type="button" label="Back" icon="pi pi-angle-left" iconPos="left" (onClick)="prevPage()"></p-button>
+        &nbsp;&nbsp;
+        <p-button type="button" label="Submit" icon="pi pi-save" iconPos="right" (onClick)="complete()"></p-button>
+        &nbsp;&nbsp;
+        <p-button type="button" label="Cancel" (onClick)="cancel()" icon="pi pi-times" iconPos="right"
+                  styleClass="p-button p-button-outlined p-button-secondary"></p-button>
+    </div>
+</div>

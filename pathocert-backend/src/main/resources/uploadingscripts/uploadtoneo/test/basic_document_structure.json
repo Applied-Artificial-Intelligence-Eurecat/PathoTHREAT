@@ -1,0 +1,23 @@
+[
+    {
+        "sql_id": 1,
+        "title": "Large waterborne Campylobacter outbreak: use of multiple approaches to investigate contamination of the drinking water supply system, Norway, June 2019",
+        "document_date": "2019-10-06",
+        "event_date": "2019-06-06",
+        "event_duration": "4 weeks",
+        "street": "",
+        "city": "Cabool",
+        "region": "Ozarks",
+        "country": "USA",
+        "cause": "43 water meter replacements and 2 line breaks",
+        "source": "groundwater supply",
+        "detection": "residents and visitors to the community of Cabool",
+        "people_ill": "243",
+        "people_hospitalized": "32",
+        "people_dead": "4",
+        "contaminants": ["Escherichia Coli"],
+        "symptoms": ["bloody diarrhea"],
+        "mitigation": ["household survey", "boil water", "chlorination program"],
+        "monitoring": ["total coliform bacteria", "water samples of 200 ml volume were collected"]
+    }
+]

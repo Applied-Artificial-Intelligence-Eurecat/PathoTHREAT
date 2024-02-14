@@ -1,0 +1,10 @@
+<div class="p-field">
+    <label>Associated Areas: </label>
+    <ul>
+        <li *ngIf="event.location?.city">City: <span>{{ event.location?.city}}</span></li>
+        <li *ngIf="event.location?.region">Region:
+            <span>{{ event.location?.region ? event.location.region : "-"}}</span></li>
+        <li *ngIf="event.location?.country">Country:
+            <span>{{ event.location?.country ? event.location.country : "-" }}</span></li>
+    </ul>
+</div>

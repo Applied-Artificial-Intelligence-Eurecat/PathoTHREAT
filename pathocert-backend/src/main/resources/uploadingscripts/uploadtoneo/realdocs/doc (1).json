@@ -1,0 +1,44 @@
+{
+  "event": "outbreak of gastroenteritis",
+  "event_date": "10 August 1994",
+  "city": "Bristol",
+  "region": "South Wales",
+  "country": [
+    "United Kingdom",
+    "Wales"
+  ],
+  "cause": "a number of unhygienic practices at the bakery",
+  "source": "contamination of the bakery water supply",
+  "detection": "the personnel department of a large bakery in South Wales notified the local Environmental Health Department",
+  "people_hospitalized": "no one required hospitalization",
+  "symptoms": [
+    "diarrhoea",
+    "abdominal pain",
+    "vomiting",
+    "fever",
+    "headache"
+  ],
+  "mitigation": [
+    "describe the outbreak",
+    "identify cases",
+    "examine risk factors for illness",
+    "determine the cause",
+    "alerting all EHDs in South Wales via EPINET (an electronic mail network used for epidemiological surveillance)",
+    "local general practitioners by telephone",
+    "the general public by means of a news release"
+  ],
+  "monitoring": [
+    "faecal smears",
+    "bacteria (including Salmonella",
+    "Shigella",
+    "Campylobacter species)"
+  ],
+  "investigation": [
+    "describe the outbreak",
+    "identify cases",
+    "examine risk factors for illness",
+    "determine the cause",
+    "unhygienic practices at the bakery"
+  ],
+  "title": "A Community Outbreak Of Food-Borne Small Round-Structured Virus Gastroenteritis Caused By A Contaminated Water Supply"
+}

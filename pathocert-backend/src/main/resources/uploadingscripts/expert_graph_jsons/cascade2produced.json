@@ -1,0 +1,22 @@
+[
+    {
+        "cascading_event": "surface water contamination",
+        "produced_event": "direct contact with pathogens"
+    },
+    {
+        "cascading_event": "source water contamination",
+        "produced_event": "water supply contamination"
+    },
+    {
+        "cascading_event": "dw infrastructure damage",
+        "produced_event": ["soil pathogens intrusion in dw infrastructure", "water supply contamination"]
+    },
+    {
+        "cascading_event": "dw infrastructure damage",
+        "produced_event": "sewage intrusion in dw infrastructure"
+    },
+    {
+        "cascading_event": "industrial infrastructure damage",
+        "produced_event": ["sewage intrusion in dw infrastructure", "water supply contamination"]
+    }
+]

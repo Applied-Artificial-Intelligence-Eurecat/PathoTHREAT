@@ -1,0 +1,37 @@
+{
+  "event": "unusually high number of patients with acute diarrhoea",
+  "event_date": "between July and October 2006",
+  "city": "Taranto",
+  "region": "Apulia",
+  "country": "Italy",
+  "cause": "technical problems at the local chlorination treatment facilities",
+  "source": [
+    "drinkable tap water contaminated with (at least) rota-",
+    "noroviruses"
+  ],
+  "detection": [
+    "reported by the accident",
+    "emergency departments"
+  ],
+  "people_ill": "2,860",
+  "contaminants": [
+    "rota-noroviruses"
+  ],
+  "symptoms": [
+    "fever",
+    "headache",
+    "vomit",
+    "abdominal pain",
+    "nausea"
+  ],
+  "monitoring": [
+    "tap water",
+    "sea water",
+    "shellfish"
+  ],
+  "investigation": [
+    "standard questionnaire",
+    "Risk factors which were shown to be significantly associated with the onset of acute diarrhoea"
+  ],
+  "title": "Outbreak Of Diarrhoeal Illness In Participants In An Obstacle Adventure Race, Alpes-Maritimes, France, June 2015"
+}

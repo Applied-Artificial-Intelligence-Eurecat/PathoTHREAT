@@ -1,0 +1,25 @@
+{
+  "event": "community-wide outbreak",
+  "event_date": "June 2009",
+  "city": "Tune",
+  "country": "Denmark",
+  "cause": "unusually heavy rainfall",
+  "source": "water from the common drainage",
+  "people_ill": "159",
+  "contaminants": "Campylobacter",
+  "symptoms": [
+    "diarrhoea",
+    "abdominal pain",
+    "fever",
+    "vomiting"
+  ],
+  "mitigation": [
+    "a cohort study using an e-questionnaire of disease determinants",
+    "microbiological study of stool samples",
+    "serological study of blood samples from cases",
+    "asymptomatic members of case households",
+    "environmental analyses of the water distribution system"
+  ],
+  "investigation": "serology as a tool",
+  "title": "Epidemiological And Serological Investigation Of A Waterborne Campylobacter Jejuni Outbreak In A Danish Town"
+}

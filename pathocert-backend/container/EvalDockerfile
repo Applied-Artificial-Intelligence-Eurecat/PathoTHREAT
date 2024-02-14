@@ -1,0 +1,18 @@
+FROM python:3.9-alpine
+
+LABEL org.opencontainers.image.authors="lluis.echeverria@eurecat.org, joel.aumedes@eurecat.org"
+
+RUN apt-get update -y && apt-get install -y libopenmpi-dev libgl1-mesa-glx
+
+ENV PT=/PT
+ENV PYTHONPATH=$PT:$PYTHONPATH
+
+WORKDIR $PT
+
+RUN pip install --upgrade pip
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "evaluate_performance.py" ]

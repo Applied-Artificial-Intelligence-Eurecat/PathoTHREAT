@@ -1,0 +1,21 @@
+[
+  {
+    "sql_id": 102,
+    "title": "Large outbreak of E. coli O157 in 2005, Ireland.pdf",
+    "event_date": "October/November 2005",
+    "country": "Ireland",
+    "people_ill": "18",
+    "people_hospitalized": "2",
+    "contaminants": [
+      "Escherichia coli",
+      "E. coli"
+    ],
+    "mitigation": [
+      "voluntary closure of the crèches,",
+      "‘boil water’ advisory"
+    ],
+    "monitoring": [
+      "faecal and drinking water samples"
+    ]
+  }
+]

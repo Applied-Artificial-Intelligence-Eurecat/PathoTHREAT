@@ -1,0 +1,21 @@
+[
+    {
+        "type_of_event": "industrial accident",
+        "cascading_event": ["gas explosion", "poisonous cloud"],
+        "produced_event": "source contamination",
+        "effect_water_taste": ["earthy-musty", "chlorine-bleach"],
+        "effect_water_odor": "sulfur",
+        "contaminants": [
+                    {"name": "ecoli",
+                    "family": "bacteria",
+                    "type": "toxin",
+                    "health_effect": "gastroenteritis",
+                    "symptoms": ["vomit", "fever"],
+                    "treatment": "antibiotics"},
+                    {"name": "norovirus",
+                    "family": "virus",
+                    "treatment": "coagulants",
+                    "type": "chemical"}
+                    ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "sql_id": 19,
+    "title": "An outbreak of viral gastroenteritis linked to municipal water supply, Lombardy, Italy, June 2009",
+    "document_date": "2009-06-25",
+    "event_date": "2009-06",
+    "event_duration": "1 month",
+    "region": "northern Italy",
+    "country": "Italy",
+    "source": [
+      "contaminated municipal water supply",
+      "municipal water systems"
+    ],
+    "detection": [
+      "cases of gastroenteritis among guests of a hotel",
+      "cluster of gastroenteritis in a hotel"
+    ],
+    "people_ill": "299",
+    "people_hospitalized": "4",
+    "contaminants": [
+      "norovirus",
+      "rotavirus",
+      "enterovirus",
+      "astrovirus"
+    ],
+    "symptoms": [
+      "diarrhea",
+      "fever",
+      "vomiting"
+    ],
+    "monitoring": [
+      "high levels of Clostridium  perfringens (4 UFC/100 ml) and Aeromonas hydrophyla (16  UFC/100 ml)"
+    ]
+  }
+]

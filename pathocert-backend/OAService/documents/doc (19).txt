@@ -1,0 +1,105 @@
+Abstract
+Context: During ongoing passive surveillance in Burail, Chandigarh an unexpected rise in number of acute viral hepatitis (AVH) was reported during December 2016. Aims: An outbreak of AVH was investigated in an urbanized village, Burail, in Chandigarh, India with an objective of describing its epidemiological features. Settings and Design: A house‑to‑house survey was conducted in Burail (population 51,958). Subjects and Methods: WHO’s standard case definition for AVH was used to identify cases. Suspected cases were tested for hepatitis A virus (HAV) and E virus (HEV) using enzyme‑linked immunosorbent assay. Drinking water samples were tested for fecal contamination. Control measures were implemented to contain the outbreak. Statistical Analysis Used: Descriptive analysis was done as per time, person, and place. Results: Out of 141 confirmed cases of AVH, 85.1% were positive for HEV, 12.8% for HAV, and 2.1% for both HAV and HEV. The attack rate was 27.1 per 10,000 in a population. Males were affected more than females (P < 0.05). One of the areas reported a leakage in drinking water pipeline and had highest attack rate (36.8/10000 population). Drinking water samples were found negative for contamination. Around 27% of confirmed cases reported history of taking food from local vendors in Burail 2–6 weeks prior to the onset of symptoms.
+
+Conclusion: This study described the epidemiological features of dual hepatitis outbreak due to HAV and HEV from Chandigarh, Union Territory, north India.
+
+Keywords: Attack rate, jaundice, hepatitis A, hepatitis E, outbreak investigation
+
+Introduction Globally, acute viral hepatitis (AVH) endures a major public health problem and it is now considered as comparable to big three communicable disease, that is, HIV/AIDS, malaria, and tuberculosis.[1] It is responsible for around 1.4 million deaths, where 47% deaths are caused due to hepatitis B virus (HBV), 48% due to hepatitis C virus (HCV), and the rest are caused by both hepatitis A (HAV) and E (HEV) viruses.[2] HAV mainly attacks pediatric age group (1–3 years) and HEV mainly affects older children and young adults and is responsible for frequent epidemics.[3,4] Occasionally, HEV epidemic is associated with HAV epidemics in the form of dual infection in developing countries.[5] These viruses are mainly transmitted through ingestion of contaminated food and water. Inadequate sanitary conditions, inadequate safe drinking water, and sewage disposal problems leads to these outbreaks.[6,7] Hepatitis cases due HEV and HAV are routinely reported from different regions from India.[8]
+
+These infections take a decent time for recovery from illness which affects daily life and have significant economic and social impact in the community.[3,4] The impact of these viral disease in respect of public health dimensions is poorly understood in many countries. The key challenges include poor public health approach, lack of access to affordable treatment, ignorance in the community, inadequate data, and lack of commitment. To address these challenges, the world health assembly adopted the first Global Health Sector Strategy on Viral Hepatitis, 2016–2021, with a vision of eliminating viral hepatitis as a public health problem with global targets of reducing new viral hepatitis infections by 90% and reducing deaths due to viral hepatitis by 65% by 2030.[2] In achieving sustainable development goals (SDGs), recently the National Viral Hepatitis Control Program is launched in India aiming to end viral hepatitis by 2030.[9]
+
+During December 2016 to March 2017, 32 cases of jaundice with features of acute hepatitis were reported in the catchment area of Civil Hospital, sector 45 (CH‑45), Chandigarh, India. This number was significantly higher than the numbers (3–5 cases) reported in the last 3 years’ reports of integrated disease surveillance project (IDSP) in the same period (2014–16).[10] With the team of epidemiologist, virologist, and program officers an AVH outbreak was detected, and an epidemiological investigation was carried out. The objective was to describe its epidemiological features, identify the source of contamination and implement the containment measures in Chandigarh, a North Indian Union Territory.
+
+Subjects and Methods
+A descriptive outbreak investigation of AVH was done from December 2016 to November 2017, in the catchment area of CH‑45, Chandigarh, mainly involving Burail (an urbanized village), where 51,958 were affected. Inhabitants of this area were mostly poor migrants who lived in overcrowded buildings with poor sanitary conditions and interrupted water supply. It is also a field practice area of medical college and tertiary care institute, in northern India. A verbal consent was taken from the study participants.
+
+Outbreak Verification
+Case definition
+We used standard WHO case definition to investigate the outbreak.[11] Acute illness was defined as symptoms of acute jaundice, dark urine, anorexia, malaise, extreme fatigue, and right upper quadrant tenderness. Biological signs included increased urine urobilinogen and >2.5 times the upper limit of serum alanine aminotransferase. A case positive for IgM anti‑HAV was labeled as hepatitis A, and positive for IgM anti‑HEV labeled as hepatitis E. The suspected case was defined as a case if compatible with the clinical description. The confirmed case was defined as a suspected case that is laboratory‑confirmed for hepatitis A and E.
+
+Active surveillance
+The house to house survey was carried out by the trained team of field investigators with standard case record form from April 2017 to November 2017. [Supplementary File 1].
+
+Laboratory and environmental investigations
+Hepatitis A and E antibodies were detected by ELISA in the designated laboratory under Integrated Diseases Surveillance Project (IDSP) in Civil Hospital (CH), Manimajra, Chandigarh, for all the suspected cases. The diagnosis was also verified in randomly selected 19 cases in designated reference laboratory in the department of virology, tertiary care institute, and medical college.
+
+A total of 18 drinking water samples from five tube wells and nearby households were tested during February 2017 and April 2017 for most probable number at IDSP designated laboratory at CH Manimajra. Additionally, six drinking water samples from the suspected contaminated area were tested in bacteriology laboratory in tertiary care institute and medical college for cross‑verification.
+
+Data analysis
+A line list of confirmed and probable cases was maintained in an Excel sheet. Descriptive analysis of all the confirmed cases was done as per time, person, and place. Attack rates of acute hepatitis by age and gender was calculated. Hypothesis was generated and tested by conducting an age and gender matched case control study, where 125 pairs were identified and water sources, food, and travel history 2–6 weeks prior to the onset of any symptoms was obtained to identify the source of infection.
+
+The mean serum levels of bilirubin, serum glutamate oxaloacetic transaminase (SGOT), and serum glutamic pyruvate transaminase (SGPT) were calculated. The cutoff for hepatitis was taken as total bilirubin>1.2mg/dL, SGOT and SGPT >35 U/L calculated.[12]
+
+Ethical clearance
+The ethical approval was obtained by the Institute Ethics Committee, Chandigarh. (NK/5003/report/097).
+
+Results
+A total of 31,527 individuals and 10,509 households in Burail were contacted, and a total of 246 suspected cases were identified. Out of these, 141 cases were confirmed serologically for hepatitis A and E. Hence, a mixed outbreak of hepatitis A and E was declared in Burail. Line list of all confirmed cases was maintained [Supplementary Table 1].
+
+Time trend analysis
+The time trend analysis of the outbreak indicated that the cases were continuously rising and falling throughout the year. Weekly attack rate (per 10,000) ranged from 0 to 1.35 case per week per 10,000. Active surveillance was carried out till November 8, 2017 (45th week), thereafter, passive surveillance continued. [Figure 1].
+
+Person analysis
+The age of the cases varied from 2 years to 74 years (mean 21.6 ± 1.03). The adolescents and young adults (10–29 years) were most commonly affected. Overall, attack rate was 27.1/10000 and age specific attack rate was the highest between 10 and 14 years age group (86.7/10000), males were affected more than females (64% versus 36%, Chi‑square
+6.80, P < 0.05). The gender‑specific attack rate was higher among males (32.8/10000 male population) as compared to females (20.8/10,000 females) Table 1.
+
+Four pregnant women aged 20–34 years reported to be positive for AVH (three cases were HEV positive and one was HAV positive), out of 18 pregnant women during the outbreak. One of them had a miscarriage at 23 weeks of gestation due to severity of HEV, and others had delivered live and healthy babies by normal vaginal delivery. No maternal death reported.
+
+Of the 141 confirmed cases, majority (85.1%) were due to mono infection with HEV followed by mono infection with HAV (12.8%), and rest (2.1%) were coinfected with both HAV and HEV. The attack rate was higher for HEV (23.10/10,000) than HAV (3.46/10,000) and coinfection (0.58/10,000). HAV mainly affected population <14 years of age (88%), where majority of the cases were between 5 and 9 years age group. HEV mainly affected population >10 years (95%), where majority of the cases were between 20 and 24 years age group.
+
+The three coinfected cases were present in 20–24 years age group (n = 2) and 30–34 age group (n = 1). HAV was prevalent more among females (56%) than males (44%), whereas HEV was prevalent more among males (68%) as compared to females (32%).
+
+Around 27% of confirmed cases reported history of taking food from local vendors in Burail 2–6 weeks prior to the onset of symptoms. Around 35% of cases aged 25–29 years reported history of eating food from outside and across gender highest attack rate among males of age 15–19 years.
+
+Clinically, the jaundice was the most commonly reported symptom (78%) and diarrhea was the least (27%) reported symptom. The average duration between the onsets of symptoms to the presentation at any health facility was 6.18 days, and it varied from 0 days to 49 days. Biochemical investigations of the patient have shown deranged liver functions in majority of the patients with mean total bilirubin levels of 6.67 ± 0.41 mg/dL (n = 104), SGOT 1132.9 ± 72.56 U/I (n = 133), SGPT 1291.6 ± 77.89 U/I (n = 133).
+
+None of the population surveyed was immunized against hepatitis A vaccine.
+
+Place analysis
+The spot map was drawn with important landmarks, locations of cases, and source of drinking water like municipality tube wells. There were five tube wells in Burail as shown in the spot map of the area. The cases were mainly clustered around tube wells located near the wheat mill (Atta Chakki) [marked as area under blue rectangle on the right side in Figure 2]. There were also seven dried wells in the area, as it was an urbanized village. However, no one gave the history of using these wells. Since Burail area is divided in five blocks (marked as number 1 to 5) as per the population covered by an ANM, we estimated attack rate per ANM’s area and plotted the incidence map as shown in Supplementary Figure 1. The highest attack rate was observed in area five (36.8 per 10,000) and lowest (15.2 per 10000) in area one. [Supplementary Figure 1].
+
+Some residents (household no 1330, 218, and 818) complained of foul smell coming from the water supplied from the tube wells. There was also a history of leakage in drinking water pipelines and overflowing drains in the area (household no 750 to 760 and 810 to 825).
+
+Case control study
+Out of 125 pairs, 82 (65.6%) were males and 43 (36.4%) were females. All case and control had same source of drinking water and sewage drainage. None of the controls had the history of eating food outside or contaminated food or water, history of travel outside, history of attending large gatherings and history of contact with confirmed case or suspect as compared to the cases. Among 125 cases, 11% ate outside food, 18% ate contaminated food or water, 18% had traveled outside, 8% attended large gatherings, and 20% had a contact either with confirmed case or suspect. One of the cases was employed as food handler in the schools of the Burail area. She was advised to take all the mandatory precaution required to contain the spread of the disease.
+
+Water supply chain
+The main source of drinking water in Burail was tap water supplied by Municipal Corporation, Chandigarh Administration. However, it was supplied intermittently for 1–2 h in the morning and evening through the tube wells. Chlorination is done daily as a routine at water works and tube well by the staff from Municipal Corporation.
+
+Environmental findings
+Drinking water samples were found to be satisfactory in bacteriology lab in tertiary care institute and medical college. The water samples tested by hydrogen sulfide test by the local CH‑45 staff or by most probable number at IDSP lab in CH Manimajra were tested negative for contamination.
+
+Probable source of infection
+Based upon the results of the case control study, the probable source of infection seems to be contaminated food or water (as reported by 18% cases).
+
+Control measures and management of cases
+During the active surveillance period (1 April 2017 to November 8, 2017), regular health talks were organized by the doctors and the public health specialists in the community, schools, anganwadis, and health facilities. A meeting was held with area councilor to take initiatives to control the outbreak. He confirmed that pipes were laid 70 years back and there was a possibility of mixing of sewage with drinking water. An interim report was submitted to him. Based on the interim report, regular cleaning of gutters/manholes started in area five in Supplementary Figure 1, and separation of pipeline with sewerage line and new pipeline work started in Burail in April, 2017.
+
+Discussion
+The time trend analysis of the outbreak indicated that the cases were continuously rising and falling throughout the year. The shape of the epidemic curve suggested a persisting continuous transmission pattern. The attack rate of cases was similar irrespective of age group and gender.
+
+The study findings confirm the HEV as the prime etiological agent of this outbreak of acute hepatitis. HEV is documented to be major cause of outbreaks of acute hepatitis in developing countries like India.[13,14] These outbreaks are reported from various parts of the country viz., Chattisgarh,[6] West Bengal,[15] Ahmedabad,[16] and Punjab.[17,18]
+
+During the outbreak, 18 (12.8%) cases of HAV were detected along with three cases of coinfection of HAV with HEV. Similarly, a lower prevalence of HAV (20%) in hospitalized cases was documented by from Madhya Pradesh,[19] Punjab,[17,18] and Chhattisgarh.[6] The decreasing trend of HAV in these studies supports the shift in seroprevalence of HAV reflecting improved living standard and environmental hygiene.[20]
+
+The age of the cases varied from 2 years to 74 years and maximum number of cases ranged below 29 years. The younger age groups (10–29 years) were most commonly affected. More adults in comparison to children were affected due to HEV and more children in comparison to adults were affected due to HAV. Similar findings were reported from Chhattisgarh,[6] Kerala,[21] Andhra Pradesh[22] Gujarat,[16,23] Punjab,[17,18] and north western India.[24]
+
+However, HAV was also identified in later ages, that is, >14 years age group as mono and dual infection which supports the gradual transition in age of acquiring HAV from childhood to adulthood.[20,25]
+
+In this outbreak, more males (64%) were affected than females (36%) which was analogous to other studies from Chhattisgarh,[6] Punjab,[18] Gujarat,[16,23] and south India.[21] This suggests that males are more exposed to contaminated food and water as they go out for work.
+
+Infection with HEV in pregnant women is found to be associated with adverse obstetric outcome and increased perinatal mortality.[18,26] During this outbreak, pregnant women were infected with HEV and one of the pregnancies had an adverse outcome. It was in contrast to the studies from Gujarat[23] and south India[22] where no HEV cases were found among pregnant women in the survey population.
+
+The different symptoms reported were almost similar to presentation in other studies and presenting symptoms mainly included jaundice, dark urine, abdominal pain, fever, vomiting, loss of appetite, and fatigue.[6,16,17] On biochemical investigations majority of the patients had deranged liver function test similar to the other studies.[6,16] Similar to our study, no deaths were reported in Gujarat outbreak.[16] However, studies from south India[21] and Chhattisgarh[6] had reported mortality due to hepatitis.
+
+2–6 weeks prior to the onset of symptoms 27% of the cases had taken food from local vendors which points toward food being source of infection. However, we could not test food samples as there no local labs in Chandigarh which test for presence of HAV or HEV in food. The results of the case control study are also pointing at the contaminated food and water as source of infection in this outbreak.
+
+The tested water samples were satisfactory for chlorination. However, in Burail, the drinking water pipeline and sewerage line were closely laid over and there is a possibility that due to leakage in the sewerage line, the wastewater contaminated with fecal matter was sucked into intermittently supplied drinking water system. However, we hypothesized that contamination of water in the old and corroded water pipes, after release from the tube wells, with the sewage due to negative pressure generated in the water pipes because of intermittent water supply, might be responsible for contamination and causation of this outbreak. Similarly studies done in Gujarat[16,23] Punjab[17] Chhattisgarh[6] and South India[21] have reported contaminated water as the primary reason for these outbreaks. However, all the water samples were tested negative for probable fecal contamination. The results of the case control study hinted at the possible contamination of outside food as source of infection.
+
+The study findings confirm dual infection with HAV and HEV. HEV was the prime etiological agent of this outbreak. However, HAV was identified at a later age (>14 years) as both mono and dual infection which supports the gradual transition in age of acquiring HAV. The attack rate was 27.1 per 10,000. The shape of the epidemic curve suggested a persisting continuous transmission pattern. The gender specific attack rate was higher among males (32.8/10,000 male) as compared to females (20.8/10,000). The age‑specific attack rates were higher between 10 and 29 years age group across both males and females. Pregnant women were infected with HEV and one of them had adverse outcome. The present outbreak was probably due to contamination of drinking water supplied to the affected areas with sewage water, which occurred due to old and corroded leaking pipelines of drinking water passing close to old leaking sewage lines.
+
+This study provided an opportunity to strengthen the existing health system by training of health care staff in outbreak investigation, timely referral and follow‑up, documentation of cases, health promotion activities, and importance of engaging stakeholders. Further, awareness is increased in the community regarding symptoms and preventive measure of the disease. This study increased overall preparedness of the health system in preventing and managing future outbreaks.
+
+Conclusion and Recommendation
+This study described the detailed methodology for epidemiological investigation of an outbreak and described the epidemiological features of dual hepatitis outbreak from northern India. The quality of the water both at the source of distribution and consumer end should be periodically checked for sewage contamination. There is a need of better engineering of sewage pipelines and drinking water distribution system with proper disposal systems for human feces and surveillance of status of water pipelines for any leakages especially in the old and closed communities. Authorities may consider vaccinating the susceptible population, local food vendors with licensed hepatitis A vaccine. The residents have to be informed about the possible contamination of outside food with hepatitis virus so that they avoid eating out especially in these settings, which are quite prevalent in low‑ and middle‑income group countries.

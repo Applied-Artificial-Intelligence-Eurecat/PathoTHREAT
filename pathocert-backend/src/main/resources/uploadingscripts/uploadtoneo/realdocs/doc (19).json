@@ -1,0 +1,26 @@
+{
+  "event": "two successive cryptosporidiosis outbreaks",
+  "event_date": "June 2017",
+  "region": "Southwest France",
+  "country": "France",
+  "cause": "The entire drinking water network was contaminated",
+  "people_ill": "100",
+  "contaminants": "Cryptosporidium spp",
+  "mitigation": [
+    "Epidemiological",
+    "microbiological",
+    "environmental investigations",
+    "water restrictions"
+  ],
+  "monitoring": [
+    "stool",
+    "water samples"
+  ],
+  "restoration": "water restrictions",
+  "prevention": [
+    "sensitive",
+    "easy-to-implement tools for parasite detection"
+  ],
+  "investigation": "the value of syndromic diagnosis for gastroenteritis outbreak investigation",
+  "title": "Cryptosporidiosis Outbreaks Linked To The Public Water Supply In A Military Camp, France"
+}

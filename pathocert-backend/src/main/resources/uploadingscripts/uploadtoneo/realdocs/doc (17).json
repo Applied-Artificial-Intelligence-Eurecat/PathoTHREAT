@@ -1,0 +1,18 @@
+{
+  "event": "faecal contamination is detected the drinking water",
+  "event_date": "15 May 2007",
+  "event_duration": "six  days",
+  "region": "Noord-Holland",
+  "country": "the Netherlands",
+  "cause": "faecal contamination",
+  "detection": "samples collected the day before",
+  "contaminants": "Escherichia coli",
+  "mitigation": [
+    "issued advice through mass media to boil tap water before consumption",
+    "a public website used during emergency situations",
+    "a toll-free telephone number were made available for the public",
+    "advice for consumers to boil tap water"
+  ],
+  "monitoring": "tap water",
+  "title": "Compliance With Boil Water Advice Following A Water Contamination Incident In The Netherlands In 2007"
+}

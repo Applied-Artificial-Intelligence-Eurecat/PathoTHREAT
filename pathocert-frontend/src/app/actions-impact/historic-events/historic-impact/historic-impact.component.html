@@ -1,0 +1,22 @@
+<div class="p-grid p-formgrid">
+    <div class="p-fluid p-col-12 p-md-12">
+        <app-field-inline [title]="'Number of people exposed: '"
+                          [information]="event.impact?.numberPeopleExposed.toString()"></app-field-inline>
+
+        <app-field-inline [title]="'Number of people hospitalized: '"
+                          [information]="event.impact?.numberPeopleHospitalized.toString()"></app-field-inline>
+        <app-field-inline [title]="'Number of people dead: '"
+                          [information]="event.impact?.numberPeopleDead.toString()"></app-field-inline>
+
+        <app-field-inline [title]="'Time of contamination to first detection: '"
+                          [information]="event.timeToFirstDetection"
+                          [suffix]="' days'"></app-field-inline>
+        <app-field-inline [title]="'Time of contamination to response: '"
+                          [information]="event.timeToResponse"
+                          [suffix]="' days'"></app-field-inline>
+        <app-field-list [title]="'Associated Pathogens'"
+                        [ls]="event.impact?.pathogens"></app-field-list>
+        <app-field-list [title]="'Associated Symptoms'"
+                        [ls]="event.impact?.symptoms"></app-field-list>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="layout-topbar">
+    <div class="layout-topbar-wrapper">
+        <div class="layout-topbar-left">
+            <div class="layout-topbar-logo" id="logolink" style="cursor: pointer; outline: none;" routerLink="/">
+                <img id="app-logo" [src]="'assets/images/pathocert-logo.jpg'" alt="poseidon-layout">
+            </div>
+        </div>
+
+        <div class="layout-topbar-right">
+            <a class="menu-button" href="#" (click)="appMain.onMenuButtonClick($event)">
+                <i class="pi pi-bars"></i>
+            </a>
+
+            <ul class="layout-topbar-actions">
+
+                <li #profile class="topbar-item user-profile"
+                    [ngClass]="{'active-topmenuitem':appMain.activeTopbarItem === profile}">
+                    <a href="#" (click)="appMain.onTopbarItemClick($event,profile)">
+                        <img class="profile-image" src="assets/layout/images/avatar-profile.png" alt="demo">
+                        <div class="profile-info" *ngIf="userIsLogged">
+                            <h6>{{username}}</h6>
+                        </div>
+                        <div class="profile-info" *ngIf="!userIsLogged">
+                            <h6>NOT LOGGED IN</h6>
+                        </div>
+                    </a>
+
+                    <ul class="fadeInDown">
+                        <li class="layout-submenu-header">
+                            <img class="profile-image" src="assets/layout/images/avatar-profile.png" alt="demo">
+                            <div class="profile-info" *ngIf="userIsLogged">
+                                <h6>{{username}}</h6>
+                            </div>
+                            <div class="profile-info" *ngIf="!userIsLogged">
+                                <h6>NOT LOGGED IN</h6>
+                            </div>
+                        </li>
+                        <!--
+                        <li role="menuitem" *ngIf="!userIsLogged">
+                            <a href="#" (click)="onLogin()">
+                                <i class="pi pi-sign-in"></i>
+                                <h6>Login</h6>
+                            </a>
+                        </li>-->
+                        <li role="menuitem" *ngIf="userIsLogged">
+                            <a href="#" (click)="onLogout()">
+                                <i class="pi pi-sign-out"></i>
+                                <h6>Logout</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!--
+            <a class="layout-rightpanel-button" href="#" (click)="appMain.onRightPanelButtonClick($event)">
+                <i class="pi pi-arrow-left"></i>
+            </a>-->
+        </div>
+    </div>
+</div>
